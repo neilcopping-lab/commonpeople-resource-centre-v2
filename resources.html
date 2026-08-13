@@ -144,10 +144,29 @@
   <div style="padding:64px; text-align:center; background:#0f151c;">
     <h2 style="font-family:'Anton',sans-serif; font-size:32px; text-transform:uppercase; margin:0 0 12px;">The Monthly Dispatch</h2>
     <p style="font-size:16px; color:#a9a293; margin:0 0 28px;">Guides, insight and dispatches - free, for jobseekers and hirers alike.</p>
-    <div style="display:flex; justify-content:center; gap:12px;">
-      <div style="border:2px solid #ece6d8; padding:14px 20px; width:320px; color:#7a7466; font-family:'Oswald',sans-serif; font-size:14px; text-align:left; background:#161f29;">you@email.com</div>
-      <a href="#" style="background:#e0b03c; color:#161f29; font-family:'Oswald',sans-serif; font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:1px; padding:14px 26px;">Subscribe</a>
-    </div>
+    <form id="cp-subscribe" style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+      <input type="email" name="email" required placeholder="you@email.com" style="border:2px solid #ece6d8; padding:14px 20px; width:320px; color:#ece6d8; font-family:'Oswald',sans-serif; font-size:14px; text-align:left; background:#161f29; outline:none;">
+      <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px;">
+      <button type="submit" style="background:#e0b03c; color:#161f29; font-family:'Oswald',sans-serif; font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:1px; padding:14px 26px; border:none; cursor:pointer;">Subscribe</button>
+    </form>
+    <p id="cp-subscribe-msg" role="status" aria-live="polite" style="font-size:13px; color:#a9a293; margin:14px 0 0; min-height:18px;"></p>
+    <p style="font-size:11px; color:#7a7466; margin:8px 0 0;">Free, monthly, unsubscribe any time. We use your email only to send the Loudspeaker. See our <a href="./privacy.html" style="color:#7a7466; text-decoration:underline;">Privacy Notice</a>.</p>
+    <script>
+    (function(){
+      var f=document.getElementById('cp-subscribe'), m=document.getElementById('cp-subscribe-msg');
+      if(!f) return;
+      f.addEventListener('submit', async function(e){
+        e.preventDefault();
+        m.style.color='#a9a293'; m.textContent='One moment...';
+        try{
+          var r=await fetch('https://cv.the-common-people.com/api/subscribe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:f.email.value.trim(),company:f.company.value})});
+          var d=await r.json().catch(function(){return {};});
+          if(r.ok){ f.reset(); m.style.color='#7bbf9e'; m.textContent=d.message||'You’re on the list.'; }
+          else { m.style.color='#d98c5f'; m.textContent=d.error||'Something went wrong. Please try again.'; }
+        }catch(err){ m.style.color='#d98c5f'; m.textContent='Something went wrong. Please try again.'; }
+      });
+    })();
+    </script>
   </div>
 
   <!-- FOOTER -->
