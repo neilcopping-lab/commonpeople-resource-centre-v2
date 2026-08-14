@@ -1,0 +1,5 @@
+.git
+_action-plan
+*.zip
+*.csv
+node_modules
