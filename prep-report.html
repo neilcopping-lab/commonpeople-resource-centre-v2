@@ -301,5 +301,43 @@
   </div>
 
 </div>
+<script src="/cp-mobile-nav.js" defer></script><script>
+/* Pre-warm the interview prep report app so users never land on Render's
+   "service waking up" page. Fires as soon as the sales page loads, keeps it
+   awake while they read, and shows a branded transition if they click early. */
+(function(){
+  var APP='https://the-common-people-interview-prep-app.onrender.com';
+  var warmed=false, warming=null;
+  function warm(){
+    warming=fetch(APP,{mode:'no-cors',cache:'no-store'}).then(function(){warmed=true;},function(){warmed=true;});
+    return warming;
+  }
+  warm();                         // wake it the moment this page loads
+  setInterval(warm, 120000);      // keep it awake while the visitor is here
+  function overlay(){
+    if(document.getElementById('cp-warm')) return;
+    var o=document.createElement('div'); o.id='cp-warm';
+    o.setAttribute('style','position:fixed;inset:0;z-index:99999;background:#161f29;color:#ece6d8;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;font-family:Arvo,Georgia,serif;');
+    o.innerHTML='<div style="width:46px;height:46px;border:4px solid rgba(224,176,60,.3);border-top-color:#e0b03c;border-radius:50%;animation:cpspin 1s linear infinite;margin-bottom:22px;"></div>'
+      +'<div style="font-family:Anton,Arial,sans-serif;font-size:26px;letter-spacing:.5px;">Opening your report builder</div>'
+      +'<div style="margin-top:10px;max-width:340px;font-size:15px;color:#c9c2b3;line-height:1.5;">Getting the secure report builder ready. This only takes a moment the first time, then it is quick.</div>'
+      +'<style>@keyframes cpspin{to{transform:rotate(360deg)}}</style>';
+    document.body.appendChild(o);
+  }
+  document.addEventListener('DOMContentLoaded',function(){
+    var links=document.querySelectorAll('a[href^="'+APP+'"]');
+    Array.prototype.forEach.call(links,function(a){
+      a.addEventListener('click',function(e){
+        if(warmed) return;              // already awake: go straight there
+        e.preventDefault();
+        overlay();
+        var done=false, go=function(){ if(done) return; done=true; window.location.href=a.href; };
+        (warming||warm()).then(function(){ setTimeout(go,500); });
+        setTimeout(go, 12000);          // safety net
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>
