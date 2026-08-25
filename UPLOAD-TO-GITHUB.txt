@@ -1,0 +1,21 @@
+UPLOAD THESE TO YOUR GITHUB REPO (commonpeople-resource-centre-v2)
+=================================================================
+Drag the CONTENTS of this folder (including the img/ folder) into
+GitHub -> Add file -> Upload files. Keep the img/ folder intact so
+the hero lands at img/dispatch-embed-apprenticeships-hero.jpg.
+
+NEW files (added):
+  dispatch-embed-apprenticeships.html
+  loudspeaker-edition-03.html
+  img/dispatch-embed-apprenticeships-hero.jpg
+
+CHANGED files (these overwrite the versions in the repo):
+  dispatches.html      (new dispatch card + footer link)
+  index.html           (new homepage feature block + footer link)
+  loudspeaker.html     (Edition 03 archive card + jump + footer link)
+
+These 3 changed files are based on your newest desktop copy of the
+site. If your GitHub versions have moved on since, tell Claude and
+they'll be rebuilt against the exact repo files.
+
+Commit -> Cloudflare Pages rebuilds and deploys automatically.
