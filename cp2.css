@@ -306,3 +306,13 @@ aside .side-card{background:var(--card);border:1px solid var(--line);border-radi
 .art.poster .cap,.art.poster .ico-lead,.art.poster .sticker,.art.poster h4,.art.poster .cover-tag{z-index:3}
 .cover.poster::before{background:linear-gradient(180deg,rgba(18,24,32,.25),rgba(18,24,32,.7))}
 .card .top.poster::before{background:linear-gradient(180deg,rgba(18,24,32,.15),rgba(18,24,32,.45))}
+
+/* Loudspeaker edition story cards (.case) — light, matches dispatch components */
+.case{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--orange);border-radius:var(--radius);padding:22px 24px;margin:24px 0;box-shadow:0 14px 34px -22px rgba(22,31,41,.4)}
+.case .cl{display:block;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;color:var(--muted);margin-bottom:10px}
+.case h4{font-size:22px;line-height:1.1;margin:0 0 12px;color:var(--ink);font-family:var(--display);text-transform:uppercase;letter-spacing:.3px}
+.case h4 span{color:var(--orange)!important}
+.case p{color:var(--ink);font-size:16px;line-height:1.66;margin:0 0 12px}
+.case a{color:var(--orange)!important}
+.note-box.amber{border-left-color:var(--gold)}.note-box.amber .bl{color:var(--gold)}
+.art-hero .art-lede a,.case .cl{color:inherit}
