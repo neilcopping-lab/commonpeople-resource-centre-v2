@@ -280,7 +280,7 @@ aside .side-card{background:var(--card);border:1px solid var(--line);border-radi
 /* photo-backed art panels: a real image under a brand-colour duotone wash */
 .art.photo{background-size:cover;background-position:center}
 .art.photo .ico{display:none}
-.art.photo::before{content:"";position:absolute;inset:0;z-index:1;mix-blend-mode:multiply;opacity:.66}
+.art.photo::before{content:"";position:absolute;inset:0;z-index:1;mix-blend-mode:multiply;opacity:.44}
 /* solid fallback colour so a not-yet-loaded photo never shows through */
 .art.gold.photo{background-color:var(--orange)}.art.orange.photo{background-color:#a54a12}
 .art.navy.photo{background-color:var(--navy)}.art.red.photo{background-color:var(--red)}.art.teal.photo{background-color:#2f7f97}
@@ -291,7 +291,8 @@ aside .side-card{background:var(--card);border:1px solid var(--line);border-radi
 .art.teal.photo::before{background:linear-gradient(150deg,var(--teal),#2f7f97)}
 .art.photo .cap,.art.photo .ico-lead,.art.photo .sticker{z-index:3}
 /* small surfaces need a heavier wash so labels stay legible */
-.cover.photo::before,.card .top.photo::before{opacity:.76}
+.cover.photo::before,.card .top.photo::before{opacity:.58}
+.art.navy.photo::before{opacity:.40}
 .card .top.photo .ico{display:none}
 /* dark article header bands with an image behind the display type */
 .art-hero.photo{position:relative;background-size:cover;background-position:center}
@@ -300,7 +301,7 @@ aside .side-card{background:var(--card);border:1px solid var(--line);border-radi
 
 /* poster treatment: punk collages shown full-colour with only a legibility scrim */
 .art.poster{background-size:cover;background-position:center;background-color:var(--navy)}
-.art.poster::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(160deg,rgba(18,24,32,.5),rgba(18,24,32,0) 42%,rgba(18,24,32,.55))}
+.art.poster::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(160deg,rgba(18,24,32,.34),rgba(18,24,32,0) 45%,rgba(18,24,32,.36))}
 .art.poster .ico{display:none}
 .art.poster .cap,.art.poster .ico-lead,.art.poster .sticker,.art.poster h4,.art.poster .cover-tag{z-index:3}
 .cover.poster::before{background:linear-gradient(180deg,rgba(18,24,32,.25),rgba(18,24,32,.7))}
