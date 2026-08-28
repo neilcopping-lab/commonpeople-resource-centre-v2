@@ -316,3 +316,12 @@ aside .side-card{background:var(--card);border:1px solid var(--line);border-radi
 .case a{color:var(--orange)!important}
 .note-box.amber{border-left-color:var(--gold)}.note-box.amber .bl{color:var(--gold)}
 .art-hero .art-lede a,.case .cl{color:inherit}
+
+/* fix: dark note-box/callout text stays light even when nested inside a .case story card */
+.case .note-box p,.note-box p,.note-box li{color:#C6CFD8}
+.case .note-box strong,.note-box strong{color:var(--cream)}
+.case .note-box .bl{color:var(--gold)}
+.case .note-box.teal .bl{color:var(--teal)}.case .note-box.coral .bl{color:var(--orange)}.case .note-box.purple .bl{color:#c3b7e6}
+
+/* fix: Loudspeaker edition header band — keep content off the black edges */
+div.art-hero{padding-left:clamp(22px,5vw,46px);padding-right:clamp(22px,5vw,46px)}
