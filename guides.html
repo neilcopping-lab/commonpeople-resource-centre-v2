@@ -3,158 +3,62 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Field Guides - The Com'mon People</title>
-<meta name="description" content="Free, practical field guides for jobseekers: CVs, video intros, LinkedIn and interview prep.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo:wght@400;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="article.css">
-<style id="cp-responsive">
-/* Mobile responsive layer - added Aug 2026. Applies only to screens <=820px; desktop layout unchanged. */
-@media (max-width:820px){
-  html,body{overflow-x:hidden!important;max-width:100%!important;}
-  [style*="min-width:1280px"]{min-width:0!important;}
-  .wrap{max-width:100%!important;}
-  [style*="grid-template-columns"]{grid-template-columns:1fr!important;}
-  [style*="display:flex"]{flex-wrap:wrap!important;}
-  [style*="gap:40px"]{gap:16px!important;}
-  img,video,iframe{max-width:100%!important;height:auto!important;}
-  [style*="padding:56px 64px"]{padding:32px 20px!important;}
-  [style*="padding:72px 64px"]{padding:36px 20px!important;}
-  [style*="padding:70px 64px"]{padding:36px 20px!important;}
-  [style*="padding:28px 64px"]{padding:18px 20px!important;}
-  [style*="padding:20px 64px"]{padding:16px 20px!important;}
-  [style*="padding:64px"]{padding:32px 20px!important;}
-  [style*="height:380px"]{height:240px!important;}
-  [style*="height:360px"]{height:230px!important;}
-}
-@media (max-width:560px){
-  h1{font-size:32px!important;line-height:1.1!important;}
-  h2{font-size:24px!important;}
-  h3{font-size:20px!important;}
-}
-</style>
+<title>Field Guides — The Com'mon People</title>
+<meta name="description" content="Free, practical field guides for jobseekers: CVs, video intros, LinkedIn, interview prep and the EVP field guide.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="cp2.css">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<meta property="og:image" content="img/logo.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-<div class="wrap">
-  <div style="display:flex; align-items:center; justify-content:space-between; padding:28px 64px; border-bottom:3px solid #ece6d8;">
-    <a href="./index.html" style="display:flex; gap:2px;">
-      <span style="background:#e0b03c; padding:6px 10px 8px; transform:rotate(-3deg); box-shadow:2px 2px 0 rgba(0,0,0,0.4);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:24px;">The</span></span>
-      <span style="background:#5aa9c2; padding:6px 10px 8px; transform:rotate(2deg); box-shadow:2px 2px 0 rgba(0,0,0,0.4);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:24px;">Com'mon</span></span>
-      <span style="background:#d2691e; padding:6px 10px 8px; transform:rotate(-2deg); box-shadow:2px 2px 0 rgba(0,0,0,0.4);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:24px;">People</span></span>
-    </a>
-    <div style="display:flex; gap:40px; font-family:'Oswald',sans-serif; font-size:15px; font-weight:500; letter-spacing:0.5px; text-transform:uppercase;">
-      <a href="./guides.html" style="color:#e0b03c;">Guides</a>
-      <a href="./dispatches.html" style="color:#ece6d8;">Dispatches</a>
-      <a href="./loudspeaker.html" style="color:#ece6d8;">Loudspeaker</a>
-      <a href="./about.html" style="color:#ece6d8;">About</a>
-      <a href="./apprenticeships.html" style="color:#ece6d8;">Apprenticeships</a>
-      <a href="./prep-report.html" style="color:#ece6d8;">Interview Prep Report</a>
-      <a href="https://cv.the-common-people.com" style="color:#ece6d8;">CV Rewrite</a>
-    </div>
-    <div style="display:flex; align-items:center; gap:12px;">
-      <a href="https://cal.com/the-common-people.com/interviewcoaching" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:8px; color:#ece6d8; font-family:'Oswald',sans-serif; font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;"><img src="./cv-rewrite-founder.jpg" alt="Neil Copping" style="width:34px; height:34px; border-radius:50%; object-fit:cover; border:2px solid #e0b03c;">Book a Call with Neil</a>
-      <a href="./resources.html" style="background:#e0b03c; color:#161f29; font-family:'Oswald',sans-serif; font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:1px; padding:12px 24px;">Explore Resources</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="cv" viewBox="0 0 24 24"><path fill="currentColor" d="M5 3h14v18H5V3Zm3 4h8v1.6H8V7Zm0 3.4h8V12H8v-1.6ZM8 14h5v1.6H8V14Z"/></symbol>
+  <symbol id="video" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h12v12H3V6Zm14 2 4-2v12l-4-2V8Z"/></symbol>
+  <symbol id="link" viewBox="0 0 24 24"><path fill="currentColor" d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1 1.4 1.4 1-1a3 3 0 0 1 4.2 4.2l-2 2a3 3 0 0 1-4.2 0L10 13Zm4-2a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1-1.4-1.4-1 1a3 3 0 0 1-4.2-4.2l2-2a3 3 0 0 1 4.2 0L14 11Z"/></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 2.6 6.3L21 9l-4.7 4.3L17.8 21 12 17.3 6.2 21l1.5-7.7L3 9l6.4-.7L12 2Z"/></symbol>
+  <symbol id="chart" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20V4h1.6v14.4H20V20H4Zm3-3 4-5 3 3 5-6 1.2 1L14 18l-3-3-3 3.6L7 17Z"/></symbol>
+  <symbol id="burger" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2.2H3V6Zm0 5h18v2.2H3V11Zm0 5h18v2.2H3V16Z"/></symbol>
+</svg>
+<header class="nav">
+  <div class="wrap row">
+    <a class="plates" href="index.html" aria-label="The Com'mon People — home"><span class="plate p1">The</span><span class="plate p2">Com'mon</span><span class="plate p3">People</span></a>
+    <nav class="links" id="cpnav" aria-label="Primary"><a href="guides.html" aria-current="page">Guides</a><a href="dispatches.html">Dispatches</a><a href="loudspeaker.html">Loudspeaker</a><a href="apprenticeships.html">Apprenticeships</a><a href="about.html">About</a><a href="prep-report.html">Prep Report</a><a href="https://cv.the-common-people.com">CV Rewrite</a></nav>
+    <div class="nav-actions"><a class="btn orange nav-book" href="https://cal.com/the-common-people.com/interviewcoaching" target="_blank" rel="noopener">Book a coaching call</a><a class="btn ghost nav-explore" href="resources.html">Explore resources</a><button class="burger" id="cpburger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24"><use href="#burger"/></svg></button></div>
+  </div>
+</header>
+<section class="band-navy" style="padding:64px 0 58px">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--gold)">Field Guides</span>
+    <h1 style="font-size:clamp(40px,6vw,72px);color:var(--cream);margin:12px 0 14px">Written from the<br>other side of the desk.</h1>
+    <p style="color:#AEBAC6;font-size:18px;max-width:60ch;margin:0">Practical, personal guides for jobseekers — free, always. Written from the other side of thousands of CVs, video intros and interviews.</p>
+  </div>
+</section>
+<section class="tight">
+  <div class="wrap">
+    <div class="cards">
+      <article class="card"><a class="top art teal poster" style="background-image:url('img/poster-03.jpg')" href="guide-cv.html"><svg class="ico" viewBox="0 0 24 24"><use href="#cv"/></svg></a><div class="in"><span class="card tag" style="color:var(--muted)">Guide N°01 · Free, 12 pages</span><h3>The CV That Gets Read</h3><p>Seven stops, two universal don'ts and a personal statement that doesn't read like a press release.</p><div class="foot"><span class="tag free">Out now</span><a class="go" href="guide-cv.html">Read it →</a></div></div></article>
+      <article class="card"><a class="top art orange photo" style="background-image:url('img/poster-15.jpg')" href="guide-video-intro.html"><svg class="ico" viewBox="0 0 24 24"><use href="#video"/></svg></a><div class="in"><span class="card tag" style="color:var(--muted)">Guide N°02 · Free</span><h3>The 90 Seconds That Get You In The Room</h3><p>The script, the setup and the six things that kill an intro video before it starts.</p><div class="foot"><span class="tag free">Out now</span><a class="go" href="guide-video-intro.html">Read it →</a></div></div></article>
+      <article class="card"><a class="top art gold photo" style="background-image:url('img/poster-35.jpg')" href="guide-linkedin.html"><svg class="ico" viewBox="0 0 24 24"><use href="#link"/></svg></a><div class="in"><span class="card tag" style="color:var(--muted)">Guide N°03</span><h3>LinkedIn, Properly</h3><p>The headline that does the work. The summary that sounds like you, not a job description.</p><div class="foot"><span class="tag" style="color:var(--teal)">Coming soon</span><a class="go" href="guide-linkedin.html">Get notified →</a></div></div></article>
+      <article class="card"><a class="top art navy poster" style="background-image:url('img/poster-21.jpg')" href="guide-interview-prep.html"><svg class="ico" viewBox="0 0 24 24"><use href="#star"/></svg></a><div class="in"><span class="card tag" style="color:var(--muted)">Guide N°04 · Free, 10 pages</span><h3>Interview Prep Pack</h3><p>Eight frameworks, scripts and checklists. Treat it like a performance, not a chat.</p><div class="foot"><span class="tag free">Out now</span><a class="go" href="guide-interview-prep.html">Read it →</a></div></div></article>
+      <article class="card"><a class="top art teal poster" style="background-image:url('img/poster-16.jpg')" href="guide-05-evp.html"><svg class="ico" viewBox="0 0 24 24"><use href="#chart"/></svg></a><div class="in"><span class="card tag" style="color:var(--muted)">Guide N°05 · Free · 25 min read</span><h3>The EVP Field Guide</h3><p>What you offer, why it matters and how to build a measurable employee value proposition. 45 sources, five case studies.</p><div class="foot"><span class="tag free">Out now</span><a class="go" href="guide-05-evp.html">Read it →</a></div></div></article>
+      <article class="card" style="background:var(--navy);color:var(--cream);border-color:var(--navy)"><div class="in" style="justify-content:center;gap:12px"><span class="eyebrow" style="color:var(--gold)">Want the shortcut?</span><h3 style="color:var(--cream);font-size:24px">Let us just do it.</h3><p style="color:#C6CFD8">A tailored interview prep report, built for you in minutes. £15.</p><a class="btn orange" href="prep-report.html" style="align-self:flex-start">Get the report →</a></div></article>
     </div>
   </div>
-  <div class="hub-hero">
-    <div style="display:flex; gap:2px; margin-bottom:20px; flex-wrap:wrap;">
-      <span style="background:#5aa9c2; padding:8px 12px; transform:rotate(-3deg); box-shadow:3px 3px 0 rgba(0,0,0,0.45);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:38px;">FIELD</span></span>
-      <span style="background:#e0b03c; padding:8px 12px; transform:rotate(2deg); box-shadow:3px 3px 0 rgba(0,0,0,0.45);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:38px;">GUIDES</span></span>
-    </div>
-    <p style="font-size:17px; color:#a9a293; max-width:640px; margin:0;">Practical, personal guides for jobseekers - free, always. Written from the other side of thousands of CVs, video intros and interviews.</p>
-  </div>
-  <div class="hub-cards">
-    <div class="hub-card">
-      <div><img src="./img/guide-cv-hero.jpg" alt="The CV That Gets Read" style="width:100%;height:auto;display:block;"></div>
-      <div class="tag">Guide N&deg;01 &middot; Out now &middot; Free, 12 pages</div>
-      <div class="body">
-        <h3>The CV That Gets Read</h3>
-        <p>Seven stops, two universal don&rsquo;ts and a personal statement that doesn&rsquo;t read like a press release.</p>
-        <a class="go" href="guide-cv.html">Read it &rarr;</a>
-      </div>
-    </div>
-    <div class="hub-card">
-      <div><img src="./img/video-intro-hero.jpg" alt="The 90 Seconds That Get You In The Room" style="width:100%;height:auto;display:block;"></div>
-      <div class="tag">Guide N&deg;02 &middot; Out now &middot; Free</div>
-      <div class="body">
-        <h3>The 90 Seconds That Get You In The Room</h3>
-        <p>The script, the setup and the six things that kill an intro video before it starts.</p>
-        <a class="go" href="guide-video-intro.html">Read it &rarr;</a>
-      </div>
-    </div>
-    <div class="hub-card">
-      <div><img src="./img/guide-linkedin-hero.jpg" alt="LinkedIn, Properly" style="width:100%;height:auto;display:block;"></div>
-      <div class="tag soon">Guide N&deg;03 &middot; Coming soon</div>
-      <div class="body">
-        <h3>LinkedIn, Properly</h3>
-        <p>The headline that does the work. The summary that sounds like you, not a job description.</p>
-        <a class="go" href="guide-linkedin.html">Get notified &rarr;</a>
-      </div>
-    </div>
-    <div class="hub-card">
-      <div><img src="./img/interview-prep-hero.jpg" alt="Interview Prep Pack" style="width:100%;height:auto;display:block;"></div>
-      <div class="tag">Guide N&deg;04 &middot; Out now &middot; Free, 10 pages</div>
-      <div class="body">
-        <h3>Interview Prep Pack</h3>
-        <p>Eight frameworks, scripts and checklists. Treat it like a performance, not a chat.</p>
-        <a class="go" href="guide-interview-prep.html">Read it &rarr;</a>
-      </div>
-    </div>
-    <div class="hub-card">
-      <div><img src="./img/guide-05-evp-hero.jpg" alt="The EVP Field Guide" style="width:100%;height:auto;display:block;"></div>
-      <div class="tag">Guide N&deg;05 &middot; Out now &middot; Free &middot; 25 min read</div>
-      <div class="body">
-        <h3>The EVP Field Guide</h3>
-        <p>What you offer, why it matters and how to build a measurable employee value proposition. 45 sources, five case studies.</p>
-        <a class="go" href="guide-05-evp.html">Read it &rarr;</a>
-      </div>
-    </div>
-  </div>
+</section>
 <footer>
-  <div style="background:#0f151c; padding:56px 64px 32px; display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr 1fr; gap:32px; font-family:'Oswald',sans-serif;">
-    <div>
-      <div style="display:flex; gap:2px;">
-        <span style="background:#e0b03c; padding:4px 7px 6px; transform:rotate(-3deg);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:15px;">The</span></span>
-        <span style="background:#5aa9c2; padding:4px 7px 6px; transform:rotate(2deg);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:15px;">Com'mon</span></span>
-        <span style="background:#d2691e; padding:4px 7px 6px; transform:rotate(-2deg);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:15px;">People</span></span>
-      </div>
-      <p style="font-size:12px; color:#7a7466; margin-top:16px; max-width:220px; line-height:1.6;">A free resource centre for marketing, HR, finance, events and operations people. Built on mutual aid.</p>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a class="plates" href="index.html"><span class="plate p1 sm">The</span><span class="plate p2 sm">Com'mon</span><span class="plate p3 sm">People</span></a><p class="fabout">A free resource centre for marketing, HR, finance, events and operations people. Built on mutual aid.</p><span class="sticker orange" style="margin-top:16px">Free, always</span></div>
+      <div><h6>Guides</h6><a href="guide-cv.html">The CV that gets read</a><a href="guide-video-intro.html">The intro video</a><a href="guide-interview-prep.html">Interview prep</a><a href="guide-linkedin.html">LinkedIn, properly</a><a href="guide-05-evp.html">The EVP field guide</a></div>
+      <div><h6>Dispatches</h6><a href="dispatch-embed-apprenticeships.html">Embed apprenticeships in HR</a><a href="dispatch-apprenticeship-paradox.html">The Apprenticeship Paradox</a><a href="dispatch-recruitment-rethink.html">The recruitment rethink</a><a href="dispatch-eu-ai-act.html">The EU AI Act</a><a href="dispatch-report-hertfordshire.html">The Commons Report</a></div>
+      <div><h6>Loudspeaker</h6><a href="loudspeaker.html">The archive</a><a href="loudspeaker-edition-01.html">Edition 01 · May 2026</a><a href="loudspeaker-edition-02.html">Edition 02 · July 2026</a><a href="loudspeaker-edition-03.html">Edition 03 · August 2026</a></div>
     </div>
-    <div>
-      <h6 style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#e0b03c; margin:0 0 14px;">Guides</h6>
-      <a href="guide-cv.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The CV that gets read</a>
-      <a href="guide-video-intro.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The intro video</a>
-      <a href="guide-interview-prep.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">Interview prep</a>
-      <a href="guide-linkedin.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">LinkedIn, properly</a>
-      <a href="guide-05-evp.html" style="display:block; font-size:13px; color:#a9a293;">The EVP field guide</a>
-    </div>
-    <div>
-      <h6 style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#e0b03c; margin:0 0 14px;">Dispatches</h6>
-      <a href="dispatch-apprenticeship-paradox.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The Apprenticeship Paradox</a>
-      <a href="dispatch-recruitment-rethink.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The recruitment rethink</a>
-      <a href="dispatch-eu-ai-act.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The EU AI Act</a>
-      <a href="dispatch-ai-cvs.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">AI CVs, the honest truth</a>
-      <a href="dispatch-report-hertfordshire.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The Commons Report</a>
-      <a href="dispatch-stop-ghosting.html" style="display:block; font-size:13px; color:#a9a293;">The silence that does the damage</a>
-    </div>
-    <div>
-      <h6 style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#e0b03c; margin:0 0 14px;">Loudspeaker</h6>
-      <a href="loudspeaker.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The archive</a>
-      <a href="loudspeaker-edition-01.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">Edition 01 &middot; May 2026</a>
-      <a href="loudspeaker-edition-02.html" style="display:block; font-size:13px; color:#a9a293;">Edition 02 &middot; July 2026</a>
-    </div>
-    <div>
-      <h6 style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#e0b03c; margin:0 0 14px;">About</h6>
-      <a href="resources.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">Resources</a>
-      <a href="about.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">Our story</a>
-      <a href="mailto:neil.copping@thecommonpeople.co.uk" style="display:block; font-size:13px; color:#a9a293;">Get in touch</a>
-    </div>
-  </div>
-  <div style="padding:20px 64px; border-top:1px solid #2a333d; display:flex; justify-content:space-between; font-size:12px; color:#7a7466; font-family:'Oswald',sans-serif;">
-    <span>&copy; 2026 The Com'mon People. Built on mutual aid.</span>
-    <span><a href="./privacy.html" style="color:#7a7466;">Privacy</a> &middot; Free, always.</span>
+    <div class="fbottom"><span>© 2026 The Com'mon People. Built on mutual aid.</span><span><a href="privacy.html" style="color:#7C8791">Privacy</a> · Free, always.</span></div>
   </div>
 </footer>
-</div>
-<script src="/cp-mobile-nav.js" defer></script></body>
+<script>(function(){var b=document.getElementById("cpburger"),n=document.getElementById("cpnav");if(b&&n)b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");});})();</script>
+</body>
 </html>
