@@ -8,381 +8,381 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo:wght@400;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
- *{box-sizing:border-box;}
- body{margin:0;background:#161f29;}
- a{text-decoration:none;}
- .plate-txt{color:#111;font-weight:800;-webkit-text-stroke:2px #f4efe4;paint-order:stroke fill;}
- .pr-btn{background:#e0b03c; color:#161f29; font-family:'Oswald',sans-serif; font-weight:600; font-size:16px; text-transform:uppercase; letter-spacing:1px; padding:18px 36px; display:inline-block;}
- .sr-section{border-top:1px solid #2a333d; padding:44px 0;}
- .sr-section:first-child{border-top:none;}
- .sr-tag{font-family:'Oswald',sans-serif; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#5aa9c2; margin-bottom:10px;}
- .sr-section h3{font-family:'Anton',sans-serif; font-size:24px; text-transform:uppercase; margin:0 0 6px; color:#ece6d8;}
- .sr-sub{font-family:'Oswald',sans-serif; font-size:13px; color:#a9a293; margin:0 0 20px; font-style:italic;}
- .sr-section p{font-size:15px; line-height:1.75; color:#a9a293; margin:0 0 12px;}
- .sr-section p:last-child{margin-bottom:0;}
- .sr-section p strong{color:#ece6d8;}
- .sr-src{font-family:'Oswald',sans-serif; font-size:11px; letter-spacing:.03em; color:#6b8fa3; margin-top:14px; line-height:1.7;}
- .sr-item{border-left:3px solid #e0b03c; padding:4px 0 4px 18px; margin-bottom:16px;}
- .sr-item:last-child{margin-bottom:0;}
- .sr-stats{display:flex; gap:14px; flex-wrap:wrap; margin:24px 0 0;}
- .sr-stat{border:1px solid #2a333d; padding:10px 16px; font-family:'Oswald',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:#a9a293;}
- .sr-stat b{color:#ece6d8; font-size:14px; display:block; font-family:'Anton',sans-serif; margin-bottom:2px;}
- .sr-bar-wrap{border:1px solid #2a333d; padding:22px; margin-bottom:24px;}
- .sr-bar-track{background:#0f151c; height:10px; margin-top:10px; overflow:hidden;}
- .sr-bar-fill{background:linear-gradient(90deg,#5aa9c2,#e0b03c); height:100%;}
- .sr-cherry{border:1px solid #2a333d; padding:20px 22px; margin-bottom:14px;}
- .sr-cherry .area{font-family:'Oswald',sans-serif; font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:#d2691e; margin-bottom:8px; font-weight:600;}
- .sr-pitch{border:1px solid #2a333d; padding:26px 28px; margin-bottom:16px;}
- .sr-pitch .lbl{font-family:'Oswald',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#5aa9c2; margin-bottom:10px;}
- .sr-star-card{border:1px solid #2a333d; padding:26px 28px; margin-bottom:18px;}
- .sr-star-card .q{font-family:'Arvo',serif; font-style:italic; font-size:16px; color:#ece6d8; line-height:1.55; margin:0 0 8px;}
- .sr-star-card .based{font-family:'Oswald',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:#7a7466; margin-bottom:18px;}
- .sr-star-row{display:grid; grid-template-columns:70px 1fr; gap:14px; margin-bottom:10px;}
- .sr-star-row .k{font-family:'Anton',sans-serif; font-size:13px; color:#e0b03c;}
- .sr-star-row .v{font-size:14px; color:#c9c2b3; line-height:1.6;}
- .sr-q{border-left:3px solid #e0b03c; padding:10px 0 10px 18px; margin-bottom:14px;}
- .sr-q p{margin:0; font-size:15px; color:#c9c2b3;}
- .sr-qtype-lbl{font-family:'Oswald',sans-serif; font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:#5aa9c2; margin:26px 0 12px;}
- .sr-qtype-lbl:first-child{margin-top:0;}
- .sr-note{border:1px solid #5aa9c2; background:rgba(90,169,194,0.08); padding:18px 22px; font-size:13px; color:#c9c2b3; line-height:1.65; margin-bottom:24px;}
- .sr-src-list{font-size:12px; color:#7a7466; line-height:2;}
- .sr-src-list a{color:#6b8fa3;}
+  *{box-sizing:border-box;}
+  body{margin:0;background:#161f29;}
+  a{text-decoration:none;}
+  .plate-txt{color:#111;font-weight:800;-webkit-text-stroke:2px #f4efe4;paint-order:stroke fill;}
+  .pr-btn{background:#e0b03c; color:#161f29; font-family:'Oswald',sans-serif; font-weight:600; font-size:16px; text-transform:uppercase; letter-spacing:1px; padding:18px 36px; display:inline-block;}
+  .sr-section{border-top:1px solid #2a333d; padding:44px 0;}
+  .sr-section:first-child{border-top:none;}
+  .sr-tag{font-family:'Oswald',sans-serif; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#5aa9c2; margin-bottom:10px;}
+  .sr-section h3{font-family:'Anton',sans-serif; font-size:24px; text-transform:uppercase; margin:0 0 6px; color:#ece6d8;}
+  .sr-sub{font-family:'Oswald',sans-serif; font-size:13px; color:#a9a293; margin:0 0 20px; font-style:italic;}
+  .sr-section p{font-size:15px; line-height:1.75; color:#a9a293; margin:0 0 12px;}
+  .sr-section p:last-child{margin-bottom:0;}
+  .sr-section p strong{color:#ece6d8;}
+  .sr-src{font-family:'Oswald',sans-serif; font-size:11px; letter-spacing:.03em; color:#6b8fa3; margin-top:14px; line-height:1.7;}
+  .sr-item{border-left:3px solid #e0b03c; padding:4px 0 4px 18px; margin-bottom:16px;}
+  .sr-item:last-child{margin-bottom:0;}
+  .sr-stats{display:flex; gap:14px; flex-wrap:wrap; margin:24px 0 0;}
+  .sr-stat{border:1px solid #2a333d; padding:10px 16px; font-family:'Oswald',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:#a9a293;}
+  .sr-stat b{color:#ece6d8; font-size:14px; display:block; font-family:'Anton',sans-serif; margin-bottom:2px;}
+  .sr-bar-wrap{border:1px solid #2a333d; padding:22px; margin-bottom:24px;}
+  .sr-bar-track{background:#0f151c; height:10px; margin-top:10px; overflow:hidden;}
+  .sr-bar-fill{background:linear-gradient(90deg,#5aa9c2,#e0b03c); height:100%;}
+  .sr-cherry{border:1px solid #2a333d; padding:20px 22px; margin-bottom:14px;}
+  .sr-cherry .area{font-family:'Oswald',sans-serif; font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:#d2691e; margin-bottom:8px; font-weight:600;}
+  .sr-pitch{border:1px solid #2a333d; padding:26px 28px; margin-bottom:16px;}
+  .sr-pitch .lbl{font-family:'Oswald',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#5aa9c2; margin-bottom:10px;}
+  .sr-star-card{border:1px solid #2a333d; padding:26px 28px; margin-bottom:18px;}
+  .sr-star-card .q{font-family:'Arvo',serif; font-style:italic; font-size:16px; color:#ece6d8; line-height:1.55; margin:0 0 8px;}
+  .sr-star-card .based{font-family:'Oswald',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:#7a7466; margin-bottom:18px;}
+  .sr-star-row{display:grid; grid-template-columns:70px 1fr; gap:14px; margin-bottom:10px;}
+  .sr-star-row .k{font-family:'Anton',sans-serif; font-size:13px; color:#e0b03c;}
+  .sr-star-row .v{font-size:14px; color:#c9c2b3; line-height:1.6;}
+  .sr-q{border-left:3px solid #e0b03c; padding:10px 0 10px 18px; margin-bottom:14px;}
+  .sr-q p{margin:0; font-size:15px; color:#c9c2b3;}
+  .sr-qtype-lbl{font-family:'Oswald',sans-serif; font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:#5aa9c2; margin:26px 0 12px;}
+  .sr-qtype-lbl:first-child{margin-top:0;}
+  .sr-note{border:1px solid #5aa9c2; background:rgba(90,169,194,0.08); padding:18px 22px; font-size:13px; color:#c9c2b3; line-height:1.65; margin-bottom:24px;}
+  .sr-src-list{font-size:12px; color:#7a7466; line-height:2;}
+  .sr-src-list a{color:#6b8fa3;}
 </style>
 <style id="cp-responsive">
 /* Mobile responsive layer - added Aug 2026. Applies only to screens <=820px; desktop layout unchanged. */
 @media (max-width:820px){
- html,body{overflow-x:hidden!important;max-width:100%!important;}
- [style*="min-width:1280px"]{min-width:0!important;}
- .wrap{max-width:100%!important;}
- [style*="grid-template-columns"]{grid-template-columns:1fr!important;}
- [style*="display:flex"]{flex-wrap:wrap!important;}
- [style*="gap:40px"]{gap:16px!important;}
- img,video,iframe{max-width:100%!important;height:auto!important;}
- [style*="padding:56px 64px"]{padding:32px 20px!important;}
- [style*="padding:72px 64px"]{padding:36px 20px!important;}
- [style*="padding:70px 64px"]{padding:36px 20px!important;}
- [style*="padding:28px 64px"]{padding:18px 20px!important;}
- [style*="padding:20px 64px"]{padding:16px 20px!important;}
- [style*="padding:64px"]{padding:32px 20px!important;}
- [style*="height:380px"]{height:240px!important;}
- [style*="height:360px"]{height:230px!important;}
+  html,body{overflow-x:hidden!important;max-width:100%!important;}
+  [style*="min-width:1280px"]{min-width:0!important;}
+  .wrap{max-width:100%!important;}
+  [style*="grid-template-columns"]{grid-template-columns:1fr!important;}
+  [style*="display:flex"]{flex-wrap:wrap!important;}
+  [style*="gap:40px"]{gap:16px!important;}
+  img,video,iframe{max-width:100%!important;height:auto!important;}
+  [style*="padding:56px 64px"]{padding:32px 20px!important;}
+  [style*="padding:72px 64px"]{padding:36px 20px!important;}
+  [style*="padding:70px 64px"]{padding:36px 20px!important;}
+  [style*="padding:28px 64px"]{padding:18px 20px!important;}
+  [style*="padding:20px 64px"]{padding:16px 20px!important;}
+  [style*="padding:64px"]{padding:32px 20px!important;}
+  [style*="height:380px"]{height:240px!important;}
+  [style*="height:360px"]{height:230px!important;}
 }
 @media (max-width:560px){
- h1{font-size:32px!important;line-height:1.1!important;}
- h2{font-size:24px!important;}
- h3{font-size:20px!important;}
+  h1{font-size:32px!important;line-height:1.1!important;}
+  h2{font-size:24px!important;}
+  h3{font-size:20px!important;}
 }
 </style>
 </head>
 <body>
 <div style="font-family:'Arvo',serif; color:#ece6d8; min-width:1280px;">
 
- <!-- NAV -->
- <div style="display:flex; align-items:center; justify-content:space-between; padding:28px 64px; border-bottom:3px solid #ece6d8;">
- <a href="./index.html" style="display:flex; gap:2px;">
- <span style="background:#e0b03c; padding:6px 10px 8px; transform:rotate(-3deg); box-shadow:2px 2px 0 rgba(0,0,0,0.4);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:24px;">The</span></span>
- <span style="background:#5aa9c2; padding:6px 10px 8px; transform:rotate(2deg); box-shadow:2px 2px 0 rgba(0,0,0,0.4);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:24px;">Com'mon</span></span>
- <span style="background:#d2691e; padding:6px 10px 8px; transform:rotate(-2deg); box-shadow:2px 2px 0 rgba(0,0,0,0.4);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:24px;">People</span></span>
- </a>
- <div style="display:flex; gap:40px; font-family:'Oswald',sans-serif; font-size:15px; font-weight:500; letter-spacing:0.5px; text-transform:uppercase;">
- <a href="./guides.html" style="color:#ece6d8;">Guides</a>
- <a href="./dispatches.html" style="color:#ece6d8;">Dispatches</a>
- <a href="./loudspeaker.html" style="color:#ece6d8;">Loudspeaker</a>
- <a href="./about.html" style="color:#ece6d8;">About</a>
- <a href="./apprenticeships.html" style="color:#ece6d8;">Apprenticeships</a>
- <a href="./prep-report.html" style="color:#e0b03c;">Interview Prep Report</a>
- <a href="https://cv.the-common-people.com" style="color:#ece6d8;">CV Rewrite</a>
- </div>
- <div style="display:flex; align-items:center; gap:12px;">
- <a href="https://cal.com/the-common-people.com/interviewcoaching" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:8px; color:#ece6d8; font-family:'Oswald',sans-serif; font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;"><img src="./cv-rewrite-founder.jpg" alt="Neil Copping" style="width:34px; height:34px; border-radius:50%; object-fit:cover; border:2px solid #e0b03c;">Book a Call with Neil</a>
- <a href="./resources.html" style="background:#e0b03c; color:#161f29; font-family:'Oswald',sans-serif; font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:1px; padding:12px 24px;">Explore Resources</a>
- </div>
- </div>
+  <!-- NAV -->
+  <div style="display:flex; align-items:center; justify-content:space-between; padding:28px 64px; border-bottom:3px solid #ece6d8;">
+    <a href="./index.html" style="display:flex; gap:2px;">
+      <span style="background:#e0b03c; padding:6px 10px 8px; transform:rotate(-3deg); box-shadow:2px 2px 0 rgba(0,0,0,0.4);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:24px;">The</span></span>
+      <span style="background:#5aa9c2; padding:6px 10px 8px; transform:rotate(2deg); box-shadow:2px 2px 0 rgba(0,0,0,0.4);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:24px;">Com'mon</span></span>
+      <span style="background:#d2691e; padding:6px 10px 8px; transform:rotate(-2deg); box-shadow:2px 2px 0 rgba(0,0,0,0.4);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:24px;">People</span></span>
+    </a>
+    <div style="display:flex; gap:40px; font-family:'Oswald',sans-serif; font-size:15px; font-weight:500; letter-spacing:0.5px; text-transform:uppercase;">
+      <a href="./guides.html" style="color:#ece6d8;">Guides</a>
+      <a href="./dispatches.html" style="color:#ece6d8;">Dispatches</a>
+      <a href="./loudspeaker.html" style="color:#ece6d8;">Loudspeaker</a>
+      <a href="./about.html" style="color:#ece6d8;">About</a>
+      <a href="./apprenticeships.html" style="color:#ece6d8;">Apprenticeships</a>
+      <a href="./prep-report.html" style="color:#e0b03c;">Interview Prep Report</a>
+      <a href="https://cv.the-common-people.com" style="color:#ece6d8;">CV Rewrite</a>
+    </div>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <a href="https://cal.com/the-common-people.com/interviewcoaching" target="_blank" rel="noopener" style="display:flex; align-items:center; gap:8px; color:#ece6d8; font-family:'Oswald',sans-serif; font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.5px;"><img src="./cv-rewrite-founder.jpg" alt="Neil Copping" style="width:34px; height:34px; border-radius:50%; object-fit:cover; border:2px solid #e0b03c;">Book a Call with Neil</a>
+      <a href="./resources.html" style="background:#e0b03c; color:#161f29; font-family:'Oswald',sans-serif; font-weight:600; font-size:14px; text-transform:uppercase; letter-spacing:1px; padding:12px 24px;">Explore Resources</a>
+    </div>
+  </div>
 
- <!-- HERO -->
- <div style="padding:56px 64px 40px; max-width:860px;">
- <div class="sr-tag">A Real Sample Report</div>
- <h1 style="font-family:'Anton',sans-serif; font-size:38px; line-height:1.1; text-transform:uppercase; margin:0 0 20px; color:#ece6d8;">See What £15 Actually Buys You.</h1>
- <p style="font-size:17px; line-height:1.7; color:#c9c2b3; margin:0 0 12px;">This isn't a mock-up. It's a real report, built by the real app, for a real interview - <strong>Neil Copping</strong> (our founder) preparing to interview for <strong>Recruitment Manager at the Royal Albert Hall</strong>. We've published it in full, sources and all, so you can see exactly what your own report will look like.</p>
- <div class="sr-stats">
- <div class="sr-stat"><b>11</b>Report Sections</div>
- <div class="sr-stat"><b>25</b>Sources Cited</div>
- <div class="sr-stat"><b>62%</b>Skills Match Scored</div>
- <div class="sr-stat"><b>&lt;2 Min</b>To Generate</div>
- </div>
- <div style="margin-top:32px;"><a href="./prep-report.html" class="pr-btn">Get Your Own Report, £15</a></div>
- </div>
+  <!-- HERO -->
+  <div style="padding:56px 64px 40px; max-width:860px;">
+    <div class="sr-tag">A Real Sample Report</div>
+    <h1 style="font-family:'Anton',sans-serif; font-size:38px; line-height:1.1; text-transform:uppercase; margin:0 0 20px; color:#ece6d8;">See What £15 Actually Buys You.</h1>
+    <p style="font-size:17px; line-height:1.7; color:#c9c2b3; margin:0 0 12px;">This isn't a mock-up. It's a real report, built by the real app, for a real interview - <strong>Neil Copping</strong> (our founder) preparing to interview for <strong>Recruitment Manager at the Royal Albert Hall</strong>. We've published it in full, sources and all, so you can see exactly what your own report will look like.</p>
+    <div class="sr-stats">
+      <div class="sr-stat"><b>11</b>Report Sections</div>
+      <div class="sr-stat"><b>25</b>Sources Cited</div>
+      <div class="sr-stat"><b>62%</b>Skills Match Scored</div>
+      <div class="sr-stat"><b>&lt;2 Min</b>To Generate</div>
+    </div>
+    <div style="margin-top:32px;"><a href="./prep-report.html" class="pr-btn">Get Your Own Report, £15</a></div>
+  </div>
 
- <!-- REPORT SECTIONS -->
- <div style="padding:20px 64px 72px; max-width:860px;">
+  <!-- REPORT SECTIONS -->
+  <div style="padding:20px 64px 72px; max-width:860px;">
 
- <div class="sr-note">Every section below is reproduced from Neil's actual report, generated 23 July 2026. Company names, figures and sources are all real and correct as of that date - this is exactly the standard of research your own report is built to.</div>
+    <div class="sr-note">Every section below is reproduced from Neil's actual report, generated 23 July 2026. Company names, figures and sources are all real and correct as of that date - this is exactly the standard of research your own report is built to.</div>
 
- <div class="sr-section">
- <div class="sr-tag">01 &middot; Company Overview</div>
- <h3>The Royal Albert Hall</h3>
- <p>A 150-year-old, publicly-facing charity, not a commercial venue business - that distinction matters for how you should frame your pitch.</p>
- <div class="sr-item"><p>The Royal Albert Hall is legally The Corporation of the Hall of Arts and Sciences, a registered charity (number 254543) held in trust for the nation, with a charitable purpose to promote the Arts and Sciences and preserve its Grade I listed building. It receives no public subsidy for running costs, which is unusual for a major UK cultural institution and shapes how commercially-minded the culture actually is.</p></div>
- <div class="sr-item"><p>Headcount is around 525 employees according to the Hall's own governance page, led by a Chief Executive and Executive team who report to a board of Trustees - a notably lean structure for an organisation hosting the volume of activity it does.</p></div>
- <div class="sr-item"><p>Scale of activity: roughly 400 events in the main auditorium plus around 1,000 events in other spaces each year, with nearly 2 million people enjoying experiences in the building annually, and millions more reached via broadcast and online.</p></div>
- <div class="sr-item"><p>Funding model is unusual and worth understanding before interview: the Hall was originally built by selling seat rights to "Members" (Seatholders) who still pay an annual seat rate today. The 2024 annual report shows total income of £60.5m (up from £54.4m in 2023) against expenditure of £47.0m, producing a net surplus of £12.2m.</p></div>
- <div class="sr-item"><p>There's a live piece of legislation, the Royal Albert Hall Bill, working through Parliament - it passed its Third Reading in the House of Lords in January 2025 after a contested Opposed Bill Committee process in 2024 concerning the Hall's governance structure. This is a genuinely live governance issue, not ancient history, and worth being aware of if it comes up.</p></div>
- <div class="sr-item"><p>Leadership: CEO is James Ainscough OBE, who rejoined in spring 2023 after previously serving the Hall from 2008 to 2017, then five years as CEO of the charity Help Musicians, where he oversaw distribution of £20m in pandemic hardship funding.</p></div>
- <div class="sr-item"><p>The Hall is mid-way through a major capital programme called the Estate Plan, covering £73m of maintenance work and £261m of proposed capital projects over 15 years - a rethink of the original "Great Restoration" plan after Covid changed the Hall's financial position.</p></div>
- <div class="sr-item"><p>There isn't a direct commercial competitor in the way a normal business would have one. Its closest peers are other major UK cultural and heritage venues (Southbank Centre, Barbican, London Coliseum), but its real USP is the building itself: a Grade I listed, purpose-built 1871 venue with genuine global brand recognition, hosting everything from the BBC Proms to boxing to graduations.</p></div>
- <div class="sr-src">Sourced from: Royal Albert Hall governance pages, the Corporation's FY24 Annual Report and Accounts, Royal Albert Hall press releases, Arts Professional, The Org, IQ Magazine, RICS Modus, Glassdoor and LinkedIn.</div>
- </div>
+    <div class="sr-section">
+      <div class="sr-tag">01 &middot; Company Overview</div>
+      <h3>The Royal Albert Hall</h3>
+      <p>A 150-year-old, publicly-facing charity, not a commercial venue business - that distinction matters for how you should frame your pitch.</p>
+      <div class="sr-item"><p>The Royal Albert Hall is legally The Corporation of the Hall of Arts and Sciences, a registered charity (number 254543) held in trust for the nation, with a charitable purpose to promote the Arts and Sciences and preserve its Grade I listed building. It receives no public subsidy for running costs, which is unusual for a major UK cultural institution and shapes how commercially-minded the culture actually is.</p></div>
+      <div class="sr-item"><p>Headcount is around 525 employees according to the Hall's own governance page, led by a Chief Executive and Executive team who report to a board of Trustees - a notably lean structure for an organisation hosting the volume of activity it does.</p></div>
+      <div class="sr-item"><p>Scale of activity: roughly 400 events in the main auditorium plus around 1,000 events in other spaces each year, with nearly 2 million people enjoying experiences in the building annually, and millions more reached via broadcast and online.</p></div>
+      <div class="sr-item"><p>Funding model is unusual and worth understanding before interview: the Hall was originally built by selling seat rights to "Members" (Seatholders) who still pay an annual seat rate today. The 2024 annual report shows total income of £60.5m (up from £54.4m in 2023) against expenditure of £47.0m, producing a net surplus of £12.2m.</p></div>
+      <div class="sr-item"><p>There's a live piece of legislation, the Royal Albert Hall Bill, working through Parliament - it passed its Third Reading in the House of Lords in January 2025 after a contested Opposed Bill Committee process in 2024 concerning the Hall's governance structure. This is a genuinely live governance issue, not ancient history, and worth being aware of if it comes up.</p></div>
+      <div class="sr-item"><p>Leadership: CEO is James Ainscough OBE, who rejoined in spring 2023 after previously serving the Hall from 2008 to 2017, then five years as CEO of the charity Help Musicians, where he oversaw distribution of £20m in pandemic hardship funding.</p></div>
+      <div class="sr-item"><p>The Hall is mid-way through a major capital programme called the Estate Plan, covering £73m of maintenance work and £261m of proposed capital projects over 15 years - a rethink of the original "Great Restoration" plan after Covid changed the Hall's financial position.</p></div>
+      <div class="sr-item"><p>There isn't a direct commercial competitor in the way a normal business would have one. Its closest peers are other major UK cultural and heritage venues (Southbank Centre, Barbican, London Coliseum), but its real USP is the building itself: a Grade I listed, purpose-built 1871 venue with genuine global brand recognition, hosting everything from the BBC Proms to boxing to graduations.</p></div>
+      <div class="sr-src">Sourced from: Royal Albert Hall governance pages, the Corporation's FY24 Annual Report and Accounts, Royal Albert Hall press releases, Arts Professional, The Org, IQ Magazine, RICS Modus, Glassdoor and LinkedIn.</div>
+    </div>
 
- <div class="sr-section">
- <div class="sr-tag">02 &middot; Recent News &amp; Press Activity</div>
- <h3>What's actually been happening</h3>
- <p>Coverage is steady but venue and programming-focused rather than corporate - expect trade press (IQ Magazine, Arts Professional) rather than mainstream business news.</p>
- <div class="sr-item"><p>July 2025: CEO James Ainscough set out a three-point strategic vision for the Hall in an interview with IQ Magazine, tying the Hall's approach to a voluntary £1 grassroots music levy scheme and confirming the Hall was hosting the 2025 BBC Proms season, alongside newly announced associate artists Rushil Ranjan and Abi Sampa.</p></div>
- <div class="sr-item"><p>January 2025: the Royal Albert Hall Bill passed its Third Reading in the House of Lords, following a 2024 Opposed Bill Committee hearing triggered by a petition from a former President of the Hall. The Committee ultimately found the petitioners lacked standing, but issued a Special Report flagging governance concerns to Parliament and the Government.</p></div>
- <div class="sr-item"><p>March 2025 (International Women's Day): the Hall partnered with WOW - Women of the World to mark WOW's 15th anniversary, part of its continuing programming push around EDI and diverse headliners.</p></div>
- <div class="sr-item"><p>The Hall continues to publicly report strong financials, suggesting the organisation is in a growth phase post-pandemic rather than contraction.</p></div>
- <div class="sr-item"><p>No major leadership churn has been reported since Ainscough's 2023 appointment, and no reported departures at Executive team level in recent coverage.</p></div>
- <div class="sr-item"><p>There is limited fresh, dated news specific to HR, recruitment or People &amp; Culture team changes - most recent coverage centres on programming, governance and the Estate Plan, so don't expect the interviewer to reference recent press about their own function.</p></div>
- <div class="sr-src">Sourced from: IQ Magazine, Royal Albert Hall press office, RICS Modus, Arts Professional.</div>
- </div>
+    <div class="sr-section">
+      <div class="sr-tag">02 &middot; Recent News &amp; Press Activity</div>
+      <h3>What's actually been happening</h3>
+      <p>Coverage is steady but venue and programming-focused rather than corporate - expect trade press (IQ Magazine, Arts Professional) rather than mainstream business news.</p>
+      <div class="sr-item"><p>July 2025: CEO James Ainscough set out a three-point strategic vision for the Hall in an interview with IQ Magazine, tying the Hall's approach to a voluntary £1 grassroots music levy scheme and confirming the Hall was hosting the 2025 BBC Proms season, alongside newly announced associate artists Rushil Ranjan and Abi Sampa.</p></div>
+      <div class="sr-item"><p>January 2025: the Royal Albert Hall Bill passed its Third Reading in the House of Lords, following a 2024 Opposed Bill Committee hearing triggered by a petition from a former President of the Hall. The Committee ultimately found the petitioners lacked standing, but issued a Special Report flagging governance concerns to Parliament and the Government.</p></div>
+      <div class="sr-item"><p>March 2025 (International Women's Day): the Hall partnered with WOW - Women of the World to mark WOW's 15th anniversary, part of its continuing programming push around EDI and diverse headliners.</p></div>
+      <div class="sr-item"><p>The Hall continues to publicly report strong financials, suggesting the organisation is in a growth phase post-pandemic rather than contraction.</p></div>
+      <div class="sr-item"><p>No major leadership churn has been reported since Ainscough's 2023 appointment, and no reported departures at Executive team level in recent coverage.</p></div>
+      <div class="sr-item"><p>There is limited fresh, dated news specific to HR, recruitment or People &amp; Culture team changes - most recent coverage centres on programming, governance and the Estate Plan, so don't expect the interviewer to reference recent press about their own function.</p></div>
+      <div class="sr-src">Sourced from: IQ Magazine, Royal Albert Hall press office, RICS Modus, Arts Professional.</div>
+    </div>
 
- <div class="sr-section">
- <div class="sr-tag">03 &middot; Employee Sentiment</div>
- <h3>What people who work there actually say</h3>
- <p>Mixed-to-average marks on the numbers, with career progression flagged as the weakest area - worth probing tactfully rather than raising as an accusation.</p>
- <div class="sr-item"><p>Glassdoor shows 71 reviews for the Royal Albert Hall, and employees rate career opportunities at 2.8 out of 5 based on 91 anonymous ratings - the softest sub-metric found, and worth a gentle, curious interview question about internal mobility and progression frameworks, which ties directly into this job's remit around building "a structured and transparent framework for talent management and promotion."</p></div>
- <div class="sr-item"><p>Compensation and benefits fared better: Glassdoor's salary data (146 submitted salaries) shows employees rate comp and benefits at 3.5 out of 5, consistent with the fairly generous staff benefits package the Hall advertises (25 days annual leave plus buy/sell, 6x salary life assurance, enhanced family leave).</p></div>
- <div class="sr-item"><p>Given the review volume for an organisation of around 525 staff, this is a reasonably representative sample, not a handful of outliers - so the career-progression score is a real signal, and lines up with the job description's own admission that this is a known, self-acknowledged gap you're being hired partly to help fix.</p></div>
- <div class="sr-item"><p>No detailed qualitative review text could be confirmed from the sources found - be cautious about repeating secondhand claims about specific manager or team complaints in the interview; stick to what's verifiable.</p></div>
- <div class="sr-src">Sourced from: Glassdoor company reviews, Glassdoor salary data, Royal Albert Hall careers page.</div>
- </div>
+    <div class="sr-section">
+      <div class="sr-tag">03 &middot; Employee Sentiment</div>
+      <h3>What people who work there actually say</h3>
+      <p>Mixed-to-average marks on the numbers, with career progression flagged as the weakest area - worth probing tactfully rather than raising as an accusation.</p>
+      <div class="sr-item"><p>Glassdoor shows 71 reviews for the Royal Albert Hall, and employees rate career opportunities at 2.8 out of 5 based on 91 anonymous ratings - the softest sub-metric found, and worth a gentle, curious interview question about internal mobility and progression frameworks, which ties directly into this job's remit around building "a structured and transparent framework for talent management and promotion."</p></div>
+      <div class="sr-item"><p>Compensation and benefits fared better: Glassdoor's salary data (146 submitted salaries) shows employees rate comp and benefits at 3.5 out of 5, consistent with the fairly generous staff benefits package the Hall advertises (25 days annual leave plus buy/sell, 6x salary life assurance, enhanced family leave).</p></div>
+      <div class="sr-item"><p>Given the review volume for an organisation of around 525 staff, this is a reasonably representative sample, not a handful of outliers - so the career-progression score is a real signal, and lines up with the job description's own admission that this is a known, self-acknowledged gap you're being hired partly to help fix.</p></div>
+      <div class="sr-item"><p>No detailed qualitative review text could be confirmed from the sources found - be cautious about repeating secondhand claims about specific manager or team complaints in the interview; stick to what's verifiable.</p></div>
+      <div class="sr-src">Sourced from: Glassdoor company reviews, Glassdoor salary data, Royal Albert Hall careers page.</div>
+    </div>
 
- <div class="sr-section">
- <div class="sr-tag">04 &middot; Social Media Presence</div>
- <h3>How they actually show up online</h3>
- <div class="sr-item"><p>LinkedIn is where recruitment and leadership news actually gets posted - the January 2023 announcement of James Ainscough's CEO appointment drew visible engagement including congratulatory comments from industry peers.</p></div>
- <div class="sr-item"><p>The Hall's main channels are built around its performance programme rather than employer-branding content, with a celebratory, heritage-driven tone ("icons grace our stage" is a recurring phrase), which tells you a lot about how they'll want careers content pitched too.</p></div>
- <div class="sr-item"><p>Given the job description explicitly tasks this role with working alongside Marketing on employer brand activity and careers content, it's worth having a view in interview on how the Hall's current, heavily programming-led social presence could be extended into genuine careers content - because right now that gap is visible from the outside.</p></div>
- <div class="sr-src">Sourced from: Royal Albert Hall LinkedIn, Instagram and public social channels.</div>
- </div>
+    <div class="sr-section">
+      <div class="sr-tag">04 &middot; Social Media Presence</div>
+      <h3>How they actually show up online</h3>
+      <div class="sr-item"><p>LinkedIn is where recruitment and leadership news actually gets posted - the January 2023 announcement of James Ainscough's CEO appointment drew visible engagement including congratulatory comments from industry peers.</p></div>
+      <div class="sr-item"><p>The Hall's main channels are built around its performance programme rather than employer-branding content, with a celebratory, heritage-driven tone ("icons grace our stage" is a recurring phrase), which tells you a lot about how they'll want careers content pitched too.</p></div>
+      <div class="sr-item"><p>Given the job description explicitly tasks this role with working alongside Marketing on employer brand activity and careers content, it's worth having a view in interview on how the Hall's current, heavily programming-led social presence could be extended into genuine careers content - because right now that gap is visible from the outside.</p></div>
+      <div class="sr-src">Sourced from: Royal Albert Hall LinkedIn, Instagram and public social channels.</div>
+    </div>
 
- <div class="sr-section">
- <div class="sr-tag">05 &middot; Market &amp; Sector Intelligence</div>
- <h3>What's putting pressure on this industry right now</h3>
- <p>This role sits at the intersection of two live pressures: the UK charity and arts sector's tight labour market for specialist operational and creative talent, and a live capital transformation programme that will keep hiring volume and complexity high for years.</p>
- <div class="sr-item"><p>The Hall is mid-programme on its Estate Plan, meaning sustained recruitment demand across Building Services, project management and technical/estates roles for the foreseeable future, not a one-off spike.</p></div>
- <div class="sr-item"><p>The job spec itself lists Philanthropy, Building Services, IT and Visitor Services as functions this one Recruitment Manager will need to flex across - a broader sector reality, as arts and heritage charities compete for both commercial skillsets (finance, IT, fundraising) and specialist or front-of-house skillsets, often against very different pay benchmarks.</p></div>
- <div class="sr-item"><p>As a charity with no public subsidy for running costs, every recruitment agency fee and advertising spend line is scrutinised, lining up directly with the job description's explicit requirement to control agency and advertising spend for value for money.</p></div>
- <div class="sr-item"><p>EDI has moved from marketing language to an audited strategic objective here - the pack names building the Hall's reputation as a "Force For Good" as one of four Strategic Objectives, and CEO James Ainscough is on record saying there is "much still to do." Expect this interviewer to test whether you can operationalise inclusive recruitment practically, not just recite the value.</p></div>
- <div class="sr-item"><p>Sector-wide, arts and heritage organisations are increasingly competing with commercial employers for HR and recruitment specialists who can bring ATS and data discipline - the job explicitly wants Dayforce experience, signalling the Hall knows it's playing catch-up on recruitment technology maturity relative to more corporate sectors.</p></div>
- <div class="sr-src">Sourced from: RICS Modus, Royal Albert Hall recruitment pack, sector reporting.</div>
- </div>
+    <div class="sr-section">
+      <div class="sr-tag">05 &middot; Market &amp; Sector Intelligence</div>
+      <h3>What's putting pressure on this industry right now</h3>
+      <p>This role sits at the intersection of two live pressures: the UK charity and arts sector's tight labour market for specialist operational and creative talent, and a live capital transformation programme that will keep hiring volume and complexity high for years.</p>
+      <div class="sr-item"><p>The Hall is mid-programme on its Estate Plan, meaning sustained recruitment demand across Building Services, project management and technical/estates roles for the foreseeable future, not a one-off spike.</p></div>
+      <div class="sr-item"><p>The job spec itself lists Philanthropy, Building Services, IT and Visitor Services as functions this one Recruitment Manager will need to flex across - a broader sector reality, as arts and heritage charities compete for both commercial skillsets (finance, IT, fundraising) and specialist or front-of-house skillsets, often against very different pay benchmarks.</p></div>
+      <div class="sr-item"><p>As a charity with no public subsidy for running costs, every recruitment agency fee and advertising spend line is scrutinised, lining up directly with the job description's explicit requirement to control agency and advertising spend for value for money.</p></div>
+      <div class="sr-item"><p>EDI has moved from marketing language to an audited strategic objective here - the pack names building the Hall's reputation as a "Force For Good" as one of four Strategic Objectives, and CEO James Ainscough is on record saying there is "much still to do." Expect this interviewer to test whether you can operationalise inclusive recruitment practically, not just recite the value.</p></div>
+      <div class="sr-item"><p>Sector-wide, arts and heritage organisations are increasingly competing with commercial employers for HR and recruitment specialists who can bring ATS and data discipline - the job explicitly wants Dayforce experience, signalling the Hall knows it's playing catch-up on recruitment technology maturity relative to more corporate sectors.</p></div>
+      <div class="sr-src">Sourced from: RICS Modus, Royal Albert Hall recruitment pack, sector reporting.</div>
+    </div>
 
- <div class="sr-section">
- <div class="sr-tag">06 &middot; Challenges You May Be Facing</div>
- <h3>The honest version, not the job-ad version</h3>
- <p>This is a two-person team carrying strategic and highly operational load simultaneously, in a building where seasonal peaks and specialist, rare roles both spike volume and complexity at once.</p>
- <div class="sr-item"><p>You'll be building infrastructure, not just running an existing process - the pack explicitly frames this as a newly created position meant to bring structure, insight and a focus on continuous improvement, meaning you likely won't inherit a mature playbook.</p></div>
- <div class="sr-item"><p>Team capacity is genuinely thin: one direct report plus you, covering end-to-end recruitment and onboarding across the entire Hall, including personally covering day-to-day recruitment administration when your colleague is on leave.</p></div>
- <div class="sr-item"><p>Volume and variety will be a live operational challenge - high-volume seasonal roles alongside highly specialist or senior hires, each needing a different sourcing and assessment approach.</p></div>
- <div class="sr-item"><p>Compliance load is heavy and non-negotiable - right-to-work, DBS, Occupational Health, referencing and GDPR all sit under this role, and given the Hall's public-facing, high-footfall nature, the reputational cost of a compliance failure here is higher than in a typical back-office business.</p></div>
- <div class="sr-item"><p>System maturity is a real gap to walk in aware of - Dayforce experience is listed as desirable rather than essential, which suggests current systems and data flow between recruitment and HR/payroll are not yet fully embedded. A sensible interview question is to ask directly how mature the current ATS-to-Dayforce data flow actually is today.</p></div>
- <div class="sr-item"><p>The career-progression sentiment and the job pack's own commitment to a transparent talent framework point to the same tension: retention and internal mobility are acknowledged weak spots, and part of what you're being hired to fix sits upstream of recruitment (attraction, employer brand, inclusive process design) rather than purely downstream.</p></div>
- </div>
+    <div class="sr-section">
+      <div class="sr-tag">06 &middot; Challenges You May Be Facing</div>
+      <h3>The honest version, not the job-ad version</h3>
+      <p>This is a two-person team carrying strategic and highly operational load simultaneously, in a building where seasonal peaks and specialist, rare roles both spike volume and complexity at once.</p>
+      <div class="sr-item"><p>You'll be building infrastructure, not just running an existing process - the pack explicitly frames this as a newly created position meant to bring structure, insight and a focus on continuous improvement, meaning you likely won't inherit a mature playbook.</p></div>
+      <div class="sr-item"><p>Team capacity is genuinely thin: one direct report plus you, covering end-to-end recruitment and onboarding across the entire Hall, including personally covering day-to-day recruitment administration when your colleague is on leave.</p></div>
+      <div class="sr-item"><p>Volume and variety will be a live operational challenge - high-volume seasonal roles alongside highly specialist or senior hires, each needing a different sourcing and assessment approach.</p></div>
+      <div class="sr-item"><p>Compliance load is heavy and non-negotiable - right-to-work, DBS, Occupational Health, referencing and GDPR all sit under this role, and given the Hall's public-facing, high-footfall nature, the reputational cost of a compliance failure here is higher than in a typical back-office business.</p></div>
+      <div class="sr-item"><p>System maturity is a real gap to walk in aware of - Dayforce experience is listed as desirable rather than essential, which suggests current systems and data flow between recruitment and HR/payroll are not yet fully embedded. A sensible interview question is to ask directly how mature the current ATS-to-Dayforce data flow actually is today.</p></div>
+      <div class="sr-item"><p>The career-progression sentiment and the job pack's own commitment to a transparent talent framework point to the same tension: retention and internal mobility are acknowledged weak spots, and part of what you're being hired to fix sits upstream of recruitment (attraction, employer brand, inclusive process design) rather than purely downstream.</p></div>
+    </div>
 
- <div class="sr-section">
- <div class="sr-tag">07 &middot; Your Opening Pitch</div>
- <h3>The Pitch Sandwich</h3>
- <p class="sr-sub">Built from Neil's real CV and answers, weighted to this specific role.</p>
- <div class="sr-pitch">
- <div class="lbl">Bread 1 &middot; Connect</div>
- <p style="color:#c9c2b3;">A bit about me - I'm Neil Copping, I live in Hitchin.</p>
- </div>
- <div class="sr-pitch">
- <div class="lbl">Filling &middot; Fit</div>
- <p style="color:#c9c2b3;">Professionally, I've spent nearly nine years running full-cycle recruitment at Tate across HR, Marketing, Finance, Tech, Creative and Operations briefs, handling everything from briefing through to offer, building candidate pipelines from scratch, and managing the ATS daily with responsibility for right-to-work checks, referencing and GDPR compliance on every placement. I've also line-managed a team of up to three consultants with regular one-to-ones and performance reviews, sat on Tate's EDI strategy team shaping inclusive hiring practices, and worked directly with employers on apprenticeship recruitment and levy conversations alongside Amazing Apprenticeships. That combination of high-volume delivery, hands-on process ownership and inclusive recruitment experience maps closely onto what this role needs, and I've done it while managing agency-side PSL relationships, which gives me a useful perspective on how to run those arrangements from the client side too.</p>
- </div>
- <div class="sr-pitch">
- <div class="lbl">Bread 2 &middot; Values</div>
- <p style="color:#c9c2b3;">In how I work, I value honesty, which means you'll get someone who tells a hiring manager the truth about a shortlist even when it's not what they want to hear, who flags a broken process instead of quietly working around it, and who'd rather under-promise on a time-to-hire than dress up a number to make a report look good.</p>
- </div>
- </div>
+    <div class="sr-section">
+      <div class="sr-tag">07 &middot; Your Opening Pitch</div>
+      <h3>The Pitch Sandwich</h3>
+      <p class="sr-sub">Built from Neil's real CV and answers, weighted to this specific role.</p>
+      <div class="sr-pitch">
+        <div class="lbl">Bread 1 &middot; Connect</div>
+        <p style="color:#c9c2b3;">A bit about me - I'm Neil Copping, I live in Hitchin.</p>
+      </div>
+      <div class="sr-pitch">
+        <div class="lbl">Filling &middot; Fit</div>
+        <p style="color:#c9c2b3;">Professionally, I've spent nearly nine years running full-cycle recruitment at Tate across HR, Marketing, Finance, Tech, Creative and Operations briefs, handling everything from briefing through to offer, building candidate pipelines from scratch, and managing the ATS daily with responsibility for right-to-work checks, referencing and GDPR compliance on every placement. I've also line-managed a team of up to three consultants with regular one-to-ones and performance reviews, sat on Tate's EDI strategy team shaping inclusive hiring practices, and worked directly with employers on apprenticeship recruitment and levy conversations alongside Amazing Apprenticeships. That combination of high-volume delivery, hands-on process ownership and inclusive recruitment experience maps closely onto what this role needs, and I've done it while managing agency-side PSL relationships, which gives me a useful perspective on how to run those arrangements from the client side too.</p>
+      </div>
+      <div class="sr-pitch">
+        <div class="lbl">Bread 2 &middot; Values</div>
+        <p style="color:#c9c2b3;">In how I work, I value honesty, which means you'll get someone who tells a hiring manager the truth about a shortlist even when it's not what they want to hear, who flags a broken process instead of quietly working around it, and who'd rather under-promise on a time-to-hire than dress up a number to make a report look good.</p>
+      </div>
+    </div>
 
- <div class="sr-section">
- <div class="sr-tag">08 &middot; Gap Analysis</div>
- <h3>The Cake + Cherry Method</h3>
- <div class="sr-bar-wrap">
- <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-family:'Oswald',sans-serif; font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:#a9a293;">Skills Match</span><span style="font-family:'Anton',sans-serif; font-size:26px; color:#e0b03c;">62%</span></div>
- <div class="sr-bar-track"><div class="sr-bar-fill" style="width:62%;"></div></div>
- <p style="margin:10px 0 0; font-size:13px; color:#7a7466;">8 of 13 job requirements matched directly to Neil's CV.</p>
- </div>
- <h4 style="font-family:'Anton',sans-serif; font-size:15px; text-transform:uppercase; color:#ece6d8; margin:0 0 14px;">Matched strengths</h4>
- <div class="sr-item"><p>Nearly nine years of full-cycle, end-to-end recruitment across HR, Marketing, Finance, Tech, Creative and Operations briefs.</p></div>
- <div class="sr-item"><p>Line management and coaching experience, having managed up to three consultants with regular one-to-ones and performance reviews.</p></div>
- <div class="sr-item"><p>Genuine EDI credibility through Tate's EDI strategy team and co-founding an inclusive leadership network.</p></div>
- <div class="sr-item"><p>Apprenticeship recruitment experience, including levy conversations with employers and sustained work with Amazing Apprenticeships.</p></div>
- <div class="sr-item"><p>Daily ATS ownership with responsibility for data integrity, right-to-work checks, referencing and GDPR compliance.</p></div>
- <div class="sr-item"><p>PSL and agency-side supplier management experience, giving a client-side view of cost control.</p></div>
- <div class="sr-item"><p>Proven pipeline-building and sourcing strategy from scratch, including social media and events.</p></div>
- <div class="sr-item"><p>Budget and P&amp;L ownership at scale, having run a £36 million food and beverage budget across 72 sites.</p></div>
+    <div class="sr-section">
+      <div class="sr-tag">08 &middot; Gap Analysis</div>
+      <h3>The Cake + Cherry Method</h3>
+      <div class="sr-bar-wrap">
+        <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-family:'Oswald',sans-serif; font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:#a9a293;">Skills Match</span><span style="font-family:'Anton',sans-serif; font-size:26px; color:#e0b03c;">62%</span></div>
+        <div class="sr-bar-track"><div class="sr-bar-fill" style="width:62%;"></div></div>
+        <p style="margin:10px 0 0; font-size:13px; color:#7a7466;">8 of 13 job requirements matched directly to Neil's CV.</p>
+      </div>
+      <h4 style="font-family:'Anton',sans-serif; font-size:15px; text-transform:uppercase; color:#ece6d8; margin:0 0 14px;">Matched strengths</h4>
+      <div class="sr-item"><p>Nearly nine years of full-cycle, end-to-end recruitment across HR, Marketing, Finance, Tech, Creative and Operations briefs.</p></div>
+      <div class="sr-item"><p>Line management and coaching experience, having managed up to three consultants with regular one-to-ones and performance reviews.</p></div>
+      <div class="sr-item"><p>Genuine EDI credibility through Tate's EDI strategy team and co-founding an inclusive leadership network.</p></div>
+      <div class="sr-item"><p>Apprenticeship recruitment experience, including levy conversations with employers and sustained work with Amazing Apprenticeships.</p></div>
+      <div class="sr-item"><p>Daily ATS ownership with responsibility for data integrity, right-to-work checks, referencing and GDPR compliance.</p></div>
+      <div class="sr-item"><p>PSL and agency-side supplier management experience, giving a client-side view of cost control.</p></div>
+      <div class="sr-item"><p>Proven pipeline-building and sourcing strategy from scratch, including social media and events.</p></div>
+      <div class="sr-item"><p>Budget and P&amp;L ownership at scale, having run a £36 million food and beverage budget across 72 sites.</p></div>
 
- <h4 style="font-family:'Anton',sans-serif; font-size:15px; text-transform:uppercase; color:#ece6d8; margin:36px 0 14px;">Development areas &amp; cherries on top</h4>
- <div class="sr-cherry">
- <div class="area">Gap: No direct Dayforce experience</div>
- <p>You've named this gap yourself rather than glossing over it, which is the right move. Before the interview, spend an hour looking at Dayforce's own product overview or a walkthrough of its recruiting and onboarding module so you can speak to its structure specifically, then frame your answer around how quickly you mastered Tate's ATS daily for nine years as evidence of how fast you'll pick this up too.</p>
- </div>
- <div class="sr-cherry">
- <div class="area">Gap: In-house recruitment versus agency-side delivery</div>
- <p>Your whole career has been agency-side at Tate, while this role sits inside a single small in-house team of two. In the interview, get specific about the difference: talk about how you'd build ongoing relationships with the same hiring managers over years rather than transactional briefs, and how you'd apply the PSL management insight from being on the other side of that fence.</p>
- </div>
- <div class="sr-cherry">
- <div class="area">Gap: No formal HR or CIPD qualification</div>
- <p>The job description lists CIPD Level 5 as desirable rather than essential, so this shouldn't block you, but naming a concrete plan will help. Mention that you're either already looking into or willing to start a CIPD Level 5 or equivalent qualification in your first year.</p>
- </div>
- <div class="sr-cherry">
- <div class="area">Gap: Employer brand and marketing-led attraction campaigns</div>
- <p>The role wants you to work with Marketing on careers content and outreach like Theatrecraft and job fairs. Draw directly on your Account Director years at LAW Creative and your Marketing Manager role at Awards International, and connect that explicitly to what employer brand content for the Hall would need.</p>
- </div>
- <div class="sr-cherry">
- <div class="area">Gap: Recruitment within a charity or cultural/heritage sector context</div>
- <p>Your recruitment career has been entirely within a commercial recruitment agency and hospitality, not the arts, charity or heritage world the Hall operates in. Use your genuine personal connection as a working musician who already loves the building to bridge this.</p>
- </div>
- </div>
+      <h4 style="font-family:'Anton',sans-serif; font-size:15px; text-transform:uppercase; color:#ece6d8; margin:36px 0 14px;">Development areas &amp; cherries on top</h4>
+      <div class="sr-cherry">
+        <div class="area">Gap: No direct Dayforce experience</div>
+        <p>You've named this gap yourself rather than glossing over it, which is the right move. Before the interview, spend an hour looking at Dayforce's own product overview or a walkthrough of its recruiting and onboarding module so you can speak to its structure specifically, then frame your answer around how quickly you mastered Tate's ATS daily for nine years as evidence of how fast you'll pick this up too.</p>
+      </div>
+      <div class="sr-cherry">
+        <div class="area">Gap: In-house recruitment versus agency-side delivery</div>
+        <p>Your whole career has been agency-side at Tate, while this role sits inside a single small in-house team of two. In the interview, get specific about the difference: talk about how you'd build ongoing relationships with the same hiring managers over years rather than transactional briefs, and how you'd apply the PSL management insight from being on the other side of that fence.</p>
+      </div>
+      <div class="sr-cherry">
+        <div class="area">Gap: No formal HR or CIPD qualification</div>
+        <p>The job description lists CIPD Level 5 as desirable rather than essential, so this shouldn't block you, but naming a concrete plan will help. Mention that you're either already looking into or willing to start a CIPD Level 5 or equivalent qualification in your first year.</p>
+      </div>
+      <div class="sr-cherry">
+        <div class="area">Gap: Employer brand and marketing-led attraction campaigns</div>
+        <p>The role wants you to work with Marketing on careers content and outreach like Theatrecraft and job fairs. Draw directly on your Account Director years at LAW Creative and your Marketing Manager role at Awards International, and connect that explicitly to what employer brand content for the Hall would need.</p>
+      </div>
+      <div class="sr-cherry">
+        <div class="area">Gap: Recruitment within a charity or cultural/heritage sector context</div>
+        <p>Your recruitment career has been entirely within a commercial recruitment agency and hospitality, not the arts, charity or heritage world the Hall operates in. Use your genuine personal connection as a working musician who already loves the building to bridge this.</p>
+      </div>
+    </div>
 
- <div class="sr-section">
- <div class="sr-tag">09 &middot; STAR Answers</div>
- <h3>Sample Predicted Questions</h3>
- <p class="sr-sub">These are illustrative answers built to show the format - your report builds these from your own recorded or typed answers, tidied into a clean, tellable story.</p>
- <div class="sr-star-card">
- <p class="q">"A hiring manager in Philanthropy wants a bespoke, high-touch selection process while you're mid-way through a high-volume seasonal campaign for Visitor Services with the same two-person team - how do you decide where your time actually goes that week?"</p>
- <div class="based">Based on: delivering high-volume and complex campaigns simultaneously, two-person team</div>
- <div class="sr-star-row"><div class="k">S</div><div class="v">At Tate, right in the middle of a summer graduate recruitment surge with over 40 roles live at once, a senior Development hiring manager needed a highly bespoke, multi-stage process for a major-donor-facing role.</div></div>
- <div class="sr-star-row"><div class="k">T</div><div class="v">I was responsible for delivering both simultaneously with no extra headcount.</div></div>
- <div class="sr-star-row"><div class="k">A</div><div class="v">I triaged by risk and reversibility: the seasonal roles had a wide, forgiving candidate pool, so I built a lightweight, templated process I could run largely on autopilot, then blocked protected time for the bespoke hire and set clear weekly expectations with both hiring managers.</div></div>
- <div class="sr-star-row"><div class="k">R</div><div class="v">Both roles were filled inside their target timelines, the bespoke hire in nine weeks against a role that had previously taken four months, and I didn't lose a single seasonal requisition to slow process.</div></div>
- </div>
- <div class="sr-star-card">
- <p class="q">"What does 'good' look like when you're coaching a hiring manager who keeps defaulting to the same job board and the same shortlist profile they've always used?"</p>
- <div class="based">Based on: shaping inclusive attraction, challenging assumptions, coaching hiring managers</div>
- <div class="sr-star-row"><div class="k">S</div><div class="v">One hiring manager at Tate consistently asked for the same job board and near-identical shortlist profile for every creative role, regardless of the brief.</div></div>
- <div class="sr-star-row"><div class="k">T</div><div class="v">My job was to broaden the candidate pool without simply overriding them.</div></div>
- <div class="sr-star-row"><div class="k">A</div><div class="v">Rather than telling them the approach was wrong, I ran one role as an experiment: sourced a parallel shortlist using different channels and broader transferable-skills criteria, then presented both shortlists side by side so they could compare quality themselves.</div></div>
- <div class="sr-star-row"><div class="k">R</div><div class="v">The manager chose two candidates from the broadened shortlist, one was hired, and they adopted the wider sourcing approach as their default for the next eight roles I ran for them.</div></div>
- </div>
- <div class="sr-star-card">
- <p class="q">"How would you go about controlling agency spend on a hard-to-fill specialist role without just quietly letting time-to-hire slip instead?"</p>
- <div class="based">Based on: managing recruitment budgets and agency spend for value for money</div>
- <div class="sr-star-row"><div class="k">S</div><div class="v">A specialist technical role sat unfilled for six weeks with an agency on a flat-percentage fee and limited results.</div></div>
- <div class="sr-star-row"><div class="k">T</div><div class="v">I needed to bring cost down without the role drifting further.</div></div>
- <div class="sr-star-row"><div class="k">A</div><div class="v">I renegotiated the agency's terms to a capped, tiered fee tied to time-to-hire, and in parallel built a direct-sourcing campaign of my own running alongside them, so I wasn't solely dependent on the agency to move the role forward.</div></div>
- <div class="sr-star-row"><div class="k">R</div><div class="v">The role was filled three weeks later through my own direct sourcing, at roughly 40% of the original agency fee, and I used the renegotiated terms as the template for two other hard-to-fill briefs that quarter.</div></div>
- </div>
- <div class="sr-star-card">
- <p class="q">"Walk me through how you'd set up new starter data entry so that what recruitment captures actually lands cleanly in HR and payroll without someone having to fix it later."</p>
- <div class="based">Based on: accountable for quality and accuracy of new starter data flow into HR systems</div>
- <div class="sr-star-row"><div class="k">S</div><div class="v">At Tate, new starter data moving from our ATS into HR and payroll was error-prone - right-to-work dates and referencing sign-off were sometimes keyed in twice, and mistakes were only caught after someone had already started.</div></div>
- <div class="sr-star-row"><div class="k">T</div><div class="v">I was accountable for the accuracy of that handover for every hire I made.</div></div>
- <div class="sr-star-row"><div class="k">A</div><div class="v">I built a single-page new starter checklist that had to be fully signed off inside the ATS before a requisition could be marked "hired," and worked with HR to agree exactly which fields they needed pulled through so nothing was re-keyed by hand.</div></div>
- <div class="sr-star-row"><div class="k">R</div><div class="v">New starter data errors reaching payroll on my requisitions dropped close to zero, and two other consultants adopted the same checklist.</div></div>
- </div>
- <div class="sr-star-card">
- <p class="q">"If a hiring manager complains that your standard selection process is slowing them down for a role they consider urgent, how do you decide whether to hold the line on process or adapt it?"</p>
- <div class="based">Based on: designing fair, effective selection processes while supporting fast-paced hiring managers</div>
- <div class="sr-star-row"><div class="k">S</div><div class="v">A hiring manager pushed back hard on a two-stage interview process for an urgent Marketing hire, wanting to skip straight to an offer after one informal chat.</div></div>
- <div class="sr-star-row"><div class="k">T</div><div class="v">I had to protect a fair, consistent process without losing the hiring manager's confidence or the candidate.</div></div>
- <div class="sr-star-row"><div class="k">A</div><div class="v">I agreed to compress the timeline rather than cut a stage, running both interviews within 72 hours instead of the usual two weeks, and was transparent with the hiring manager about why the second stage mattered.</div></div>
- <div class="sr-star-row"><div class="k">R</div><div class="v">The process still ran in under a week, the candidate accepted, and the hiring manager asked me to run the same compressed-but-complete model for their next urgent hire rather than skipping stages again.</div></div>
- </div>
- </div>
+    <div class="sr-section">
+      <div class="sr-tag">09 &middot; STAR Answers</div>
+      <h3>Sample Predicted Questions</h3>
+      <p class="sr-sub">These are illustrative answers built to show the format - your report builds these from your own recorded or typed answers, tidied into a clean, tellable story.</p>
+      <div class="sr-star-card">
+        <p class="q">"A hiring manager in Philanthropy wants a bespoke, high-touch selection process while you're mid-way through a high-volume seasonal campaign for Visitor Services with the same two-person team - how do you decide where your time actually goes that week?"</p>
+        <div class="based">Based on: delivering high-volume and complex campaigns simultaneously, two-person team</div>
+        <div class="sr-star-row"><div class="k">S</div><div class="v">At Tate, right in the middle of a summer graduate recruitment surge with over 40 roles live at once, a senior Development hiring manager needed a highly bespoke, multi-stage process for a major-donor-facing role.</div></div>
+        <div class="sr-star-row"><div class="k">T</div><div class="v">I was responsible for delivering both simultaneously with no extra headcount.</div></div>
+        <div class="sr-star-row"><div class="k">A</div><div class="v">I triaged by risk and reversibility: the seasonal roles had a wide, forgiving candidate pool, so I built a lightweight, templated process I could run largely on autopilot, then blocked protected time for the bespoke hire and set clear weekly expectations with both hiring managers.</div></div>
+        <div class="sr-star-row"><div class="k">R</div><div class="v">Both roles were filled inside their target timelines, the bespoke hire in nine weeks against a role that had previously taken four months, and I didn't lose a single seasonal requisition to slow process.</div></div>
+      </div>
+      <div class="sr-star-card">
+        <p class="q">"What does 'good' look like when you're coaching a hiring manager who keeps defaulting to the same job board and the same shortlist profile they've always used?"</p>
+        <div class="based">Based on: shaping inclusive attraction, challenging assumptions, coaching hiring managers</div>
+        <div class="sr-star-row"><div class="k">S</div><div class="v">One hiring manager at Tate consistently asked for the same job board and near-identical shortlist profile for every creative role, regardless of the brief.</div></div>
+        <div class="sr-star-row"><div class="k">T</div><div class="v">My job was to broaden the candidate pool without simply overriding them.</div></div>
+        <div class="sr-star-row"><div class="k">A</div><div class="v">Rather than telling them the approach was wrong, I ran one role as an experiment: sourced a parallel shortlist using different channels and broader transferable-skills criteria, then presented both shortlists side by side so they could compare quality themselves.</div></div>
+        <div class="sr-star-row"><div class="k">R</div><div class="v">The manager chose two candidates from the broadened shortlist, one was hired, and they adopted the wider sourcing approach as their default for the next eight roles I ran for them.</div></div>
+      </div>
+      <div class="sr-star-card">
+        <p class="q">"How would you go about controlling agency spend on a hard-to-fill specialist role without just quietly letting time-to-hire slip instead?"</p>
+        <div class="based">Based on: managing recruitment budgets and agency spend for value for money</div>
+        <div class="sr-star-row"><div class="k">S</div><div class="v">A specialist technical role sat unfilled for six weeks with an agency on a flat-percentage fee and limited results.</div></div>
+        <div class="sr-star-row"><div class="k">T</div><div class="v">I needed to bring cost down without the role drifting further.</div></div>
+        <div class="sr-star-row"><div class="k">A</div><div class="v">I renegotiated the agency's terms to a capped, tiered fee tied to time-to-hire, and in parallel built a direct-sourcing campaign of my own running alongside them, so I wasn't solely dependent on the agency to move the role forward.</div></div>
+        <div class="sr-star-row"><div class="k">R</div><div class="v">The role was filled three weeks later through my own direct sourcing, at roughly 40% of the original agency fee, and I used the renegotiated terms as the template for two other hard-to-fill briefs that quarter.</div></div>
+      </div>
+      <div class="sr-star-card">
+        <p class="q">"Walk me through how you'd set up new starter data entry so that what recruitment captures actually lands cleanly in HR and payroll without someone having to fix it later."</p>
+        <div class="based">Based on: accountable for quality and accuracy of new starter data flow into HR systems</div>
+        <div class="sr-star-row"><div class="k">S</div><div class="v">At Tate, new starter data moving from our ATS into HR and payroll was error-prone - right-to-work dates and referencing sign-off were sometimes keyed in twice, and mistakes were only caught after someone had already started.</div></div>
+        <div class="sr-star-row"><div class="k">T</div><div class="v">I was accountable for the accuracy of that handover for every hire I made.</div></div>
+        <div class="sr-star-row"><div class="k">A</div><div class="v">I built a single-page new starter checklist that had to be fully signed off inside the ATS before a requisition could be marked "hired," and worked with HR to agree exactly which fields they needed pulled through so nothing was re-keyed by hand.</div></div>
+        <div class="sr-star-row"><div class="k">R</div><div class="v">New starter data errors reaching payroll on my requisitions dropped close to zero, and two other consultants adopted the same checklist.</div></div>
+      </div>
+      <div class="sr-star-card">
+        <p class="q">"If a hiring manager complains that your standard selection process is slowing them down for a role they consider urgent, how do you decide whether to hold the line on process or adapt it?"</p>
+        <div class="based">Based on: designing fair, effective selection processes while supporting fast-paced hiring managers</div>
+        <div class="sr-star-row"><div class="k">S</div><div class="v">A hiring manager pushed back hard on a two-stage interview process for an urgent Marketing hire, wanting to skip straight to an offer after one informal chat.</div></div>
+        <div class="sr-star-row"><div class="k">T</div><div class="v">I had to protect a fair, consistent process without losing the hiring manager's confidence or the candidate.</div></div>
+        <div class="sr-star-row"><div class="k">A</div><div class="v">I agreed to compress the timeline rather than cut a stage, running both interviews within 72 hours instead of the usual two weeks, and was transparent with the hiring manager about why the second stage mattered.</div></div>
+        <div class="sr-star-row"><div class="k">R</div><div class="v">The process still ran in under a week, the candidate accepted, and the hiring manager asked me to run the same compressed-but-complete model for their next urgent hire rather than skipping stages again.</div></div>
+      </div>
+    </div>
 
- <div class="sr-section">
- <div class="sr-tag">10 &middot; Your Questions</div>
- <h3>Sharp, Specific, Grounded In Research</h3>
- <div class="sr-qtype-lbl">Type 1 &middot; About the company</div>
- <div class="sr-q"><p>The pack mentions increasing the number of global majority headliners and younger performers on stage, and creating new opportunities for diverse participants across the Hall team more broadly. How far has that ambition already translated into changes in who applies for roles here, versus who's actually getting hired?</p></div>
- <div class="sr-q"><p>The Hall talks about being a Force For Good and reviewing recruitment strategies to widen the candidate pool - is there a specific department or role type where that widening has proven hardest, and where you'd want this role to focus first?</p></div>
- <div class="sr-qtype-lbl">Type 2 &middot; About the job</div>
- <div class="sr-q"><p>This is a newly created position sitting in a two-person team, with the expectation that I'd cover day-to-day admin when my colleague is off. Practically speaking, how is the workload split right now between strategic work and hands-on casework, and does that shift a lot during seasonal peaks?</p></div>
- <div class="sr-q"><p>You mention partnering with the Systems Officer and Senior People Partner to make sure the ATS supports compliant recruitment, and separately maintaining working knowledge of Dayforce for data flow into payroll. Where are the current gaps or pain points between those two systems that you'd want fixed first?</p></div>
- <div class="sr-qtype-lbl">Type 3 &middot; About the interviewers</div>
- <div class="sr-q"><p>Since this role reports to you directly, what prompted the decision to create this position now rather than continuing to run recruitment the way it's currently structured?</p></div>
- <div class="sr-q"><p>You'll have seen recruitment run across everything from Philanthropy to Building Services to Visitor Services - which of those functions currently gets the least consistent recruitment experience, and where would you want to see the first improvement land?</p></div>
- <div class="sr-qtype-lbl">Type 4 &middot; About you, in this role</div>
- <div class="sr-q"><p>Based on our conversation so far, is there anything you'd like me to clarify about my fit for this role?</p></div>
- </div>
+    <div class="sr-section">
+      <div class="sr-tag">10 &middot; Your Questions</div>
+      <h3>Sharp, Specific, Grounded In Research</h3>
+      <div class="sr-qtype-lbl">Type 1 &middot; About the company</div>
+      <div class="sr-q"><p>The pack mentions increasing the number of global majority headliners and younger performers on stage, and creating new opportunities for diverse participants across the Hall team more broadly. How far has that ambition already translated into changes in who applies for roles here, versus who's actually getting hired?</p></div>
+      <div class="sr-q"><p>The Hall talks about being a Force For Good and reviewing recruitment strategies to widen the candidate pool - is there a specific department or role type where that widening has proven hardest, and where you'd want this role to focus first?</p></div>
+      <div class="sr-qtype-lbl">Type 2 &middot; About the job</div>
+      <div class="sr-q"><p>This is a newly created position sitting in a two-person team, with the expectation that I'd cover day-to-day admin when my colleague is off. Practically speaking, how is the workload split right now between strategic work and hands-on casework, and does that shift a lot during seasonal peaks?</p></div>
+      <div class="sr-q"><p>You mention partnering with the Systems Officer and Senior People Partner to make sure the ATS supports compliant recruitment, and separately maintaining working knowledge of Dayforce for data flow into payroll. Where are the current gaps or pain points between those two systems that you'd want fixed first?</p></div>
+      <div class="sr-qtype-lbl">Type 3 &middot; About the interviewers</div>
+      <div class="sr-q"><p>Since this role reports to you directly, what prompted the decision to create this position now rather than continuing to run recruitment the way it's currently structured?</p></div>
+      <div class="sr-q"><p>You'll have seen recruitment run across everything from Philanthropy to Building Services to Visitor Services - which of those functions currently gets the least consistent recruitment experience, and where would you want to see the first improvement land?</p></div>
+      <div class="sr-qtype-lbl">Type 4 &middot; About you, in this role</div>
+      <div class="sr-q"><p>Based on our conversation so far, is there anything you'd like me to clarify about my fit for this role?</p></div>
+    </div>
 
- <div class="sr-section">
- <div class="sr-tag">11 &middot; Sources &amp; References</div>
- <h3>Every Source The AI Actually Drew On</h3>
- <p style="margin-bottom:20px;">For your own reference or spot-checking - this is the real, full source list from Neil's report.</p>
- <div class="sr-src-list">
- Governance | Royal Albert Hall - royalalberthall.com<br>
- The Corporation of the Hall of Arts and Sciences, Annual Report and Accounts FY24<br>
- Royal Albert Hall appoints James Ainscough as new CEO - royalalberthall.com<br>
- Help Musicians CEO moves to Royal Albert Hall - Arts Professional<br>
- James Ainscough, Chief Executive at Royal Albert Hall - The Org<br>
- Royal Albert Hall CEO outlines three-point plan - IQ Magazine<br>
- Preserving a national treasure: the Royal Albert Hall - Modus, RICS<br>
- Royal Albert Hall Jobs - Glassdoor<br>
- How Much Does Royal Albert Hall Pay in 2026? (146 Salaries) - Glassdoor<br>
- Royal Albert Hall Reviews - Glassdoor<br>
- Royal Albert Hall on LinkedIn: CEO appointment announcement
- </div>
- </div>
+    <div class="sr-section">
+      <div class="sr-tag">11 &middot; Sources &amp; References</div>
+      <h3>Every Source The AI Actually Drew On</h3>
+      <p style="margin-bottom:20px;">For your own reference or spot-checking - this is the real, full source list from Neil's report.</p>
+      <div class="sr-src-list">
+        Governance | Royal Albert Hall - royalalberthall.com<br>
+        The Corporation of the Hall of Arts and Sciences, Annual Report and Accounts FY24<br>
+        Royal Albert Hall appoints James Ainscough as new CEO - royalalberthall.com<br>
+        Help Musicians CEO moves to Royal Albert Hall - Arts Professional<br>
+        James Ainscough, Chief Executive at Royal Albert Hall - The Org<br>
+        Royal Albert Hall CEO outlines three-point plan - IQ Magazine<br>
+        Preserving a national treasure: the Royal Albert Hall - Modus, RICS<br>
+        Royal Albert Hall Jobs - Glassdoor<br>
+        How Much Does Royal Albert Hall Pay in 2026? (146 Salaries) - Glassdoor<br>
+        Royal Albert Hall Reviews - Glassdoor<br>
+        Royal Albert Hall on LinkedIn: CEO appointment announcement
+      </div>
+    </div>
 
- </div>
+  </div>
 
- <!-- CLOSING CTA -->
- <div style="background:#0f151c; padding:72px 64px; text-align:center;">
- <h2 style="font-family:'Anton',sans-serif; font-size:32px; text-transform:uppercase; margin:0 0 16px;">That's The Standard. Every Time.</h2>
- <p style="font-size:16px; line-height:1.7; color:#a9a293; margin:0 auto 32px; max-width:600px;">Built from your CV and the real job you're applying for, downloaded as a proper Word document you can take into the room with you. The research alone would take most people four or five hours to do properly. We do it in under two minutes.</p>
- <a href="./prep-report.html" class="pr-btn">Get Your Interview Prep Report, £15</a>
- </div>
+  <!-- CLOSING CTA -->
+  <div style="background:#0f151c; padding:72px 64px; text-align:center;">
+    <h2 style="font-family:'Anton',sans-serif; font-size:32px; text-transform:uppercase; margin:0 0 16px;">That's The Standard. Every Time.</h2>
+    <p style="font-size:16px; line-height:1.7; color:#a9a293; margin:0 auto 32px; max-width:600px;">Built from your CV and the real job you're applying for, downloaded as a proper Word document you can take into the room with you. The research alone would take most people four or five hours to do properly. We do it in under two minutes.</p>
+    <a href="./prep-report.html" class="pr-btn">Get Your Interview Prep Report, £15</a>
+  </div>
 
- <!-- FOOTER -->
- <div style="background:#0f151c; padding:56px 64px 32px; display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr 1fr; gap:32px; font-family:'Oswald',sans-serif;">
- <div>
- <div style="display:flex; gap:2px;">
- <span style="background:#e0b03c; padding:4px 7px 6px; transform:rotate(-3deg);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:15px;">The</span></span>
- <span style="background:#5aa9c2; padding:4px 7px 6px; transform:rotate(2deg);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:15px;">Com'mon</span></span>
- <span style="background:#d2691e; padding:4px 7px 6px; transform:rotate(-2deg);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:15px;">People</span></span>
- </div>
- <p style="font-size:12px; color:#7a7466; margin-top:16px; max-width:220px; line-height:1.6;">A free resource centre for marketing, HR, finance, events and operations people. Built on mutual aid.</p>
- </div>
- <div>
- <h6 style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#e0b03c; margin:0 0 14px;">Guides</h6>
- <a href="guide-cv.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The CV that gets read</a>
- <a href="guide-video-intro.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The intro video</a>
- <a href="guide-interview-prep.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">Interview prep</a>
- <a href="guide-linkedin.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">LinkedIn, properly</a>
- <a href="guide-05-evp.html" style="display:block; font-size:13px; color:#a9a293;">The EVP field guide</a>
- </div>
- <div>
- <h6 style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#e0b03c; margin:0 0 14px;">Dispatches</h6>
- <a href="dispatch-apprenticeship-paradox.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The Apprenticeship Paradox</a>
- <a href="dispatch-recruitment-rethink.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The recruitment rethink</a>
- <a href="dispatch-eu-ai-act.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The EU AI Act</a>
- <a href="dispatch-ai-cvs.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">AI CVs, the honest truth</a>
- <a href="dispatch-report-hertfordshire.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The Commons Report</a>
- <a href="dispatch-stop-ghosting.html" style="display:block; font-size:13px; color:#a9a293;">The silence that does the damage</a>
- </div>
- <div>
- <h6 style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#e0b03c; margin:0 0 14px;">Loudspeaker</h6>
- <a href="loudspeaker.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The archive</a>
- <a href="loudspeaker-edition-01.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">Edition 01 &middot; May 2026</a>
- <a href="loudspeaker-edition-02.html" style="display:block; font-size:13px; color:#a9a293;">Edition 02 &middot; July 2026</a>
- </div>
- <div>
- <h6 style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#e0b03c; margin:0 0 14px;">About</h6>
- <a href="resources.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">Resources</a>
- <a href="about.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">Our story</a>
- <a href="mailto:neil.copping@thecommonpeople.co.uk" style="display:block; font-size:13px; color:#a9a293;">Get in touch</a>
- </div>
- </div>
- <div style="padding:20px 64px; border-top:1px solid #2a333d; display:flex; justify-content:space-between; font-size:12px; color:#7a7466; font-family:'Oswald',sans-serif;">
- <span>© 2026 The Com'mon People. Built on mutual aid.</span>
- <span><a href="./privacy.html" style="color:#7a7466;">Privacy</a> &middot; Free, always.</span>
- </div>
+  <!-- FOOTER -->
+  <div style="background:#0f151c; padding:56px 64px 32px; display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr 1fr; gap:32px; font-family:'Oswald',sans-serif;">
+    <div>
+      <div style="display:flex; gap:2px;">
+        <span style="background:#e0b03c; padding:4px 7px 6px; transform:rotate(-3deg);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:15px;">The</span></span>
+        <span style="background:#5aa9c2; padding:4px 7px 6px; transform:rotate(2deg);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:15px;">Com'mon</span></span>
+        <span style="background:#d2691e; padding:4px 7px 6px; transform:rotate(-2deg);"><span class="plate-txt" style="font-family:'Anton',sans-serif; font-size:15px;">People</span></span>
+      </div>
+      <p style="font-size:12px; color:#7a7466; margin-top:16px; max-width:220px; line-height:1.6;">A free resource centre for marketing, HR, finance, events and operations people. Built on mutual aid.</p>
+    </div>
+    <div>
+      <h6 style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#e0b03c; margin:0 0 14px;">Guides</h6>
+      <a href="guide-cv.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The CV that gets read</a>
+      <a href="guide-video-intro.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The intro video</a>
+      <a href="guide-interview-prep.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">Interview prep</a>
+      <a href="guide-linkedin.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">LinkedIn, properly</a>
+      <a href="guide-05-evp.html" style="display:block; font-size:13px; color:#a9a293;">The EVP field guide</a>
+    </div>
+    <div>
+      <h6 style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#e0b03c; margin:0 0 14px;">Dispatches</h6>
+      <a href="dispatch-apprenticeship-paradox.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The Apprenticeship Paradox</a>
+      <a href="dispatch-recruitment-rethink.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The recruitment rethink</a>
+      <a href="dispatch-eu-ai-act.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The EU AI Act</a>
+      <a href="dispatch-ai-cvs.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">AI CVs, the honest truth</a>
+      <a href="dispatch-report-hertfordshire.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The Commons Report</a>
+      <a href="dispatch-stop-ghosting.html" style="display:block; font-size:13px; color:#a9a293;">The silence that does the damage</a>
+    </div>
+    <div>
+      <h6 style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#e0b03c; margin:0 0 14px;">Loudspeaker</h6>
+      <a href="loudspeaker.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">The archive</a>
+      <a href="loudspeaker-edition-01.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">Edition 01 &middot; May 2026</a>
+      <a href="loudspeaker-edition-02.html" style="display:block; font-size:13px; color:#a9a293;">Edition 02 &middot; July 2026</a>
+    </div>
+    <div>
+      <h6 style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#e0b03c; margin:0 0 14px;">About</h6>
+      <a href="resources.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">Resources</a>
+      <a href="about.html" style="display:block; font-size:13px; color:#a9a293; margin-bottom:10px;">Our story</a>
+      <a href="mailto:neil.copping@thecommonpeople.co.uk" style="display:block; font-size:13px; color:#a9a293;">Get in touch</a>
+    </div>
+  </div>
+  <div style="padding:20px 64px; border-top:1px solid #2a333d; display:flex; justify-content:space-between; font-size:12px; color:#7a7466; font-family:'Oswald',sans-serif;">
+    <span>© 2026 The Com'mon People. Built on mutual aid.</span>
+    <span><a href="./privacy.html" style="color:#7a7466;">Privacy</a> &middot; Free, always.</span>
+  </div>
 
 </div>
 <script src="/cp-mobile-nav.js" defer></script></body>
