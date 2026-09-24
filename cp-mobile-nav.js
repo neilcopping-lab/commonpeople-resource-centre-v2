@@ -1,4 +1,4 @@
-/* The Com'mon People — shared mobile navigation.
+/* The Com'mon People - shared mobile navigation.
    Turns the top menu into a clean hamburger on phones (<=820px).
    Desktop layout is left exactly as-is. Works on both the main site
    nav and the CV Rewrite app nav. Self-contained, no dependencies. */
