@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Loudspeaker, Edition 04, September 2026</title>
+<meta name="description" content="The Loudspeaker, Edition 04, September 2026. Eight fresh UK stories on who gets heard at work, from The Com'mon People, written by Neil Copping.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Arvo:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+  :root{
+    --paper:#FBFAF7;
+    --card:#FFFFFF;
+    --ink:#1C2733;
+    --ink-soft:#55636F;
+    --ink-faint:#8A949E;
+    --navy:#161F29;
+    --navy-2:#0F151C;
+    --cream:#ECE6D8;
+    --cream-2:#C6CFD8;
+    --muted-cream:#9AA6B0;
+    --gold:#E0B03C;
+    --orange:#D2691E;
+    --teal:#5AA9C2;
+    --pale:#EAF2F5;
+    --line:rgba(28,39,51,0.12);
+    --line-strong:rgba(28,39,51,0.18);
+    --line-cream:rgba(236,230,216,0.16);
+    --display:"Anton","Arial Narrow",sans-serif;
+    --label:"Oswald","Arial Narrow",sans-serif;
+    --body:"Arvo",Georgia,"Times New Roman",serif;
+    --r:16px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.72;-webkit-font-smoothing:antialiased}
+  a{color:var(--orange)}
+  a:hover{text-decoration:underline}
+  a:focus-visible{outline:2px solid var(--orange);outline-offset:3px;border-radius:3px}
+  img,svg{max-width:100%}
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px}
+
+  .band-dark{background:var(--navy);color:var(--cream)}
+  .band-light{background:var(--paper)}
+
+  .topbar{background:var(--card);border-bottom:1px solid var(--line)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 24px;flex-wrap:wrap}
+  .logo{display:inline-flex;align-items:center;gap:6px;transform:rotate(-1deg)}
+  .logo span{font-family:var(--display);color:#fff;letter-spacing:.5px;font-size:20px;line-height:1;padding:8px 10px 6px;border-radius:7px;text-transform:uppercase;box-shadow:0 3px 0 rgba(0,0,0,0.18)}
+  .logo .l1{background:#D9A441;transform:rotate(-3deg)}
+  .logo .l2{background:#4F9DB5;transform:rotate(2deg)}
+  .logo .l3{background:#CC6A26;transform:rotate(-2deg)}
+  .topbar .meta{font-family:var(--label);text-transform:uppercase;letter-spacing:2px;font-size:12px;color:var(--ink-soft)}
+  .topbar .meta a{color:var(--ink-soft)}
+  .topbar .meta a:hover{color:var(--orange)}
+
+  header.hero{padding:54px 0 60px}
+  .backlink{font-family:var(--label);text-transform:uppercase;letter-spacing:2.5px;font-size:12px;color:var(--muted-cream)}
+  .backlink a{color:var(--muted-cream)}
+  .backlink a:hover{color:var(--gold)}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 22px}
+  .chip{font-family:var(--label);text-transform:uppercase;letter-spacing:1.5px;font-size:11.5px;font-weight:600;color:var(--cream);border:1px solid var(--line-cream);padding:8px 14px;border-radius:999px;background:rgba(236,230,216,0.03)}
+  .chip.solid{background:var(--orange);color:#fff;border-color:var(--orange)}
+
+  h1.mast{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:clamp(52px,11vw,104px);line-height:.9;letter-spacing:1px;margin:8px 0 0;color:var(--cream);position:relative}
+  h1.mast .mark-bar{display:block;width:clamp(150px,26vw,250px);height:clamp(12px,2.2vw,20px);background:var(--orange);border-radius:8px;transform:rotate(-1.4deg);margin:10px 0 0}
+  .dek{font-size:clamp(19px,2.6vw,24px);line-height:1.5;color:var(--cream-2);max-width:42ch;margin:26px 0 0;font-weight:400}
+  .dek .lede-strong{color:var(--gold)}
+  .kicker{font-family:var(--label);text-transform:uppercase;letter-spacing:2px;font-size:12px;color:var(--muted-cream);margin-top:22px}
+
+  .share{display:flex;align-items:center;gap:12px;margin:30px 0 8px;padding-top:26px;border-top:1px solid var(--line-cream)}
+  .share .lbl{font-family:var(--label);text-transform:uppercase;letter-spacing:2px;font-size:11px;color:var(--muted-cream);margin-right:4px}
+  .share a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border:1px solid var(--line-cream);border-radius:999px;color:var(--cream)}
+  .share a:hover{border-color:var(--orange);color:var(--orange)}
+  .share svg{width:17px;height:17px;fill:currentColor}
+
+  .lead-figure{position:relative;margin:40px 0 8px}
+  .hero-pill{position:absolute;top:16px;right:16px;z-index:2;font-family:var(--label);text-transform:uppercase;letter-spacing:1.5px;font-size:12px;font-weight:600;color:#fff;background:var(--orange);padding:8px 14px;border-radius:999px;box-shadow:0 6px 14px rgba(0,0,0,.3)}
+  .lead-img{display:block;width:100%;height:auto;border-radius:var(--r);border:1px solid var(--line-cream);background:#0c1117}
+  .collage-cap{font-family:var(--label);text-transform:uppercase;letter-spacing:2px;font-size:11px;color:var(--muted-cream);margin:12px 2px 0}
+
+  .editorband{padding:8px 0 56px}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin:0 0 24px}
+  .sec-num{font-family:var(--display);color:var(--orange);font-size:clamp(26px,5vw,40px);line-height:1}
+  .sec-title{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:clamp(26px,5vw,38px);letter-spacing:.5px;margin:0}
+  .editorband .sec-title{color:var(--cream)}
+  .editor p{margin:0 0 20px;color:var(--cream-2)}
+  .editor p:last-child{margin-bottom:0}
+
+  blockquote.pull{margin:36px 0 0;border-left:4px solid var(--orange);background:var(--pale);padding:24px 28px;border-radius:0 var(--r) var(--r) 0}
+  blockquote.pull p{font-style:italic;font-size:clamp(20px,3vw,25px);line-height:1.45;margin:0 0 14px;color:var(--ink)}
+  blockquote.pull cite{font-style:normal;font-family:var(--label);text-transform:uppercase;letter-spacing:1.5px;font-size:12px;color:var(--ink-soft)}
+
+  main.band-light{padding:56px 0 8px}
+  main .sec-title{color:var(--ink)}
+  .band-img{display:block;width:100%;height:auto;border-radius:var(--r);border:1px solid var(--line);margin:34px 0}
+
+  .story{border:1px solid var(--line);border-radius:var(--r);background:var(--card);padding:30px 30px 28px;margin:22px 0;box-shadow:0 1px 2px rgba(28,39,51,0.04)}
+  .story .eyebrow{font-family:var(--label);text-transform:uppercase;letter-spacing:.7px;font-size:12px;font-weight:700;color:var(--ink);margin:0 0 12px}
+  .story .eyebrow .src{color:var(--ink-soft);font-weight:600}
+  .story h3{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:clamp(24px,4vw,33px);line-height:1.02;letter-spacing:.4px;margin:0 0 18px;color:var(--ink);text-wrap:balance}
+  .story h3 .hi{color:var(--orange)}
+  .story p{margin:0 0 18px;color:var(--ink)}
+  .story p:last-of-type{margin-bottom:22px}
+
+  .callout{background:var(--navy);border-left:4px solid var(--gold);padding:20px 22px;border-radius:var(--r);margin:0 0 24px}
+  .callout .clbl{font-family:var(--label);text-transform:uppercase;letter-spacing:1.2px;font-size:11.5px;font-weight:600;color:var(--gold);margin:0 0 8px}
+  .callout p{margin:0;font-size:16.5px;line-height:1.6;color:var(--cream-2)}
+
+  .readmore{margin:0}
+  .readmore a{display:inline-flex;align-items:center;gap:8px;font-family:var(--label);text-transform:uppercase;letter-spacing:1.5px;font-size:12.5px;font-weight:600;color:var(--orange);border:1.5px solid var(--orange);border-radius:999px;padding:10px 20px;text-decoration:none;transition:background .15s ease,color .15s ease}
+  .readmore a:hover{background:var(--orange);color:#fff;text-decoration:none}
+  .readmore .arw{transition:transform .15s ease}
+  .readmore a:hover .arw{transform:translateX(3px)}
+
+  .signoff{border-top:1px solid var(--line);margin-top:56px;padding-top:32px}
+  .signoff p{color:var(--ink)}
+  .signoff .sig-name{font-family:var(--display);text-transform:uppercase;font-size:22px;letter-spacing:1px;color:var(--ink);margin-top:14px}
+  .signoff .sig-role{font-family:var(--label);text-transform:uppercase;letter-spacing:1.5px;font-size:12px;color:var(--ink-soft)}
+
+  .sources{margin-top:48px;border:1px solid var(--line);border-radius:var(--r);background:var(--card);padding:26px 28px}
+  .sources h4{font-family:var(--label);text-transform:uppercase;letter-spacing:2px;font-size:13px;color:var(--orange);margin:0 0 14px}
+  .sources ol{margin:0;padding-left:20px}
+  .sources li{font-size:14.5px;line-height:1.55;color:var(--ink-soft);margin-bottom:9px;font-family:var(--label);letter-spacing:.3px}
+  .sources li a{word-break:break-word;color:var(--teal)}
+
+  .spotlight{border:1px solid var(--navy);border-radius:var(--r);background:var(--navy);padding:32px 30px;margin:26px 0;color:var(--cream)}
+  .spotlight .flag{font-family:var(--label);text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:700;color:var(--gold);margin:0 0 12px}
+  .spotlight h3{font-family:var(--display);text-transform:uppercase;font-weight:400;font-size:clamp(24px,4.5vw,34px);line-height:1.02;letter-spacing:.5px;margin:0 0 16px;color:var(--cream);text-wrap:balance}
+  .spotlight h3 .hi{color:var(--orange)}
+  .spotlight p{margin:0 0 16px;color:var(--cream-2)}
+  .spotlight p:last-of-type{margin-bottom:0}
+  .spotlight strong{color:var(--cream)}
+  .spotlight .readmore a{color:var(--gold);border-color:var(--gold)}
+  .spotlight .readmore a:hover{background:var(--gold);color:#171008}
+  footer.foot{background:var(--navy);border-top:none}
+  footer.foot .wrap{padding:40px 24px 48px}
+  footer.foot .brand{font-family:var(--display);text-transform:uppercase;font-size:20px;letter-spacing:1px;color:var(--cream)}
+  footer.foot p{color:var(--muted-cream);font-size:15px;max-width:52ch;margin:12px 0 0}
+  footer.foot .fnote{font-family:var(--label);text-transform:uppercase;letter-spacing:1.5px;font-size:11px;color:var(--ink-soft);margin-top:26px}
+
+  @media (max-width:600px){
+    body{font-size:17px}
+    .story{padding:24px 20px}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="logo" href="https://the-common-people.com" aria-label="The Com'mon People">
+      <span class="l1">The</span><span class="l2">Com'mon</span><span class="l3">People</span>
+    </a>
+    <div class="meta">The Loudspeaker &middot; Edition 04 &middot; <a href="https://the-common-people.com/loudspeaker">The archive</a></div>
+  </div>
+</div>
+
+<header class="hero band-dark">
+  <div class="wrap">
+    <div class="backlink"><a href="https://the-common-people.com/loudspeaker">&larr; The Loudspeaker archive</a></div>
+
+    <div class="chips">
+      <span class="chip solid">Edition 04 &middot; September 2026</span>
+      <span class="chip">Neil Copping</span>
+      <span class="chip">8 stories</span>
+      <span class="chip">~9 min read</span>
+      <span class="chip">Free to share</span>
+    </div>
+
+    <h1 class="mast">The<br>Loudspeaker.<span class="mark-bar"></span></h1>
+
+    <p class="dek">This month is about <span class="lede-strong">who gets heard</span>: the idea left unsaid, the candidate nobody will risk, the dad who cannot take the leave, the adjustment nobody can define. Properly British. Never dull.</p>
+
+    <p class="kicker">Published on LinkedIn on the last Friday of the month, with a full web edition here.</p>
+
+    <div class="share">
+      <span class="lbl">Share this</span>
+      <a href="#" aria-label="Share on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a>
+      <a href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg></a>
+      <a href="#" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.82a4.28 4.28 0 0 1-1.06-2.82h-3.2v12.9a2.44 2.44 0 1 1-2.44-2.44c.2 0 .4.03.6.08V10.3a5.7 5.7 0 0 0-.6-.03A5.66 5.66 0 1 0 15.56 16V9.3a7.5 7.5 0 0 0 4.44 1.42V7.5a4.28 4.28 0 0 1-3.4-1.68z"/></svg></a>
+      <a href="#" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.9-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.44 9.44 0 1 1 17.5-5A9.45 9.45 0 0 1 12.05 21.5zM20.1 3.9A11.3 11.3 0 0 0 2.3 17.5L.7 23.4l6.05-1.59a11.3 11.3 0 0 0 5.4 1.38h.01A11.3 11.3 0 0 0 20.1 3.9z"/></svg></a>
+    </div>
+
+    <figure class="lead-figure"><span class="hero-pill">Monthly</span>
+      <img class="lead-img" src="images/lead.jpg" alt="A single brass horn loudspeaker on a slim pole, silhouetted against a vast navy dusk sky over a British skyline, with a warm orange glow at the horizon.">
+    </figure>
+    <p class="collage-cap">One voice, a very big sky. September is about who actually gets heard at work.</p>
+  </div>
+</header>
+
+<section class="editorband band-dark">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-num">00</span><h2 class="sec-title">From the editor.</h2></div>
+    <div class="editor">
+      <p>Something links this month's stories, and it is quieter than the usual headline noise. It is about who gets heard. The best idea nobody dared say. The young worker nobody will take a chance on. The dad who cannot afford the leave. The disabled employee stuck in a stalemate over what "reasonable" even means. Every one of them is a voice the workplace is not quite catching.</p>
+      <p>The timing is neat. Psychological Safety Week runs from 21 to 25 September, and the trade has handed us a phrase for the whole problem: "talent hushing." Read the eight stories together and a pattern shows up. When people stop expecting to be heard, they go quiet, and quiet is expensive. It costs you ideas, retention, tribunals and, in one case this month, 2.68 billion pounds of national output.</p>
+      <p>The good news, if you want it, is that most of the fixes are dull. Ask the junior person to speak first. Write down what "reasonable" means before someone has to ask. Check what your hiring robot is quietly rejecting. Nobody hands out awards for good process. Your people might just stick around, which is better.</p>
+      <p>The brief has not changed. Useful, current, properly British and never dull.</p>
+      <blockquote class="pull">
+        <p>"We are far more united and have far more in common with each other than things that divide us."</p>
+        <cite>Jo Cox, Labour MP, in her maiden speech to the House of Commons, 2015</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<main class="band-light">
+  <div class="wrap">
+
+    <img class="band-img" src="images/band-1.jpg" alt="An empty chair turned slightly away from a long boardroom table in a quiet office at dawn, cold light through tall windows with a warm shaft of sunrise across the table.">
+
+    <section aria-labelledby="stories">
+      <div class="sec-head"><span class="sec-num">01</span><h2 class="sec-title" id="stories">The stories.</h2></div>
+
+    <article class="story">
+      <p class="eyebrow">01 &middot; HR News &amp; Trends &middot; <span class="src">Personnel Today &middot; 14 September 2026</span></p>
+      <h3>Your best ideas are going unsaid, and there is now a name for it: <span class="hi">talent hushing.</span></h3>
+      <p>Pearn Kandola, the business psychologists behind Psychological Safety Week (21 to 25 September this year), have coined "talent hushing" for what happens when capable people quietly stop speaking up. Not because they have run out of ideas, but because raising them feels pointless, unwelcome or faintly risky. Personnel Today, the week's headline sponsor, put the term into wider circulation on 14 September. Professor Binna Kandola, the firm's co-founder, calls out "the organisational risks and missed opportunities when those with the best ideas feel they will not be heard."</p>
+      <p>There is no shiny statistic attached, which is rather the point. Talent hushing does not show up on a dashboard. It shows up as the meeting that ends in nodding and no dissent, the near miss nobody flagged, the resignation that "came out of nowhere." Rob Moss, Personnel Today's editor, reckons plenty of employers will know it on sight: "Many employers will recognise this issue immediately, even if they have not yet had the language for it." Now they have the language. The harder bit is the listening.</p>
+      <div class="callout">
+        <p class="clbl">Worth flagging in your next ELT meeting</p>
+        <p>Pick one recurring meeting and, for a month, ask the most junior person in the room to speak first. If the whole tone of the meeting shifts, you have just found your hushing.</p>
+      </div>
+      <p class="readmore"><a href="https://www.personneltoday.com/hr/psychological-safety-week-2026-talent-hushing/">Read it on Personnel Today <span class="arw">&rarr;</span></a></p>
+    </article>
+
+    <article class="story">
+      <p class="eyebrow">02 &middot; Apprenticeships &middot; <span class="src">FE News / Social Mobility Foundation &middot; 2 September 2026</span></p>
+      <h3>Degree apprenticeships were meant to level up. <span class="hi">They are 3.5 times harder to reach on free school meals.</span></h3>
+      <p>The Social Mobility Foundation's new report, The Opportunity Divide, lands an awkward finding for anyone who sells apprenticeships as the great leveller. Degree apprenticeships are 3.5 times less accessible to young people who were eligible for free school meals than Russell Group universities are. Around 500 free-school-meal students miss out on a degree apprenticeship every year for reasons that have nothing to do with ability. And a third (32%) of all the positions sit in just 10 postcodes. FE News carried it on 2 September.</p>
+      <p>Sarah Atkinson, the Foundation's chief executive, keeps the framing generous: "Degree apprenticeships should be a strong alternative to the traditional university route and a powerful engine for social mobility." Should be. The geography tells its own story. When the opportunities cluster where the head offices are, the young people furthest from those postcodes end up competing on paper for something that, in practice, was never really within reach.</p>
+      <div class="callout">
+        <p class="clbl">Worth flagging in your next ELT meeting</p>
+        <p>Before your next apprenticeship intake, map where your last three cohorts actually lived. If they all share one commuter belt, widen the advert radius and the outreach, not the entry bar.</p>
+      </div>
+      <p class="readmore"><a href="https://www.fenews.co.uk/skills/poorer-students-are-losing-out-on-degree-apprenticeships/">Read it on FE News <span class="arw">&rarr;</span></a></p>
+    </article>
+
+    <article class="story">
+      <p class="eyebrow">03 &middot; Getting your people employment ready &middot; <span class="src">HRreview / DWP research &middot; 1 September 2026</span></p>
+      <h3>A third of employers are wary of the under-25s. <span class="hi">The fix is work experience, not a lecture.</span></h3>
+      <p>New Department for Work and Pensions research, reported by HRreview on 1 September, makes sober reading. Almost a third of employers (32%) say they are less likely to hire someone under 25, and 62% think young people are less ready for work than older generations. The reasons are specific: 41% point to soft skills and work readiness, 40% to a plain lack of work experience, and 76% believe the curriculum does not prepare young people for the workplace. All this while 981,000 people aged 16 to 24 are not in education, employment or training.</p>
+      <p>The trap is obvious once you say it out loud. Employers want experience, experience needs a first employer, and the first employer is nervous. Brett Hill of consultancy Broadstone puts the stakes plainly: "With almost a million young people now outside education or employment, tackling the poor health of the next generation of workers needs to be seen as a national priority." The businesses that break the cycle will be the ones that treat "not ready" as a to-do list, not a verdict.</p>
+      <div class="callout">
+        <p class="clbl">Worth flagging in your next ELT meeting</p>
+        <p>Turn one unfilled role into a structured six-week placement with a named mentor and a real task. You risk very little and you build the exact experience the market keeps saying is missing.</p>
+      </div>
+      <p class="readmore"><a href="https://hrreview.co.uk/hr-news/strategy-news/one-in-three-employers-less-likely-to-hire-workers-under-25/390237">Read it on HRreview <span class="arw">&rarr;</span></a></p>
+    </article>
+
+    <article class="story">
+      <p class="eyebrow">04 &middot; Recruitment &middot; <span class="src">Onrec / People Like Us &amp; Censuswide &middot; 16 September 2026</span></p>
+      <h3>You bought a robot to sift CVs. <span class="hi">More than a quarter of you never check what it rejects.</span></h3>
+      <p>A survey of 500 UK hiring decision-makers by People Like Us with Censuswide, reported by Onrec on 16 September, found that 28% of employers do not monitor the outcomes of their automated hiring tools at all. Of those who do look, 82% found the results differed by ethnicity, and 36% called those differences meaningful. The tools were bought to save time on a flood of applications. On this evidence, some are quietly making decisions nobody is auditing.</p>
+      <p>Sheeraz Gulsher, co-founder of People Like Us, is careful not to cast villains: "Employers aren't the villains here, most resort to automations in good faith to cope with surging volume of applicants." Fair enough. But good faith is not a defence at tribunal. As employment lawyer Tom Heys of Lewis Silkin warns, "if your hiring software is rejecting ethnic minority talent simply because of their name or background, that could be discrimination." A machine you do not check is still your decision.</p>
+      <div class="callout">
+        <p class="clbl">Worth flagging in your next ELT meeting</p>
+        <p>Ask your ATS or hiring vendor for a breakdown of pass-through rates by demographic this quarter. If they cannot produce one, that is the finding.</p>
+      </div>
+      <p class="readmore"><a href="https://www.onrec.com/news/ai-automation/over-a-quarter-of-employers-don%E2%80%99t-monitor-their-automated-hiring-tools-82-of">Read it on Onrec <span class="arw">&rarr;</span></a></p>
+    </article>
+
+    <article class="story">
+      <p class="eyebrow">05 &middot; Employee value proposition &middot; <span class="src">HRreview / Everywhen &middot; 15 September 2026</span></p>
+      <h3>For the first time, employers rank wellbeing <span class="hi">just ahead of salary.</span></h3>
+      <p>A survey of 500 UK HR decision-makers by benefits provider Everywhen, reported by HRreview on 15 September, found health and wellbeing support has nudged ahead of pay as a lever for attracting and keeping staff: 44% named wellbeing as a priority against 43% for salary, with working hours (42%) and career progression (38%) close behind. Among larger employers of 250-plus staff the gap widens to 52% wellbeing versus 40% salary. Smaller firms still lead with pay.</p>
+      <p>Even the people who ran the survey were taken aback. Debra Clark, Everywhen's head of wellbeing, admitted as much: "we were hoping and expecting that employers would recognise the important role health and wellbeing support plays in recruitment and retention, but even we were surprised that it is seen as more important than salary." A word of caution before you rewrite the reward strategy, though. Wellbeing that beats salary in a survey still has to beat it in practice, and a fruit bowl is not a benefit. The winners here will be the employers whose wellbeing offer survives contact with a busy Tuesday.</p>
+      <div class="callout">
+        <p class="clbl">Worth flagging in your next ELT meeting</p>
+        <p>Audit your EVP for "wellbeing theatre." If a benefit needs a poster to be noticed, it is probably not the one keeping people. Move that budget to the thing they actually use.</p>
+      </div>
+      <p class="readmore"><a href="https://hrreview.co.uk/hr-news/wellbeing-news/health-and-wellbeing-overtakes-salary-as-top-priority-for-attracting-and-retaining-staff/389617">Read it on HRreview <span class="arw">&rarr;</span></a></p>
+    </article>
+
+    <img class="band-img" src="images/band-2.jpg" alt="A single vintage microphone on a chrome stand in a pool of warm orange light inside a vast dark empty hall, with deep navy shadows and generous negative space.">
+
+    <article class="story">
+      <p class="eyebrow">06 &middot; Wellbeing &middot; <span class="src">HRreview / Vitality &amp; Hospitality Action &middot; 17 September 2026</span></p>
+      <h3>Nearly half of hospitality workers are struggling, <span class="hi">and most doubt anyone will fix it.</span></h3>
+      <p>Research from insurer Vitality, reported by HRreview on 17 September, found that 48% of hospitality workers struggle with their mental health at work, 24% rated their mental health as poor over the past six months, and 18% had frequent burnout in the last year. A parallel "Taking the Temperature" survey of more than 500 professionals by the charity Hospitality Action found 65% of managers who had experienced mental health problems believed work triggered them, and 57% named understaffing as the main pressure.</p>
+      <p>The bleakest figure is about hope, not health. Only 31% of hospitality staff were confident their employer would improve wellbeing support, against 48% of UK employees overall. Gary Impett of VitalityHealth puts it plainly: "Hospitality is one of the UK's most people-focused industries, but our research suggests many employees are facing significant pressures without feeling fully supported." An industry built on looking after other people is not, on this evidence, looking after its own.</p>
+      <div class="callout">
+        <p class="clbl">Worth flagging in your next ELT meeting</p>
+        <p>If you run shift teams, start with the rota, not a wellbeing app. Chronic understaffing is a wellbeing problem with a spreadsheet solution.</p>
+      </div>
+      <p class="readmore"><a href="https://hrreview.co.uk/hr-news/wellbeing-news/nearly-half-of-hospitality-workers-struggle-at-work-with-their-mental-health/390352">Read it on HRreview <span class="arw">&rarr;</span></a></p>
+    </article>
+
+    <article class="story">
+      <p class="eyebrow">07 &middot; Working parents &middot; <span class="src">HRreview / King's College London GIWL &middot; 11 September 2026</span></p>
+      <h3>Six weeks of proper paternity leave could add <span class="hi">2.68 billion pounds a year to the economy.</span></h3>
+      <p>A scoping review from the Global Institute for Women's Leadership at King's College London, with Equimundo, reported by HRreview on 11 September, puts a number on something HR has argued for years. Six weeks of paternity leave paid at 90% of average weekly earnings, and non-transferable between parents, could deliver a net economic gain of 2.68 billion pounds a year. The workings: up to 5.5 billion pounds of extra output as more mothers stay in work, set against 2.8 billion pounds of output lost while fathers are on leave, plus around 599 million pounds from fewer family breakdowns.</p>
+      <p>Professor Heejung Chung, who led the review, reframes the whole debate: "Paternity leave is still too often treated simply as a bill for government and employers. But the strongest evidence shows that when fathers have leave of their own and can afford to take it, they do more care at home and mothers are better able to stay in paid work, which benefits the country economically." In other words, the leave dads take is not a cost to swallow. It is a retention lever you have been leaving on the table.</p>
+      <div class="callout">
+        <p class="clbl">Worth flagging in your next ELT meeting</p>
+        <p>Put your paternity policy next to your maternity one. If dads get two weeks at statutory pittance, your "family-friendly" EVP has a gap that your working mothers are quietly paying for.</p>
+      </div>
+      <p class="readmore"><a href="https://hrreview.co.uk/hr-news/employment-law/six-weeks-paid-paternity-leave-could-add-2-68bn-a-year-to-uk-economy/390394">Read it on HRreview <span class="arw">&rarr;</span></a></p>
+    </article>
+
+    <article class="story">
+      <p class="eyebrow">08 &middot; Employing people with seen and unseen disabilities &middot; <span class="src">HRreview / Cabinet Office Disability Unit &middot; 11 September 2026</span></p>
+      <h3>The problem with reasonable adjustments is not the cost. <span class="hi">It is that nobody agrees what they are.</span></h3>
+      <p>Government research from the Cabinet Office's Disability Unit, reported by HRreview on 11 September, finds that the biggest obstacle in the reasonable-adjustment process is not money but confusion. Across 66 employment tribunal judgments analysed, 68% turned on differing expectations of what an adjustment should be. For cases involving mental impairments, often the unseen ones, that rose to 77%. Acas conciliators back it up: 83% regularly see mismatched expectations, and 70% cite plain disagreement over what counts as reasonable.</p>
+      <p>Meanwhile the clock has slowed. Access to Work processing has stretched from 28 working days in 2021/22 to 109 now. Only about a third of disabled employees get all the adjustments they ask for, with another third getting some. The lesson is not that adjustments are hard. It is that "reasonable" without a shared definition becomes a negotiation, and negotiations without clarity become tribunals.</p>
+      <div class="callout">
+        <p class="clbl">Worth flagging in your next ELT meeting</p>
+        <p>Write down, in advance, how an adjustment request is handled where you work: who decides, by when, and what "reasonable" means to you. Most of the friction is process, and process is the cheapest thing to fix.</p>
+      </div>
+      <p class="readmore"><a href="https://hrreview.co.uk/hr-news/employment-law/confusion-over-reasonable-adjustments-causing-workplace-delays/390450">Read it on HRreview <span class="arw">&rarr;</span></a></p>
+    </article>
+
+    </section>
+
+    <section aria-labelledby="also">
+      <div class="sec-head"><span class="sec-num">02</span><h2 class="sec-title" id="also">Also from us.</h2></div>
+      <div class="spotlight">
+        <p class="flag">A dispatch from The Com'mon People</p>
+        <h3>Your levy is your money. <span class="hi">In 2026 you get less time to spend it.</span></h3>
+        <p>Three changes to the apprenticeship levy land in 2026/27, and they all point the same way: use your funds or lose them faster. The 10% government top-up is ending, unspent funds will expire after 12 months instead of 24, and once your own funds run out you pay 25% of the training cost. In short, you get half the time to spend money you have already handed over.</p>
+        <p>It is not all one-way. Smaller, non-levy employers can still get training 95% funded as standard, 100% funded for a 16 to 18-year-old apprentice if you have fewer than 50 staff, plus a 1,000 pound payment for taking one on. And levy payers can transfer up to 50% of unused funds to smaller firms in their supply chain. Our dispatch sets out what changed, why employers waste levy money, and how to stop being one of them.</p>
+        <p class="readmore"><a href="https://the-common-people.com/dispatch-levy-2026.html">Read the dispatch on The Com'mon People <span class="arw">&rarr;</span></a></p>
+      </div>
+    </section>
+
+    <div class="signoff">
+      <p>That is your lot for September. Read it, nick the useful bits, and go and let someone be heard. See you on the last Friday.</p>
+      <div class="sig-name">Neil Copping</div>
+      <div class="sig-role">Editor, The Loudspeaker &middot; Founder, The Com'mon People</div>
+    </div>
+
+    <div class="sources">
+      <h4>Sources</h4>
+      <ol>
+        <li>"Psychological Safety Week to warn against 'talent hushing'", Personnel Today, 14 September 2026 &middot; <a href="https://www.personneltoday.com/hr/psychological-safety-week-2026-talent-hushing/">personneltoday.com</a></li>
+        <li>"Poorer students are losing out on degree apprenticeships" (The Opportunity Divide, Social Mobility Foundation), FE News, 2 September 2026 &middot; <a href="https://www.fenews.co.uk/skills/poorer-students-are-losing-out-on-degree-apprenticeships/">fenews.co.uk</a> &middot; campaign: <a href="https://www.socialmobility.org.uk/campaigns/apprenticeships-without-barriers">socialmobility.org.uk</a></li>
+        <li>"One in three employers less likely to hire workers under 25" (DWP research), HRreview, 1 September 2026 &middot; <a href="https://hrreview.co.uk/hr-news/strategy-news/one-in-three-employers-less-likely-to-hire-workers-under-25/390237">hrreview.co.uk</a></li>
+        <li>"Over a quarter of employers don't monitor their automated hiring tools" (People Like Us / Censuswide), Onrec, 16 September 2026 &middot; <a href="https://www.onrec.com/news/ai-automation/over-a-quarter-of-employers-don%E2%80%99t-monitor-their-automated-hiring-tools-82-of">onrec.com</a></li>
+        <li>"Health and wellbeing overtakes salary as top priority for attracting and retaining staff" (Everywhen), HRreview, 15 September 2026 &middot; <a href="https://hrreview.co.uk/hr-news/wellbeing-news/health-and-wellbeing-overtakes-salary-as-top-priority-for-attracting-and-retaining-staff/389617">hrreview.co.uk</a></li>
+        <li>"Nearly half of hospitality workers struggle at work with their mental health" (Vitality / Hospitality Action), HRreview, 17 September 2026 &middot; <a href="https://hrreview.co.uk/hr-news/wellbeing-news/nearly-half-of-hospitality-workers-struggle-at-work-with-their-mental-health/390352">hrreview.co.uk</a></li>
+        <li>"Six weeks' paid paternity leave could add 2.68bn a year to UK economy" (King's College London GIWL / Equimundo), HRreview, 11 September 2026 &middot; <a href="https://hrreview.co.uk/hr-news/employment-law/six-weeks-paid-paternity-leave-could-add-2-68bn-a-year-to-uk-economy/390394">hrreview.co.uk</a></li>
+        <li>"Confusion over reasonable adjustments causing workplace delays, government finds" (Cabinet Office Disability Unit), HRreview, 11 September 2026 &middot; <a href="https://hrreview.co.uk/hr-news/employment-law/confusion-over-reasonable-adjustments-causing-workplace-delays/390450">hrreview.co.uk</a></li>
+        <li>Quote: Jo Cox MP, maiden speech to the House of Commons, 3 June 2015 &middot; <a href="https://hansard.parliament.uk/Commons/2015-06-03/debates/15060324000002/Immigration">hansard.parliament.uk</a></li>
+        <li>"Your levy is your money. In 2026 you get less time to spend it." (The Dispatch), The Com'mon People, 2026 &middot; <a href="https://the-common-people.com/dispatch-levy-2026.html">the-common-people.com</a></li>
+      </ol>
+    </div>
+
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="brand">The Com'mon People</div>
+    <p>A free resource centre for marketing, HR, finance, events and operations people. Built on mutual aid.</p>
+    <p class="fnote">The Loudspeaker &middot; Edition 04 &middot; September 2026 &middot; Free, always.</p>
+  </div>
+</footer>
+
+</body>
+</html>
