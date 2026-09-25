@@ -1,13 +1,15 @@
-SITE CHANGE — all "Book a Call with Neil" buttons now go straight to Cal.com
+SITE CHANGE: The Commons cartoon family page + menu link + homepage feature
 ===========================================================================
-26 pages changed. Every "Book a Call with Neil" nav link now points to:
-  https://cal.com/the-common-people.com/interviewcoaching  (opens in a new tab)
-instead of routing via prep-report.html#coaching.
+New page:   commons-family.html  (the-common-people.com/commons-family.html)
+New images: img/commons-family/  (7 character pictures)
+Menu:       "The Commons" link added to the top menu on 28 pages
+Homepage:   new "Meet the Commons" feature section under "What's inside"
+Stylesheet: cp2.css gets a small rule so the menu fits on mid-size screens
 
-TO DEPLOY: GitHub -> your repo -> Add file -> Upload files -> drag in ALL
-the .html files in this folder (they overwrite the same-named files in the
-repo) -> commit to main. Cloudflare Pages redeploys automatically.
+TO DEPLOY: GitHub -> your repo -> Add file -> Upload files -> drag in
+EVERYTHING in this folder (all the .html files, cp2.css and the img folder).
+Same-named files are overwritten, your other images are untouched.
+Commit to main. Cloudflare Pages redeploys automatically.
 
-(The "Book Your Session - £45" button inside prep-report.html was already
-pointing at Cal.com and is unchanged. The prep-report #coaching section
-still exists as the coaching pitch.)
+WEEKLY EPISODES: edit commons-family.html on GitHub, find the EPISODES list
+near the bottom, add youtube:"VIDEO_ID" to that week's episode, commit.

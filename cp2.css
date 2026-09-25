@@ -325,3 +325,7 @@ aside .side-card{background:var(--card);border:1px solid var(--line);border-radi
 
 /* fix: Loudspeaker edition header band - keep content off the black edges */
 div.art-hero{padding-left:clamp(22px,5vw,46px);padding-right:clamp(22px,5vw,46px)}
+
+/* nav: extra room for "The Commons" link on mid-size screens (Sept 2026) */
+@media (min-width:921px) and (max-width:1320px){.links{gap:15px;font-size:13px}.nav .row{gap:14px}.nav-actions .btn{padding:12px 18px;font-size:14px}}
+@media (min-width:921px) and (max-width:1120px){.nav-explore{display:none}}

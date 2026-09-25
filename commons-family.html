@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Commons | A cartoon family from The Com'mon People</title>
+<meta name="description" content="Meet the Commons, a Hertfordshire family on both sides of the recruitment desk. A new animated episode every Friday, plus free guides for every one of their adventures.">
+<meta property="og:title" content="Meet the Commons | The Com'mon People">
+<meta property="og:description" content="A cartoon family on both sides of the recruitment desk. New episode every Friday.">
+<meta property="og:image" content="img/commons-family/zara.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="cp2.css">
+<link rel="icon" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<script defer data-site-id="88bb72ef-58ce-4e73-a307-471e35e35b1b" data-api="https://savri.io" src="https://savri.io/script.js"></script>
+<style>
+/* ===== The Commons page. Everything here is scoped with cf- so it can't clash with cp2.css ===== */
+.cf-dots{position:relative;isolation:isolate}
+.cf-dots::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(236,230,216,.10) 1px,transparent 1.6px);background-size:18px 18px;z-index:-1;pointer-events:none}
+
+/* hero */
+.cf-hero{background:var(--navy);color:var(--cream);padding:70px 0 80px;overflow:hidden}
+.cf-hero .grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:40px;align-items:center}
+.cf-hero h1{font-size:clamp(56px,8.6vw,112px);color:var(--cream);letter-spacing:.5px}
+.cf-hero .lead{color:#C6CFD8;font-size:19px;max-width:46ch;margin:22px 0 0}
+.cf-hero .lead b{color:var(--gold);font-weight:600}
+.cf-hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.cf-hero .btn.ghost{color:var(--cream);border-color:rgba(236,230,216,.35)}
+.cf-hero .btn.ghost:hover{border-color:var(--gold);color:var(--gold)}
+.cf-kicker{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+
+/* scrapbook collage */
+.cf-collage{position:relative;height:560px}
+.cf-pol{position:absolute;width:30%;background:#FBF7EC;padding:8px 8px 0;border-radius:12px;box-shadow:0 22px 40px -18px rgba(0,0,0,.7);transform:rotate(var(--r,0deg));transition:transform .25s ease}
+.cf-pol:hover{transform:rotate(0deg) scale(1.06);z-index:9}
+.cf-pol img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:7px;border:2px solid #14110E}
+.cf-pol span{display:block;text-align:center;font-family:var(--display);text-transform:uppercase;color:#14110E;font-size:18px;letter-spacing:.5px;padding:7px 0 8px}
+.cf-bubble{position:absolute;right:-2%;bottom:3%;z-index:8;background:var(--gold);color:#14110E;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:13px;line-height:1.3;padding:12px 16px;border-radius:16px;border:2.5px solid #14110E;max-width:190px;transform:rotate(4deg);box-shadow:0 8px 0 rgba(20,17,14,.5)}
+.cf-bubble::before{content:"";position:absolute;left:26px;top:-14px;border:10px solid transparent;border-bottom-color:#14110E}
+.cf-float{animation:cf-bob 5s ease-in-out infinite}
+.cf-float:nth-child(2n){animation-duration:6.2s}.cf-float:nth-child(3n){animation-duration:7s}
+@keyframes cf-bob{0%,100%{translate:0 0}50%{translate:0 -8px}}
+
+/* episode */
+.cf-ep{display:grid;grid-template-columns:1.35fr .65fr;gap:34px;align-items:start}
+.cf-screen{position:relative;aspect-ratio:16/9;border-radius:var(--radius-lg);overflow:hidden;background:var(--navy);border:3px solid #14110E;box-shadow:0 12px 0 #14110E}
+.cf-screen iframe,.cf-screen video{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+.cf-teaser{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:24px 26px;color:var(--cream)}
+.cf-teaser .faces{display:flex;justify-content:center;gap:0}
+.cf-teaser .faces img{width:15%;aspect-ratio:1;object-fit:cover;object-position:50% 18%;border-radius:50%;border:3px solid var(--cream);margin-left:-2.5%;box-shadow:0 8px 16px -8px #000}
+.cf-teaser .faces img:first-child{margin-left:0}
+.cf-teaser .big{font-family:var(--display);text-transform:uppercase;font-size:clamp(26px,4.4vw,52px);line-height:.95;text-align:center}
+.cf-teaser .big em{font-style:normal;color:var(--gold)}
+.cf-count{display:flex;justify-content:center;gap:12px}
+.cf-count div{background:rgba(236,230,216,.08);border:1.5px solid rgba(236,230,216,.25);border-radius:12px;padding:8px 14px;text-align:center;min-width:74px}
+.cf-count b{display:block;font-family:var(--display);font-size:30px;color:var(--orange);line-height:1}
+.cf-count span{font-family:var(--label);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#AEBAC6}
+.cf-play{position:absolute;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:var(--orange);display:grid;place-items:center;border:2.5px solid #14110E;opacity:.55}
+.cf-play svg{width:24px;height:24px;color:#fff;margin-left:3px}
+.cf-epinfo .num{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.cf-epinfo h2{font-size:clamp(30px,3.6vw,44px)}
+.cf-epinfo p{color:var(--muted);margin:14px 0 0}
+.cf-stars{display:flex;margin-top:18px}
+.cf-stars img{width:46px;height:46px;border-radius:50%;object-fit:cover;object-position:50% 18%;border:2.5px solid #fff;margin-left:-10px;box-shadow:0 4px 10px -4px rgba(0,0,0,.4)}
+.cf-stars img:first-child{margin-left:0}
+.cf-res{margin-top:22px;border-top:1px solid var(--line);padding-top:18px}
+.cf-res h3{font-family:var(--label);font-weight:700;font-size:13px;letter-spacing:.12em;color:var(--teal)}
+.cf-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.cf-chip{font-family:var(--label);font-weight:600;font-size:14px;border:1.5px solid var(--orange);color:var(--ink);border-radius:999px;padding:8px 14px;background:#fff;transition:background .15s,color .15s}
+.cf-chip:hover{background:var(--orange);color:#fff}
+.cf-howl{display:flex;gap:14px;align-items:center;margin-top:22px;background:var(--tint);border-radius:var(--radius);padding:12px 14px}
+.cf-howl img{width:62px;height:62px;border-radius:12px;object-fit:cover;object-position:50% 20%;border:2px solid #14110E}
+.cf-howl p{margin:0;font-size:14.5px;color:var(--ink)}
+
+/* family flip cards */
+.cf-family{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.cf-flip{all:unset;display:block;cursor:pointer;perspective:1200px;border-radius:var(--radius-lg)}
+.cf-flip:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
+.cf-flip .inner{position:relative;aspect-ratio:4/5.6;transition:transform .6s cubic-bezier(.2,.7,.2,1);transform-style:preserve-3d}
+.cf-flip[aria-pressed="true"] .inner{transform:rotateY(180deg)}
+.cf-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:var(--radius-lg);overflow:hidden;border:2.5px solid #14110E;box-shadow:0 8px 0 #14110E}
+.cf-front{background:var(--c,#E0B03C);display:flex;flex-direction:column}
+.cf-front img{width:100%;flex:1;min-height:0;object-fit:cover;object-position:50% 12%;border-bottom:2.5px solid #14110E}
+.cf-front .nm{padding:12px 14px 14px;color:#14110E}
+.cf-front .nm b{display:block;font-family:var(--display);text-transform:uppercase;font-size:26px;line-height:1;font-weight:400}
+.cf-front .nm span{font-family:var(--label);font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.cf-front .flipme{position:absolute;right:10px;top:10px;background:#14110E;color:var(--cream);font-family:var(--label);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+.cf-back{transform:rotateY(180deg);background:var(--navy);color:var(--cream);padding:20px 18px;display:flex;flex-direction:column;gap:10px}
+.cf-back b{font-family:var(--display);text-transform:uppercase;font-size:24px;font-weight:400;color:var(--gold);line-height:1}
+.cf-back q{font-style:italic;font-size:15px;line-height:1.45;color:var(--cream)}
+.cf-back p{margin:0;font-size:14px;line-height:1.5;color:#C6CFD8}
+.cf-back .go{overflow-wrap:anywhere;margin-top:auto;font-family:var(--label);font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--orange)}
+.cf-hint{font-family:var(--label);font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:20px}
+
+/* quiz */
+.cf-quiz{max-width:860px;margin:0 auto;background:#fff;border:2.5px solid #14110E;border-radius:var(--radius-lg);box-shadow:0 12px 0 #14110E;padding:34px 34px 30px;color:var(--ink)}
+.cf-quiz .dots{display:flex;gap:8px;margin-bottom:18px}
+.cf-quiz .dots i{width:34px;height:8px;border-radius:99px;background:var(--line)}
+.cf-quiz .dots i.on{background:var(--orange)}
+.cf-quiz h3{font-size:clamp(26px,3.2vw,36px);color:var(--ink)}
+.cf-opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:22px}
+.cf-opt{all:unset;box-sizing:border-box;cursor:pointer;border:2px solid var(--line);border-radius:var(--radius);padding:14px 16px;font-size:15.5px;line-height:1.4;background:#fff;transition:border-color .15s,transform .15s,background .15s}
+.cf-opt:hover{border-color:var(--orange);transform:translateY(-2px)}
+.cf-opt:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.cf-result{display:grid;grid-template-columns:220px 1fr;gap:28px;align-items:center}
+.cf-result img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius);border:2.5px solid #14110E;transform:rotate(-3deg)}
+.cf-result .you{font-family:var(--label);font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+.cf-result h3{margin-top:6px}
+.cf-result p{color:var(--muted);margin:12px 0 0}
+.cf-again{all:unset;cursor:pointer;margin-top:18px;display:inline-block;font-family:var(--label);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--orange);text-decoration:underline;text-underline-offset:3px}
+
+/* episode guide */
+.cf-guide{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.cf-epcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+.cf-epcard .top{position:relative;aspect-ratio:16/11;background:var(--c,#E0B03C)}
+.cf-epcard .top img{width:100%;height:100%;object-fit:cover;object-position:50% 14%}
+.cf-epcard .epn{position:absolute;left:12px;top:12px;font-family:var(--display);font-size:22px;color:#14110E;background:#FBF7EC;border:2px solid #14110E;border-radius:10px;padding:2px 9px;transform:rotate(-4deg)}
+.cf-epcard .when{position:absolute;right:10px;bottom:10px}
+.cf-epcard .in{padding:18px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.cf-epcard h3{font-size:21px}
+.cf-epcard p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.5}
+.cf-epcard .act{margin-top:auto;padding-top:12px}
+.cf-watch{all:unset;cursor:pointer;font-family:var(--label);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--orange)}
+.cf-watch:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.cf-soon{font-family:var(--label);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.cf-epcard.locked .top img{filter:grayscale(.35) brightness(.92)}
+
+/* sign-up CTA */
+.cf-cta{display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;align-items:center}
+.cf-cta img{width:100%;max-width:400px;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius-lg);border:4px solid var(--cream);transform:rotate(-2.5deg);box-shadow:0 24px 40px -20px #000}
+.cf-cta h2{font-size:clamp(34px,5vw,60px);color:var(--cream)}
+.cf-cta p{color:#C6CFD8;font-size:18px;margin:16px 0 0;max-width:48ch}
+
+/* mobile nav fallback + responsive */
+#cpnav.open{display:flex}
+@media (max-width:920px){
+  .cf-hero .grid,.cf-ep,.cf-cta{grid-template-columns:1fr}
+  .cf-collage{height:auto;display:flex;flex-wrap:wrap;justify-content:center;gap:14px;padding-bottom:70px}
+  .cf-pol{position:relative;left:auto!important;top:auto!important;width:30%}
+  .cf-bubble{right:4%;bottom:0}
+  .cf-family,.cf-guide{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cf-result{grid-template-columns:1fr}
+  .cf-result img{max-width:220px}
+}
+@media (max-width:560px){
+  .cf-pol{width:44%}
+  main .mark-underline{white-space:normal;color:var(--orange)}
+  main .mark-underline::after{display:none}
+  .cf-screen.is-teaser{aspect-ratio:1/1}
+  .cf-teaser{padding:20px 16px}
+  .cf-cta img{max-width:260px}
+  .cf-opts{grid-template-columns:1fr}
+  .cf-quiz{padding:24px 18px}
+  .cf-guide{grid-template-columns:1fr}
+  .cf-family{gap:14px}
+  .cf-front .nm{padding:8px 10px 10px}
+  .cf-front .nm b{font-size:19px}
+  .cf-front .nm span{font-size:10px}
+  .cf-back{padding:12px 11px;gap:6px}
+  .cf-back b{font-size:18px}
+  .cf-back q{font-size:12.5px}
+  .cf-back p{font-size:11.5px;line-height:1.4}
+  .cf-back .go{font-size:10.5px}
+  .cf-play{display:none}
+  .cf-count div{min-width:60px;padding:6px 10px}
+  .cf-count b{font-size:22px}
+}
+@media (prefers-reduced-motion:reduce){
+  .cf-float{animation:none}
+  .cf-flip .inner{transition:none}
+  .cf-pol,.cf-opt{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap row">
+    <a class="plates" href="index.html" aria-label="The Com'mon People, home"><span class="plate p1">The</span><span class="plate p2">Com'mon</span><span class="plate p3">People</span></a>
+    <nav class="links" id="cpnav" aria-label="Primary"><a href="guides.html">Guides</a><a href="dispatches.html">Dispatches</a><a href="loudspeaker.html">Loudspeaker</a><a href="apprenticeships.html">Apprenticeships</a><a href="commons-family.html" aria-current="page">The Commons</a><a href="about.html">About</a><a href="prep-report.html">Prep Report</a><a href="https://cv.the-common-people.com">CV Rewrite</a></nav>
+    <div class="nav-actions"><a class="btn orange nav-book" href="https://cal.com/the-common-people.com/interviewcoaching" target="_blank" rel="noopener">Book a coaching call</a><a class="btn ghost nav-explore" href="resources.html">Explore resources</a><button class="burger" id="cpburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="cpnav"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3V6Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z"/></svg></button></div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="cf-hero cf-dots" aria-labelledby="cf-title">
+  <div class="wrap grid">
+    <div>
+      <div class="cf-kicker"><span class="sticker orange">New cartoon series</span><span class="sticker navy" style="transform:rotate(2deg);border:1.5px solid rgba(236,230,216,.3)">Every Friday</span></div>
+      <h1 id="cf-title">Meet the <span class="mark-underline">Commons.</span></h1>
+      <p class="lead">One Hertfordshire family. Both sides of the recruitment desk. A redundant night-shift legend, a small employer, an HR lead, a ghosted graduate, a future chef, a returner and two very loud schnauzers. <b>Every one of them is who The Com'mon People is for.</b></p>
+      <div class="cta">
+        <a class="btn orange lg" href="#episode">Watch this week's episode</a>
+        <a class="btn ghost lg" href="#family">Meet the family</a>
+      </div>
+    </div>
+    <div class="cf-collage" aria-label="The Commons family">
+      <figure class="cf-pol cf-float" style="left:2%;top:2%;--r:-6deg;margin:0"><img src="img/commons-family/dee.jpg" alt="Nan Dee"><span>Nan Dee</span></figure>
+      <figure class="cf-pol cf-float" style="left:35%;top:0;--r:3deg;margin:0"><img src="img/commons-family/marcus.jpg" alt="Marcus"><span>Marcus</span></figure>
+      <figure class="cf-pol cf-float" style="left:68%;top:4%;--r:-3deg;margin:0"><img src="img/commons-family/priya.jpg" alt="Priya"><span>Priya</span></figure>
+      <figure class="cf-pol cf-float" style="left:0;top:48%;--r:4deg;margin:0"><img src="img/commons-family/zara.jpg" alt="Zara"><span>Zara</span></figure>
+      <figure class="cf-pol cf-float" style="left:24%;top:40%;--r:-2deg;margin:0"><img src="img/commons-family/kai.jpg" alt="Kai"><span>Kai</span></figure>
+      <figure class="cf-pol cf-float" style="left:47%;top:46%;--r:5deg;margin:0"><img src="img/commons-family/lou.jpg" alt="Auntie Lou"><span>Auntie Lou</span></figure>
+      <figure class="cf-pol cf-float" style="left:70%;top:42%;--r:-4deg;margin:0"><img src="img/commons-family/bowie-ozzy.jpg" alt="Bowie and Ozzy, the schnauzers"><span>Bowie &amp; Ozzy</span></figure>
+      <div class="cf-bubble">When Ozzy howls, a new episode's out.</div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="track">
+  <div class="seg">A new episode every Friday <i>★</i> Both sides of the desk <i>★</i> Free, always <i>★</i> Built on mutual aid <i>★</i> Knowledge shouldn't cost a thing <i>★</i></div>
+  <div class="seg">A new episode every Friday <i>★</i> Both sides of the desk <i>★</i> Free, always <i>★</i> Built on mutual aid <i>★</i> Knowledge shouldn't cost a thing <i>★</i></div>
+</div></div>
+
+<!-- ============ THIS WEEK'S EPISODE ============ -->
+<section id="episode" class="band-tint" aria-labelledby="cf-ep-title">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">This week on The Commons</span><h2>Grab a cuppa. <span class="mark-underline">It's episode time.</span></h2></div>
+    <div class="cf-ep">
+      <div class="cf-screen" id="cf-screen"></div>
+      <div class="cf-epinfo" id="cf-epinfo"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEET THE FAMILY ============ -->
+<section id="family" aria-labelledby="cf-fam-title">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">The cast</span><h2 id="cf-fam-title">Three generations, <span class="mark-underline">two dogs,</span> one very busy group chat.</h2><p>Tap a card to flip it and find out what each of them is up against, and which free resource gets them out of it.</p></div>
+    <div class="cf-family" id="cf-family"></div>
+  </div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section id="quiz" class="band-teal" aria-labelledby="cf-quiz-title">
+  <div class="wrap">
+    <div class="head" style="margin-left:auto;margin-right:auto;text-align:center"><span class="eyebrow">Thirty-second quiz</span><h2 id="cf-quiz-title">Which Common are you?</h2><p style="color:#123842">Three questions. No email address required. Obviously.</p></div>
+    <div class="cf-quiz" id="cf-quiz" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============ EPISODE GUIDE ============ -->
+<section id="guide" aria-labelledby="cf-guide-title">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Series one</span><h2 id="cf-guide-title">The episode guide.</h2><p>Every episode ends with the free guide or tool that would have saved them a lot of bother. New episodes land every Friday.</p></div>
+    <div class="cf-guide" id="cf-guide"></div>
+  </div>
+</section>
+
+<!-- ============ NEVER MISS ONE ============ -->
+<section class="band-navy cf-dots" aria-labelledby="cf-cta-title">
+  <div class="wrap cf-cta">
+    <img src="img/commons-family/bowie-ozzy.jpg" alt="Bowie and Ozzy, the family schnauzers">
+    <div>
+      <span class="eyebrow">Never miss an episode</span>
+      <h2 id="cf-cta-title" style="margin-top:12px">Let Bowie and Ozzy <span class="mark-underline">bring you the news.</span></h2>
+      <p>Get the monthly Loudspeaker for the best of the Commons, plus the guides, dispatches and apprenticeship updates behind every episode. Free to subscribe, free to share.</p>
+      <div class="cta" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:26px">
+        <a class="btn orange lg" href="loudspeaker.html">Subscribe to The Loudspeaker</a>
+        <a class="btn on-color lg" href="resources.html">Explore the free resources</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a class="plates" href="index.html"><span class="plate p1 sm">The</span><span class="plate p2 sm">Com'mon</span><span class="plate p3 sm">People</span></a><p class="fabout">A free resource centre for marketing, HR, finance, events and operations people. Built on mutual aid.</p><span class="sticker orange" style="margin-top:16px">Free, always</span></div>
+      <div><h6>Guides</h6><a href="guide-cv.html">The CV that gets read</a><a href="guide-video-intro.html">The intro video</a><a href="guide-interview-prep.html">Interview prep</a><a href="guide-linkedin.html">LinkedIn, properly</a><a href="guide-05-evp.html">The EVP field guide</a></div>
+      <div><h6>Dispatches</h6><a href="dispatch-first-year-wage.html">Pay the first year</a><a href="dispatch-training-shortage.html">The training shortage</a><a href="dispatch-embed-apprenticeships.html">Embed apprenticeships in HR</a><a href="dispatch-apprenticeship-paradox.html">The Apprenticeship Paradox</a><a href="dispatch-recruitment-rethink.html">The recruitment rethink</a><a href="dispatch-eu-ai-act.html">The EU AI Act</a><a href="dispatch-report-hertfordshire.html">The Commons Report</a></div>
+      <div><h6>Loudspeaker</h6><a href="loudspeaker.html">The archive</a><a href="loudspeaker-edition-01.html">Edition 01 · May 2026</a><a href="loudspeaker-edition-02.html">Edition 02 · July 2026</a><a href="loudspeaker-edition-03.html">Edition 03 · August 2026</a><a href="loudspeaker-edition-04.html">Edition 04 · September 2026</a><a href="commons-family.html">The Commons cartoon</a></div>
+    </div>
+    <div class="fbottom"><span>© 2026 The Com'mon People. Built on mutual aid.</span><span><a href="privacy.html" style="color:#7C8791">Privacy</a> · Free, always.</span></div>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   EPISODES: the only bit you edit each week.
+   - date: the Friday it goes live (YYYY-MM-DD). It appears on that day.
+   - Add ONE of: youtube: "VIDEO_ID"  (the bit after v= in the YouTube link)
+                 or video: "videos/episode-01.mp4" (a file in the repo)
+   - Until an episode has a video, it shows as "coming soon".
+   ===================================================================== */
+var EPISODES = [
+  { num:1, date:"2026-10-02", title:"Thirty-One Years and a Floppy Disk", stars:["dee","zara"], img:"dee",
+    blurb:"Nan Dee is made redundant after 31 years on the night shift and digs out her last CV. It is on a floppy disk. Zara tries to help. Nobody survives the font choice.",
+    res:[["The CV that gets read","guide-cv.html"],["CV Rewrite app (free)","https://cv.the-common-people.com"]] },
+  { num:2, date:"2026-10-09", title:"Read Receipts", stars:["zara","bowie"], img:"zara",
+    blurb:"Zara smashes a final interview. Then nothing. Days of nothing. Bowie and Ozzy stage a sit-in by her phone while the family debate whether no news is good news.",
+    res:[["#StopGhostingJobSeekers","dispatch-stop-ghosting.html"],["Interview Prep app (free)","prep-report.html"]] },
+  { num:3, date:"2026-10-16", title:"Sunday Roast, Monday Interview", stars:["kai","priya"], img:"kai",
+    blurb:"Kai can cook for twelve without breaking a sweat. Talking about himself for ten minutes is another story. Priya runs a very strict mock interview across the gravy.",
+    res:[["Interview prep guide","guide-interview-prep.html"],["Apprenticeships, explained","apprenticeships.html"]] },
+  { num:4, date:"2026-10-23", title:"The Paperwork Staircase", stars:["marcus","kai"], img:"marcus",
+    blurb:"Marcus decides to take on his first apprentice and meets his greatest enemy yet: the funding rules. He builds a staircase to escape. It does not help.",
+    res:[["Apprenticeship guidance","apprenticeships.html"],["The Apprenticeship Paradox","dispatch-apprenticeship-paradox.html"]] },
+  { num:5, date:"2026-10-30", title:"Two Hundred and Eighty", stars:["priya","marcus"], img:"priya",
+    blurb:"Priya opens her inbox to around 280 applications for one role (the Home Counties average, according to The Commons Report). Not one mentions the job. She needs a better plan and a board that will listen.",
+    res:[["The Commons Report","dispatch-report-hertfordshire.html"],["Embed apprenticeships in HR","dispatch-embed-apprenticeships.html"]] },
+  { num:6, date:"2026-11-06", title:"Stand By", stars:["lou","zara"], img:"lou",
+    blurb:"Auntie Lou has run festivals for thousands, but one LinkedIn headline brings her to her knees. Zara offers help. Lou offers a clipboard. Chaos, with a running order.",
+    res:[["LinkedIn, properly","guide-linkedin.html"],["The intro video guide","guide-video-intro.html"]] },
+  { num:7, date:"2026-11-13", title:"The Robots Are Reading", stars:["dee","kai"], img:"dee",
+    blurb:"Dee is convinced a computer binned her application before a human saw it. Kai tries to explain AI. Dee writes a strongly worded letter to the algorithm.",
+    res:[["The EU AI Act, explained","dispatch-eu-ai-act.html"],["CV Rewrite app (free)","https://cv.the-common-people.com"]] },
+  { num:8, date:"2026-11-20", title:"Woof. Woof.", stars:["bowie","dee","marcus","priya","zara","kai","lou"], img:"bowie-ozzy",
+    blurb:"Series finale. The whole family gathers for a celebration and Bowie and Ozzy steal the show. Someone gets a job. Someone gets an apprentice. Ozzy gets the sausage rolls.",
+    res:[["Subscribe to The Loudspeaker","loudspeaker.html"],["Explore all resources","resources.html"]] }
+];
+
+var FAMILY = {
+  dee:{name:"Nan Dee", role:"Redundant after 31 years", c:"#E0B03C", img:"dee",
+       q:"Thirty-one years of keeping the lights on. I think I can manage a LinkedIn profile.",
+       p:"Ran the night shift at a distribution centre for 31 years. Last wrote a CV in 1994. Sharp, organised, not retiring.",
+       go:["The CV that gets read","guide-cv.html"]},
+  marcus:{name:"Marcus", role:"Small employer", c:"#D2691E", img:"marcus",
+       q:"Give me a set of plans and I'm sorted. Give me a funding rulebook and I'm lost.",
+       p:"Runs a five-person joinery in Hitchin and wants to take on his first apprentice. The paperwork is winning.",
+       go:["Apprenticeship guidance","apprenticeships.html"]},
+  priya:{name:"Priya", role:"HR lead", c:"#5AA9C2", img:"priya",
+       q:"Two hundred CVs, and not one of them read the advert.",
+       p:"Hires for four hotels in St Albans. Knows apprenticeships could fix her pipeline. Needs the business case for her board.",
+       go:["Embed apprenticeships in HR","dispatch-embed-apprenticeships.html"]},
+  zara:{name:"Zara", role:"Ghosted graduate", c:"#ECE6D8", img:"zara",
+       q:"Rejection I can handle. Silence is just rude.",
+       p:"Marketing graduate, wheelchair user, more followers than most brands. Sixty applications, a handful of replies.",
+       go:["#StopGhostingJobSeekers","dispatch-stop-ghosting.html"]},
+  kai:{name:"Kai", role:"Future chef", c:"#E0B03C", img:"kai",
+       q:"Give me a recipe over an essay any day.",
+       p:"Year 13, dyslexic, cooks Sunday dinner for everyone. Wants a chef apprenticeship, not a lecture about uni.",
+       go:["Apprenticeships, explained","apprenticeships.html"]},
+  lou:{name:"Auntie Lou", role:"The returner", c:"#D2691E", img:"lou",
+       q:"I've run festivals for thousands. It's the LinkedIn headline that scares me.",
+       p:"Priya's best mate and family in every way that counts. Back after seven years raising twins with her wife, Jo.",
+       go:["LinkedIn, properly","guide-linkedin.html"]},
+  bowie:{name:"Bowie & Ozzy", role:"The Loudspeakers", c:"#5AA9C2", img:"bowie-ozzy",
+       q:"Woof. Woof.",
+       p:"Bowie is silver, cool and reads your CV over your shoulder. Ozzy is black and has never owned an indoor voice. When Ozzy howls, there's news.",
+       go:["Subscribe to The Loudspeaker","loudspeaker.html"]}
+};
+
+function img(k){ return "img/commons-family/" + k + ".jpg"; }
+function esc(s){ return String(s).replace(/[&<>"]/g,function(ch){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch];}); }
+function parseDay(d){ var p=d.split("-"); return new Date(+p[0], +p[1]-1, +p[2], 0, 0, 0); }
+function niceDate(d){ return parseDay(d).toLocaleDateString("en-GB",{weekday:"short", day:"numeric", month:"short"}); }
+function isOut(ep){ return parseDay(ep.date) <= new Date() && (ep.youtube || ep.video); }
+
+var released = EPISODES.filter(isOut);
+var current = released.length ? released[released.length-1] : null;
+var nextUp = EPISODES.filter(function(e){ return !isOut(e); })[0] || null;
+
+/* ---------- player ---------- */
+function starsHTML(list){
+  return '<div class="cf-stars" aria-label="Starring">' + list.slice(0,7).map(function(k){ return '<img src="'+img(FAMILY[k].img)+'" alt="'+esc(FAMILY[k].name)+'">'; }).join("") + '</div>';
+}
+function infoHTML(ep, live){
+  return '<div class="num"><span class="pill solid" style="color:#fff">Episode ' + String(ep.num).padStart(2,"0") + '</span>' +
+         '<span class="sticker '+(live?'orange':'navy')+'" style="transform:rotate(-2deg)">'+(live?'Out now':'Premieres '+esc(niceDate(ep.date)))+'</span></div>' +
+         '<h2 id="cf-ep-title">' + esc(ep.title) + '</h2><p>' + esc(ep.blurb) + '</p>' + starsHTML(ep.stars) +
+         '<div class="cf-res"><h3>Free help from this episode</h3><div class="cf-chips">' +
+         ep.res.map(function(r){ return '<a class="cf-chip" href="'+r[1]+'">'+esc(r[0])+'</a>'; }).join("") + '</div></div>' +
+         '<div class="cf-howl"><img src="'+img("bowie-ozzy")+'" alt=""><p><b>New episodes every Friday.</b> Ozzy will howl. You will know.</p></div>';
+}
+function playEpisode(ep){
+  var s = document.getElementById("cf-screen");
+  s.classList.remove("is-teaser");
+  if (ep.youtube){
+    s.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/'+encodeURIComponent(ep.youtube)+'?rel=0" title="The Commons, episode '+ep.num+': '+esc(ep.title)+'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>';
+  } else {
+    s.innerHTML = '<video controls preload="metadata" poster="'+img(ep.img)+'"><source src="'+esc(ep.video)+'" type="video/mp4">Your browser can\'t play this video.</video>';
+  }
+  document.getElementById("cf-epinfo").innerHTML = infoHTML(ep, true);
+}
+function teaser(ep){
+  var s = document.getElementById("cf-screen");
+  s.classList.add("is-teaser");
+  var faces = ["dee","marcus","priya","zara","kai","lou","bowie-ozzy"].map(function(k){ return '<img src="'+img(k)+'" alt="">'; }).join("");
+  s.innerHTML = '<div class="cf-teaser cf-dots"><div class="faces">'+faces+'</div>' +
+    '<div class="big">Episode '+String(ep.num).padStart(2,"0")+'<br><em>'+esc(ep.title)+'</em></div>' +
+    '<div class="cf-count" id="cf-count"></div></div>' +
+    '<div class="cf-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 4v16l13-8L7 4Z"/></svg></div>';
+  document.getElementById("cf-epinfo").innerHTML = infoHTML(ep, false);
+  tick(ep);
+}
+function tick(ep){
+  var el = document.getElementById("cf-count"); if(!el) return;
+  var ms = parseDay(ep.date) - new Date();
+  if (ms <= 0){ el.innerHTML = '<div><b>Soon</b><span>Very soon</span></div>'; return; }
+  var d=Math.floor(ms/864e5), h=Math.floor(ms%864e5/36e5), m=Math.floor(ms%36e5/6e4);
+  el.innerHTML = '<div><b>'+d+'</b><span>Days</span></div><div><b>'+h+'</b><span>Hours</span></div><div><b>'+m+'</b><span>Mins</span></div>';
+  setTimeout(function(){ tick(ep); }, 30000);
+}
+if (current) playEpisode(current); else if (nextUp) teaser(nextUp);
+
+/* ---------- family flip cards ---------- */
+document.getElementById("cf-family").innerHTML = Object.keys(FAMILY).map(function(k){
+  var f = FAMILY[k];
+  return '<button class="cf-flip" type="button" aria-pressed="false" aria-label="'+esc(f.name)+', '+esc(f.role)+'. Flip for their story.">' +
+    '<div class="inner"><div class="cf-face cf-front" style="--c:'+f.c+'"><img src="'+img(f.img)+'" alt=""><span class="flipme">Flip</span>' +
+    '<div class="nm"><b>'+esc(f.name)+'</b><span>'+esc(f.role)+'</span></div></div>' +
+    '<div class="cf-face cf-back"><b>'+esc(f.name)+'</b><q>'+esc(f.q)+'</q><p>'+esc(f.p)+'</p>' +
+    '<span class="go">Their go-to: '+esc(f.go[0])+' &rarr;</span></div></div></button>';
+}).join("");
+Array.prototype.forEach.call(document.querySelectorAll(".cf-flip"), function(b){
+  b.addEventListener("click", function(){ b.setAttribute("aria-pressed", b.getAttribute("aria-pressed")==="true" ? "false" : "true"); });
+});
+
+/* ---------- episode guide ---------- */
+function renderGuide(){
+  document.getElementById("cf-guide").innerHTML = EPISODES.map(function(ep, i){
+    var out = isOut(ep), lead = FAMILY[ep.stars[0]];
+    return '<article class="cf-epcard'+(out?'':' locked')+'"><div class="top" style="--c:'+lead.c+'"><img src="'+img(ep.img)+'" alt="" loading="lazy">' +
+      '<span class="epn">'+String(ep.num).padStart(2,"0")+'</span>' +
+      '<span class="when sticker '+(out?'orange':'navy')+'">'+(out?'Out now':esc(niceDate(ep.date)))+'</span></div>' +
+      '<div class="in"><h3>'+esc(ep.title)+'</h3><p>'+esc(ep.blurb)+'</p><div class="act">' +
+      (out ? '<button class="cf-watch" type="button" data-i="'+i+'">Watch episode &rarr;</button>' : '<span class="cf-soon">Coming '+esc(niceDate(ep.date))+'</span>') +
+      '</div></div></article>';
+  }).join("");
+  Array.prototype.forEach.call(document.querySelectorAll(".cf-watch"), function(b){
+    b.addEventListener("click", function(){ playEpisode(EPISODES[+b.getAttribute("data-i")]); document.getElementById("episode").scrollIntoView({behavior:"smooth"}); });
+  });
+}
+renderGuide();
+
+/* ---------- quiz ---------- */
+var QUIZ = [
+  { q:"It's Monday morning. You are...", a:[
+    ["Staring at an entry-level job that wants ten years' experience","zara"],
+    ["Hiding from a mountain of CVs","priya"],
+    ["Wondering when CVs started needing a personal brand","dee"],
+    ["Wondering if you even need a CV","kai"],
+    ["Trying to explain a career break in one line","lou"],
+    ["Trying to hire someone and drowning in forms","marcus"] ]},
+  { q:"Your secret superpower?", a:[
+    ["Deadpan comebacks","zara"],["A colour-coded spreadsheet for everything","priya"],
+    ["Thirty years of knowing how things actually work","dee"],["A roast dinner for twelve","kai"],
+    ["Running a room of thousands with a clipboard","lou"],["Building anything from scratch","marcus"] ]},
+  { q:"What would help most right now?", a:[
+    ["Employers who actually reply","zara"],["The business case to win over my board","priya"],
+    ["A CV that fits the job","dee"],["Some interview practice","kai"],
+    ["A LinkedIn glow-up","lou"],["Someone to explain apprenticeships in plain English","marcus"] ]}
+];
+var RESULTS = {
+  zara:{line:"Talented, funny and done with being left on read. You deserve an answer, and a CV that sounds like you.", links:[["#StopGhostingJobSeekers","dispatch-stop-ghosting.html"],["Interview Prep app (free)","prep-report.html"]]},
+  priya:{line:"Organised, fair and buried in applications. Time to build the pipeline and the business case.", links:[["Embed apprenticeships in HR","dispatch-embed-apprenticeships.html"],["The EVP field guide","guide-05-evp.html"]]},
+  dee:{line:"Decades of experience, zero patience for jargon. Let's get all that know-how onto one page.", links:[["The CV that gets read","guide-cv.html"],["CV Rewrite app (free)","https://cv.the-common-people.com"]]},
+  kai:{line:"Big heart, bigger ambitions and a route that doesn't have to be uni. Earn while you learn.", links:[["Apprenticeships, explained","apprenticeships.html"],["Interview prep guide","guide-interview-prep.html"]]},
+  lou:{line:"You've run bigger things than this. The gap on your CV is a story, so let's tell it well.", links:[["LinkedIn, properly","guide-linkedin.html"],["1:1 coaching with Neil","https://cal.com/the-common-people.com/interviewcoaching"]]},
+  marcus:{line:"You want to give someone a start and do it properly. The paperwork is less scary than it looks.", links:[["Apprenticeship guidance","apprenticeships.html"],["The Apprenticeship Paradox","dispatch-apprenticeship-paradox.html"]]}
+};
+var qStep = 0, qScore = {};
+function renderQuiz(){
+  var box = document.getElementById("cf-quiz");
+  if (qStep < QUIZ.length){
+    var item = QUIZ[qStep];
+    box.innerHTML = '<div class="dots" aria-hidden="true">' + QUIZ.map(function(_,i){ return '<i class="'+(i<=qStep?'on':'')+'"></i>'; }).join("") + '</div>' +
+      '<p class="small-cap">Question '+(qStep+1)+' of '+QUIZ.length+'</p><h3>'+esc(item.q)+'</h3><div class="cf-opts">' +
+      item.a.map(function(o){ return '<button class="cf-opt" type="button" data-k="'+o[1]+'">'+esc(o[0])+'</button>'; }).join("") + '</div>';
+    Array.prototype.forEach.call(box.querySelectorAll(".cf-opt"), function(b){
+      b.addEventListener("click", function(){ var k=b.getAttribute("data-k"); qScore[k]=(qScore[k]||0)+1; qStep++; renderQuiz(); });
+    });
+  } else {
+    var best = Object.keys(qScore).sort(function(a,b){ return qScore[b]-qScore[a]; })[0];
+    var f = FAMILY[best], r = RESULTS[best];
+    box.innerHTML = '<div class="cf-result"><img src="'+img(f.img)+'" alt="'+esc(f.name)+'"><div>' +
+      '<span class="you">You are...</span><h3>'+esc(f.name)+'</h3><p>'+esc(r.line)+'</p>' +
+      '<div class="cf-chips">' + r.links.map(function(l){ return '<a class="cf-chip" href="'+l[1]+'">'+esc(l[0])+'</a>'; }).join("") + '</div>' +
+      '<p style="font-size:14px">Secretly more of a Bowie or Ozzy? You just want the news. <a href="loudspeaker.html" style="color:var(--orange);text-decoration:underline">Get The Loudspeaker</a>.</p>' +
+      '<button class="cf-again" type="button">Take it again</button></div></div>';
+    box.querySelector(".cf-again").addEventListener("click", function(){ qStep=0; qScore={}; renderQuiz(); });
+  }
+}
+renderQuiz();
+
+/* ---------- mobile menu ---------- */
+(function(){
+  var b=document.getElementById("cpburger"), n=document.getElementById("cpnav");
+  if(!b||!n) return;
+  b.addEventListener("click", function(){ var o=n.classList.toggle("open"); b.setAttribute("aria-expanded", o?"true":"false"); });
+})();
+</script>
+<script defer src="cp-free-popup.js"></script>
+</body>
+</html>
