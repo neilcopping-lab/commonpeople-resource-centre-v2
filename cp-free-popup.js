@@ -1,4 +1,6 @@
-/* The Com'mon People - "Free forever" launch pop-up (Sept 2026).
+/* The Com'mon People - "Free forever" launch pop-up (Sept 2026), rebranded to Comquat (Nov 2026).
+   Colours and type follow the Comquat Brand design system: kumquat #FF8A1F, leaf #1F6B45,
+   ink #17191C, peel #FFF3E2, Bricolage Grotesque headlines, DM Sans everything else.
    Appears 5 seconds after someone lands, once per visit (per browser tab session).
    Chasing theatre lights, confetti, a bouncing stamp and an original fanfare.
    Lights chase at 2 steps a second, well under the 3-flashes-a-second safety limit.
@@ -16,39 +18,41 @@
     "#cpfree{position:fixed;inset:0;z-index:100000;display:flex;align-items:center;justify-content:center;padding:18px;background:rgba(10,14,20,.78);opacity:0;transition:opacity .35s ease}",
     "#cpfree.on{opacity:1}",
     "#cpfree canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}",
-    "#cpfree .cf-card{position:relative;width:min(560px,100%);max-height:calc(100vh - 36px);overflow:auto;background:#161F29;color:#ECE6D8;border-radius:26px;padding:44px 34px 30px;text-align:center;box-shadow:0 30px 80px -20px rgba(0,0,0,.8),0 0 0 4px #E0B03C;transform:scale(.4) rotate(-6deg);transition:transform .6s cubic-bezier(.2,1.6,.4,1);font-family:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif}",
+    "#cpfree .cf-card{position:relative;width:min(560px,100%);max-height:calc(100vh - 36px);overflow:auto;background:#17191C;color:#FFF3E2;border-radius:26px;padding:44px 34px 30px;text-align:center;box-shadow:0 30px 80px -20px rgba(0,0,0,.8),0 0 0 4px #FF8A1F;transform:scale(.4) rotate(-6deg);transition:transform .6s cubic-bezier(.2,1.6,.4,1);font-family:'DM Sans','Hanken Grotesk','Helvetica Neue',Arial,sans-serif}",
     "#cpfree.on .cf-card{transform:scale(1) rotate(0)}",
     "#cpfree .cf-bulbs{position:absolute;inset:10px;border-radius:18px;pointer-events:none}",
-    "#cpfree .cf-bulb{position:absolute;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:#5a4a1c;box-shadow:none}",
-    "#cpfree .cf-bulb.lit{background:#FFE08A;box-shadow:0 0 10px 3px rgba(255,210,90,.85)}",
+    "#cpfree .cf-bulb{position:absolute;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:#5a3a1a;box-shadow:none}",
+    "#cpfree .cf-bulb.lit{background:#FFC27A;box-shadow:0 0 10px 3px rgba(255,138,31,.8)}",
     "#cpfree .cf-x{position:absolute;top:12px;right:16px;z-index:3;background:none;border:0;color:#AEBAC6;font-size:32px;line-height:1;cursor:pointer;padding:4px 8px}",
     "#cpfree .cf-x:hover{color:#fff}",
-    "#cpfree .cf-plates{display:inline-flex;gap:5px;margin-bottom:18px}",
-    "#cpfree .cf-plates span{font-family:Anton,'Arial Narrow',sans-serif;font-size:17px;color:#14110E;-webkit-text-stroke:3px #FBF7EC;paint-order:stroke fill;padding:5px 9px 6px;border-radius:7px;border:2.5px solid #14110E;text-transform:uppercase;letter-spacing:1px}",
-    "#cpfree .p1{background:#E0B03C;transform:rotate(-3deg)}#cpfree .p2{background:#5AA9C2;transform:rotate(2deg)}#cpfree .p3{background:#D2691E;transform:rotate(-2deg)}",
-    "#cpfree .cf-eyebrow{font-family:Oswald,'Arial Narrow',sans-serif;font-weight:700;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:#E0B03C;margin:0 0 6px}",
-    "#cpfree h2{font-family:Anton,'Arial Narrow',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(46px,11vw,76px);line-height:.92;letter-spacing:1px;margin:6px 0 4px;color:#ECE6D8}",
-    "#cpfree h2 em{font-style:normal;color:#E0B03C;display:inline-block;animation:cfwiggle 1.6s ease-in-out infinite}",
-    "#cpfree .cf-sub{font-size:17px;line-height:1.55;color:#C6CFD8;margin:14px auto 22px;max-width:40ch}",
-    "#cpfree .cf-stamp{position:absolute;top:26px;left:18px;z-index:2;width:92px;height:92px;border-radius:50%;background:#D2691E;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:Anton,'Arial Narrow',sans-serif;line-height:1;transform:rotate(-14deg);box-shadow:0 8px 20px -6px rgba(0,0,0,.6);animation:cfstamp 2.4s ease-in-out infinite}",
-    "#cpfree .cf-stamp s{font-size:18px;opacity:.8}#cpfree .cf-stamp b{font-weight:400;font-size:34px}",
+    "#cpfree .cf-logo{display:inline-block;background:#FFF3E2;border-radius:999px;padding:11px 22px 9px;margin-bottom:18px}",
+    "#cpfree .cf-logo img{display:block;height:34px;width:auto}",
+    "#cpfree .cf-eyebrow{font-family:'DM Sans',Arial,sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#FF8A1F;margin:0 0 6px}",
+    "#cpfree h2{font-family:'Bricolage Grotesque','DM Sans',Arial,sans-serif;font-weight:800;text-transform:none;font-size:clamp(46px,11vw,78px);line-height:.95;letter-spacing:-1.5px;margin:6px 0 4px;color:#FFF3E2}",
+    "#cpfree h2 em{font-style:normal;color:#FF8A1F;display:inline-block;animation:cfwiggle 1.6s ease-in-out infinite}",
+    "#cpfree .cf-sub{font-size:17px;line-height:1.55;color:#E9DCC8;margin:14px auto 22px;max-width:40ch}",
+    "#cpfree .cf-stamp{position:absolute;top:26px;left:18px;z-index:2;width:92px;height:92px;border-radius:50%;background:#FF8A1F;color:#17191C;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Bricolage Grotesque','DM Sans',Arial,sans-serif;font-weight:800;line-height:1;transform:rotate(-14deg);box-shadow:0 8px 20px -6px rgba(0,0,0,.6);animation:cfstamp 2.4s ease-in-out infinite}",
+    "#cpfree .cf-stamp s{font-size:18px;opacity:.8}#cpfree .cf-stamp b{font-weight:800;font-size:34px}",
     "#cpfree .cf-btns{display:flex;flex-direction:column;gap:12px}",
-    "#cpfree .cf-btn{display:block;font-family:Oswald,'Arial Narrow',sans-serif;font-weight:700;font-size:17px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;padding:16px 20px;border-radius:999px;transition:transform .12s ease}",
+    "#cpfree .cf-btn{display:block;font-family:'DM Sans',Arial,sans-serif;font-weight:700;font-size:18px;letter-spacing:0;text-decoration:none;padding:16px 20px;border-radius:999px;transition:transform .12s ease}",
     "#cpfree .cf-btn:hover{transform:translateY(-2px) scale(1.02)}",
-    "#cpfree .cf-a{background:#D2691E;color:#fff;animation:cfpulse 1.8s ease-in-out infinite}",
-    "#cpfree .cf-b{background:#5AA9C2;color:#0F2A33}",
-    "#cpfree .cf-sound{margin-top:16px;background:none;border:2px solid #E0B03C;color:#E0B03C;border-radius:999px;padding:9px 18px;font-family:Oswald,'Arial Narrow',sans-serif;font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}",
-    "#cpfree .cf-sound:hover{background:#E0B03C;color:#161F29}",
-    "#cpfree .cf-fine{margin:14px 0 0;font-size:12.5px;color:#8E99A4}",
-    "#cpfree a:focus-visible,#cpfree button:focus-visible{outline:3px solid #E0B03C;outline-offset:3px}",
+    "#cpfree .cf-a{background:#1F6B45;color:#FFF3E2;animation:cfpulse 1.8s ease-in-out infinite}",
+    "#cpfree .cf-b{background:#FF8A1F;color:#17191C}",
+    "#cpfree .cf-sound{margin-top:16px;background:none;border:2px solid #FF8A1F;color:#FF8A1F;border-radius:999px;padding:9px 18px;font-family:'DM Sans',Arial,sans-serif;font-weight:700;font-size:14px;letter-spacing:.02em;cursor:pointer}",
+    "#cpfree .cf-sound:hover{background:#FF8A1F;color:#17191C}",
+    "#cpfree .cf-fine{margin:14px 0 0;font-size:12.5px;color:#A9A398}",
+    "#cpfree a:focus-visible,#cpfree button:focus-visible{outline:3px solid #FF8A1F;outline-offset:3px}",
     "@keyframes cfwiggle{0%,100%{transform:rotate(-2deg) scale(1)}50%{transform:rotate(2deg) scale(1.06)}}",
     "@keyframes cfstamp{0%,100%{transform:rotate(-14deg) scale(1)}50%{transform:rotate(-8deg) scale(1.1)}}",
-    "@keyframes cfpulse{0%,100%{box-shadow:0 0 0 0 rgba(210,105,30,.7)}50%{box-shadow:0 0 0 12px rgba(210,105,30,0)}}",
-    "@media (max-width:480px){#cpfree .cf-card{padding:34px 20px 24px}#cpfree .cf-plates{display:none}#cpfree .cf-stamp{width:64px;height:64px;top:16px;left:14px}#cpfree .cf-stamp s{font-size:14px}#cpfree .cf-stamp b{font-size:24px}#cpfree .cf-eyebrow{margin-top:56px}}",
+    "@keyframes cfpulse{0%,100%{box-shadow:0 0 0 0 rgba(62,154,95,.7)}50%{box-shadow:0 0 0 12px rgba(62,154,95,0)}}",
+    "@media (max-width:480px){#cpfree .cf-card{padding:34px 20px 24px}#cpfree .cf-logo{padding:9px 16px 7px}#cpfree .cf-logo img{height:26px}#cpfree .cf-stamp{width:64px;height:64px;top:16px;left:14px}#cpfree .cf-stamp s{font-size:14px}#cpfree .cf-stamp b{font-size:24px}#cpfree .cf-eyebrow{margin-top:56px}}",
     "@media (prefers-reduced-motion:reduce){#cpfree .cf-card{transition:none;transform:none}#cpfree h2 em,#cpfree .cf-stamp,#cpfree .cf-a{animation:none}}"
   ].join("\n");
 
   function build() {
+    var fl = document.createElement("link"); fl.rel = "stylesheet";
+    fl.href = "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=DM+Sans:wght@500;700&display=swap";
+    document.head.appendChild(fl);
     var st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
     var wrap = document.createElement("div");
     wrap.id = "cpfree";
@@ -61,16 +65,16 @@
         '<div class="cf-bulbs" aria-hidden="true"></div>' +
         '<button class="cf-x" type="button" aria-label="Close">&times;</button>' +
         '<div class="cf-stamp" aria-hidden="true"><s>&pound;15</s><b>&pound;0</b></div>' +
-        '<div class="cf-plates" aria-hidden="true"><span class="p1">The</span><span class="p2">Com\'mon</span><span class="p3">People</span></div>' +
+        '<div class="cf-logo"><img src="/img/comquat-logo.svg" alt="Comquat" width="150" height="34"></div>' +
         '<p class="cf-eyebrow">Big news, everyone</p>' +
         '<h2 id="cpfree-title">Free.<br><em>Forever.</em></h2>' +
-        '<p class="cf-sub">Our Interview Prep Report and CV Rewrite tools now cost nothing. Every time, for everyone. No card, no credits, no catch.</p>' +
+        '<p class="cf-sub">Comquat, our CV Rewrite and Interview Prep app, now costs nothing. Every time, for everyone. No card, no credits, no catch.</p>' +
         '<div class="cf-btns">' +
-          '<a class="cf-btn cf-a" href="https://the-common-people.com/prep-report.html">Get my free interview prep &rarr;</a>' +
+          '<a class="cf-btn cf-a" href="https://the-common-people.com/prep-report.html">Get my free Interview Prep &rarr;</a>' +
           '<a class="cf-btn cf-b" href="https://cv.the-common-people.com">Rewrite my CV for free &rarr;</a>' +
         '</div>' +
         '<button class="cf-sound" type="button">&#9835; Play the fanfare</button>' +
-        '<p class="cf-fine">Built on mutual aid. Same as every guide, dispatch and Loudspeaker.</p>' +
+        '<p class="cf-fine">Comquat is from The Com\'mon People. Built on mutual aid, same as every guide, dispatch and Loudspeaker.</p>' +
       '</div>';
     document.body.appendChild(wrap);
     return wrap;
@@ -98,7 +102,7 @@
   // Confetti burst in brand colours.
   function confetti(canvas) {
     if (reduce) return;
-    var ctx = canvas.getContext("2d"), W, H, parts = [], colours = ["#E0B03C", "#5AA9C2", "#D2691E", "#ECE6D8", "#FFFFFF"];
+    var ctx = canvas.getContext("2d"), W, H, parts = [], colours = ["#FF8A1F", "#E2650B", "#1F6B45", "#3E9A5F", "#FFF3E2"];
     function size() { W = canvas.width = innerWidth; H = canvas.height = innerHeight; }
     size();
     for (var i = 0; i < 220; i++) {
