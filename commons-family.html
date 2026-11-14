@@ -174,14 +174,33 @@
   .cf-pol,.cf-opt{transition:none}
 }
 </style>
+<style id="cf-rebrand">
+/* Rebrand, 14 Nov 2026: Option C header (cream, navy, gold highlight) and Logo C on the family cards */
+.cf-hero{background:var(--cream);color:var(--navy);border-bottom:6px solid var(--navy)}
+.cf-hero.cf-dots::before{background-image:radial-gradient(rgba(22,31,41,.09) 1px,transparent 1.6px)}
+.cf-hero h1{color:var(--navy)}
+.cf-hero .mark-underline::after{display:none}
+.cf-hero .mark-underline{background:linear-gradient(180deg,transparent 62%,var(--gold) 62%,var(--gold) 92%,transparent 92%);padding:0 4px}
+.cf-hero .lead{color:#3E4A55}
+.cf-hero .lead b{color:var(--navy)}
+.cf-hero .btn.ghost{color:var(--navy);border-color:var(--navy)}
+.cf-hero .btn.ghost:hover{color:#B3541A;border-color:var(--orange)}
+.cf-kicker .sticker.navy{border-color:var(--navy)!important}
+.cf-pol{background:#FFFFFF;box-shadow:0 22px 40px -20px rgba(22,31,41,.55)}
+.cf-pol span{display:flex;align-items:center;justify-content:center;gap:7px}
+.cf-pol span::before{content:"";width:20px;height:20px;flex:none;background:url(img/cp-icon.svg) center/contain no-repeat;border-radius:5px}
+.cf-front::after{content:"";position:absolute;top:12px;left:12px;z-index:2;width:36px;height:36px;background:url(img/cp-icon.svg) center/contain no-repeat;border-radius:9px;box-shadow:0 2px 0 rgba(20,17,14,.45)}
+.cf-screen:has(.cf-teaser)::after{content:"";position:absolute;bottom:18px;left:20px;z-index:3;width:120px;height:45px;background:url(img/cp-logo-reversed.svg) left center/contain no-repeat;pointer-events:none}
+@media (max-width:600px){.cf-screen:has(.cf-teaser)::after{width:84px;height:32px;bottom:12px;left:12px}}
+</style>
 </head>
 <body>
 
 <header class="nav">
   <div class="wrap row">
-    <a class="plates" href="index.html" aria-label="The Com'mon People, home"><span class="plate p1">The</span><span class="plate p2">Com'mon</span><span class="plate p3">People</span></a>
+    <a class="plates brand" href="index.html" aria-label="The Com'mon People, home"><img src="img/cp-logo.svg" alt="The Com'mon People" width="453" height="170"></a>
     <nav class="links" id="cpnav" aria-label="Primary"><a href="guides.html">Guides</a><a href="dispatches.html">Dispatches</a><a href="loudspeaker.html">Loudspeaker</a><a href="apprenticeships.html">Apprenticeships</a><a href="commons-family.html" aria-current="page">The Commons</a><a href="about.html">About</a><a href="prep-report.html">Prep Report</a><a href="https://cv.the-common-people.com">CV Rewrite</a></nav>
-    <div class="nav-actions"><a class="btn orange nav-book" href="https://cal.com/the-common-people.com/interviewcoaching" target="_blank" rel="noopener">Book a coaching call</a><a class="btn ghost nav-explore" href="resources.html">Explore resources</a><button class="burger" id="cpburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="cpnav"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3V6Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z"/></svg></button></div>
+    <div class="nav-actions"><a class="btn orange nav-book" href="https://cal.com/the-common-people.com/interviewcoaching" target="_blank" rel="noopener">Book a coaching call</a><button class="burger" id="cpburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="cpnav"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3V6Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z"/></svg></button></div>
   </div>
 </header>
 
@@ -262,7 +281,7 @@
       <p>Get the monthly Loudspeaker for the best of the Commons, plus the guides, dispatches and apprenticeship updates behind every episode. Free to subscribe, free to share.</p>
       <div class="cta" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:26px">
         <a class="btn orange lg" href="loudspeaker.html">Subscribe to The Loudspeaker</a>
-        <a class="btn on-color lg" href="resources.html">Explore the free resources</a>
+        <a class="btn on-color lg" href="guides.html">Browse the free guides</a>
       </div>
     </div>
   </div>
@@ -273,7 +292,7 @@
 <footer>
   <div class="wrap">
     <div class="fgrid">
-      <div><a class="plates" href="index.html"><span class="plate p1 sm">The</span><span class="plate p2 sm">Com'mon</span><span class="plate p3 sm">People</span></a><p class="fabout">A free resource centre for marketing, HR, finance, events and operations people. Built on mutual aid.</p><span class="sticker orange" style="margin-top:16px">Free, always</span></div>
+      <div><a class="plates brand foot" href="index.html" aria-label="The Com'mon People, home"><img src="img/cp-logo-reversed.svg" alt="The Com'mon People" width="453" height="170"></a><p class="fabout">A free resource centre for marketing, HR, finance, events and operations people. Built on mutual aid.</p><span class="sticker orange" style="margin-top:16px">Free, always</span></div>
       <div><h6>Guides</h6><a href="guide-cv.html">The CV that gets read</a><a href="guide-video-intro.html">The intro video</a><a href="guide-interview-prep.html">Interview prep</a><a href="guide-linkedin.html">LinkedIn, properly</a><a href="guide-05-evp.html">The EVP field guide</a></div>
       <div><h6>Dispatches</h6><a href="dispatch-investigate-the-stereotype.html">Investigate the stereotype</a><a href="dispatch-first-year-wage.html">Pay the first year</a><a href="dispatch-training-shortage.html">The training shortage</a><a href="dispatch-embed-apprenticeships.html">Embed apprenticeships in HR</a><a href="dispatch-apprenticeship-paradox.html">The Apprenticeship Paradox</a><a href="dispatch-recruitment-rethink.html">The recruitment rethink</a><a href="dispatch-eu-ai-act.html">The EU AI Act</a><a href="dispatch-report-hertfordshire.html">The Commons Report</a></div>
       <div><h6>Loudspeaker</h6><a href="loudspeaker.html">The archive</a><a href="loudspeaker-edition-01.html">Edition 01 · May 2026</a><a href="loudspeaker-edition-02.html">Edition 02 · July 2026</a><a href="loudspeaker-edition-03.html">Edition 03 · August 2026</a><a href="loudspeaker-edition-04.html">Edition 04 · September 2026</a><a href="commons-family.html">The Commons cartoon</a></div>
@@ -314,7 +333,7 @@ var EPISODES = [
     res:[["The EU AI Act, explained","dispatch-eu-ai-act.html"],["CV Rewrite app (free)","https://cv.the-common-people.com"]] },
   { num:8, date:"2026-11-20", title:"Woof. Woof.", stars:["bowie","dee","marcus","priya","zara","kai","lou"], img:"bowie-ozzy",
     blurb:"Series finale. The whole family gathers for a celebration and Bowie and Ozzy steal the show. Someone gets a job. Someone gets an apprentice. Ozzy gets the sausage rolls.",
-    res:[["Subscribe to The Loudspeaker","loudspeaker.html"],["Explore all resources","resources.html"]] }
+    res:[["Subscribe to The Loudspeaker","loudspeaker.html"],["Browse the field guides","guides.html"]] }
 ];
 
 var FAMILY = {

@@ -401,3 +401,75 @@ body.cq-landing .nav-book{background:#FF8A1F!important;color:#17191C!important}
 @media (max-width:900px){.cq-hero-grid{grid-template-columns:1fr;gap:28px}.cq-hero{padding:36px 0 40px}}
 .nav .cq-brand{flex:none;margin-right:20px}
 @media (min-width:921px) and (max-width:1180px){.nav .cq-brand .cq-feat{display:none}}
+
+/* ===== Stacked header (14 Nov 2026): logo on its own row, menu running beneath it.
+   Same layout as the Comquat CV Rewrite header. Desktop only; phones keep the burger. ===== */
+@media (min-width:921px){
+  .nav .row{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"brand brand" "links actions";align-items:center;column-gap:24px;row-gap:14px;padding:18px 0 14px}
+  .nav .row>.plates,.nav .row>.cq-brand{grid-area:brand;justify-self:start;margin:0}
+  .nav .row>.links{grid-area:links;flex-wrap:wrap;gap:8px 22px;font-size:14px;letter-spacing:.05em}
+  .nav .row>.nav-actions{grid-area:actions}
+  .nav .cq-brand .cq-feat{display:inline-flex}
+  .nav .nav-explore{display:inline-flex}
+}
+@media (min-width:921px) and (max-width:1260px){.nav .row>.links{gap:8px 18px;font-size:13.5px;letter-spacing:.04em}}
+@media (min-width:921px) and (max-width:1120px){.nav .row>.links{gap:8px 15px;font-size:13px;letter-spacing:.03em}.nav .nav-explore{display:none}}
+@media (min-width:921px){.nav .row>.links{flex-wrap:nowrap;white-space:nowrap}body.cq-landing .nav .row>.links{letter-spacing:.03em}}
+@media (min-width:921px){body.cq-landing .nav .row>.links{gap:8px 16px;font-size:13.5px}}
+@media (min-width:921px) and (max-width:1120px){body.cq-landing .nav .row>.links{gap:8px 12px;font-size:12.5px;letter-spacing:.02em}}
+
+/* ===== Logo C, "Both Sides" (14 Nov 2026) replaces the number plates ===== */
+.plates.brand{display:inline-flex;align-items:center;gap:0}
+.plates.brand img{display:block;height:64px;width:auto}
+.plates.brand.foot img{height:62px}
+@media (max-width:920px){.nav .plates.brand img{height:42px}.links{top:100%}}
+
+/* ===== Page header, Option C "The Poster" (14 Nov 2026) =====
+   Cream band, navy type, gold highlighter on the second line,
+   and the lead photo pinned up in a white frame. One header for every page. */
+.hero-c{background:var(--cream);color:var(--navy);padding:64px 0 72px;border-bottom:6px solid var(--navy)}
+.hero-c .hc-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:72px;align-items:center}
+.hero-c.nophoto .hc-grid{grid-template-columns:minmax(0,1fr)}
+.hero-c .hc-copy{min-width:0}
+.hero-c .eyebrow{color:var(--navy)!important}
+.hero-c .eyebrow::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--orange);margin-right:10px;vertical-align:1px}
+.hero-c h1,.hero-c .art-title{color:var(--navy)!important;font-size:clamp(44px,6.4vw,88px)!important;line-height:1!important;letter-spacing:.5px}
+.hero-c h1 em,.hero-c .art-title em{font-style:normal;color:var(--navy);background:linear-gradient(180deg,transparent 62%,var(--gold) 62%,var(--gold) 92%,transparent 92%);padding:0 4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.hero-c p,.hero-c .lead,.hero-c .art-lede{color:#3E4A55!important}
+.hero-c .lead{font-size:18.5px;max-width:54ch;margin:22px 0 10px}
+.hero-c .lead.two{font-size:16.5px;margin-top:10px}
+.hero-c p[style*="border-left"]{border-left-color:var(--orange)!important}
+.hero-c .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;align-items:center}
+.hero-c .btn.ghost{color:var(--navy)!important;border-color:var(--navy)!important}
+.hero-c .btn.on-color{background:var(--navy);color:var(--cream)}
+.hero-c .trust{color:#4A5661}
+.hero-c .trust b{color:var(--navy)}
+.hero-c .crumb,.hero-c .crumb a{color:#4A5661}
+.hero-c .crumb a:hover{color:var(--orange)}
+.hero-c .pill{color:var(--navy);border-color:var(--navy)}
+.hero-c .pill.solid{background:var(--navy);border-color:var(--navy);color:var(--cream)}
+.hero-c .byline,.hero-c .share-label{color:#56626D}
+.hero-c .share-ico{color:var(--navy);border-color:rgba(22,31,41,.35)}
+.hero-c .share-ico:hover{color:var(--orange);border-color:var(--orange)}
+.hero-c .jump-row a{color:var(--navy);border-color:rgba(22,31,41,.35)}
+.hero-c .jump-row a:hover{color:#B3541A;border-color:var(--orange)}
+.hero-c [style*="font-family:'Oswald'"],.hero-c [style*="font-family:var(--label)"]{color:var(--navy)!important}
+.hero-c .mark-underline::after{display:none}
+.hero-c .mark-underline{background:linear-gradient(180deg,transparent 62%,var(--gold) 62%,var(--gold) 92%,transparent 92%);padding:0 4px}
+.hc-frame{position:relative;margin:0 0 22px;background:#FFFFFF;padding:14px;border-radius:6px;box-shadow:0 24px 50px -24px rgba(22,31,41,.55);transform:rotate(-2deg)}
+.hc-frame::before{content:"";position:absolute;top:-12px;left:50%;margin-left:-55px;width:110px;height:26px;background:rgba(224,176,60,.75);transform:rotate(-3deg)}
+.hc-frame img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:3px}
+.hc-frame figcaption{position:absolute;left:22px;bottom:-18px;font-family:var(--display);font-size:20px;letter-spacing:1px;text-transform:uppercase;color:var(--cream);background:var(--navy);padding:7px 14px 8px;border-radius:4px;transform:rotate(2deg);line-height:1.1}
+@media (max-width:920px){
+  .hero-c{padding:40px 0 54px}
+  .hero-c .hc-grid{grid-template-columns:minmax(0,1fr);gap:40px}
+  .hc-frame{transform:rotate(-1.2deg);padding:10px}
+  .hc-frame figcaption{font-size:15px;left:14px}
+}
+@media (max-width:600px){
+  .feature .art,.cf-home-art{min-height:0}
+  .nav .plates.brand img{height:38px}
+  .nav-actions .nav-book{padding:10px 14px;font-size:13px;white-space:nowrap}
+}
+.consent span{min-width:0;flex:1}
+html,body{overflow-x:clip}

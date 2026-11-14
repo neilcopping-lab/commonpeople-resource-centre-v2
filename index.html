@@ -33,7 +33,7 @@
 <!-- NAV -->
 <header class="nav">
   <div class="wrap row">
-    <a class="plates" href="index.html" aria-label="The Com'mon People, home"><span class="plate p1">The</span><span class="plate p2">Com'mon</span><span class="plate p3">People</span></a>
+    <a class="plates brand" href="index.html" aria-label="The Com'mon People, home"><img src="img/cp-logo.svg" alt="The Com'mon People" width="453" height="170"></a>
     <nav class="links" id="cpnav" aria-label="Primary">
       <a href="guides.html">Guides</a><a href="dispatches.html">Dispatches</a><a href="loudspeaker.html">Loudspeaker</a>
       <a href="apprenticeships.html">Apprenticeships</a><a href="commons-family.html">The Commons</a><a href="about.html">About</a>
@@ -41,30 +41,22 @@
     </nav>
     <div class="nav-actions">
       <a class="btn orange nav-book" href="https://cal.com/the-common-people.com/interviewcoaching" target="_blank" rel="noopener">Book a coaching call</a>
-      <a class="btn ghost nav-explore" href="resources.html">Explore resources</a>
       <button class="burger" id="cpburger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24"><use href="#burger"/></svg></button>
     </div>
   </div>
 </header>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="wrap grid">
-    <div>
+<section class="hero-c">
+  <div class="wrap hc-grid"><div class="hc-copy">
       <span class="eyebrow">Knowledge shouldn't cost a thing</span>
       <h1>The <span class="mark-underline">Free</span> Resource Centre.</h1>
       <p class="lead">A free resource centre for the people on both sides of recruitment: marketing, HR, finance, events and operations. Field guides, dispatches, a monthly Loudspeaker email, and now a full stream of plain-English apprenticeship guidance: how to make them work for your business, the 2025–26 funding changes, and the business case. Written by people who've spent twenty years in the industry. No subscription. No premium tier. No catch.</p>
       <p class="lead two">Free for everyone, always, from CVs and interviews for jobseekers, to embedding apprenticeships into your HR strategy for employers. Plus two free AI tools for anyone who'd rather we just did it.</p>
-      <div class="cta"><a class="btn lg orange" href="resources.html">Explore the resources</a><a class="btn ghost lg" href="guides.html" style="color:var(--hero-ink);border-color:currentColor">Browse the field guides</a></div>
+      <div class="cta"><a class="btn lg orange" href="guides.html">Browse the field guides</a></div>
       <div class="trust"><span><b>20</b>years in the industry</span><span><b>Free</b>always, no catch</span><span><b>976</b>on the Loudspeaker</span></div>
     </div>
-    <div class="art gold hero-art poster" style="background-image:url('img/home-hero.jpg')" role="img" aria-label="Two empty chairs facing each other across a table with two mugs of tea, a CV on one side and a hiring folder on the other">
-      <span class="cap">The Com'mon People</span>
-      <svg class="ico" viewBox="0 0 24 24"><use href="#mega"/></svg>
-      <svg class="ico-lead" viewBox="0 0 24 24"><use href="#fist"/></svg>
-      <span class="sticker s1">Free, always</span>
-      <span class="sticker navy s2">Built on mutual aid</span>
-    </div>
+    <figure class="hc-frame"><img src="img/home-hero.jpg" alt="Two empty chairs facing each other across a table with two mugs of tea, a CV on one side and a hiring folder on the other" width="1600" height="900"><figcaption>Free, always</figcaption></figure>
   </div>
 </section>
 
@@ -183,7 +175,7 @@
       <span class="eyebrow">1:1 with Neil · Human coaching</span>
       <h2>Rather have a real person in your corner?</h2>
       <p>The apps are for speed. But if you'd rather talk it through, whether it's your CV, an interview you're dreading, or which roles to even go for, book a one-to-one coaching call. Nine years in recruitment, on both sides of the desk. We'll prep your interview or rework your CV together, live.</p>
-      <div class="cta"><a class="btn lg orange" href="https://cal.com/the-common-people.com/interviewcoaching" target="_blank" rel="noopener">Book an interview / CV coaching session →</a><span class="sticker navy">£45 · one hour</span></div>
+      <div class="cta"><a class="btn lg orange" href="https://cal.com/the-common-people.com/interviewcoaching" target="_blank" rel="noopener">Book an interview / CV coaching session →</a><span class="sticker navy">£45 · 30 minutes</span></div>
     </div>
     <a class="art teal poster" style="background-image:url('img/founder.jpg')" href="https://cal.com/the-common-people.com/interviewcoaching" target="_blank" rel="noopener"><span class="cap">1:1 coaching with Neil</span><svg class="ico-lead" viewBox="0 0 24 24"><use href="#mega"/></svg></a>
   </div>
@@ -224,7 +216,7 @@
 </section>
 
 <!-- NEWSLETTER -->
-<section class="band-navy">
+<section class="band-navy" id="subscribe">
   <div class="wrap news">
     <span class="eyebrow" style="color:var(--gold)">The monthly dispatch</span>
     <h2 style="color:var(--cream);font-size:clamp(30px,4.6vw,50px);margin-top:12px">Guides, insight and dispatches. Free, for jobseekers and hirers alike.</h2>
@@ -242,7 +234,7 @@
 <footer>
   <div class="wrap">
     <div class="fgrid">
-      <div><a class="plates" href="index.html"><span class="plate p1 sm">The</span><span class="plate p2 sm">Com'mon</span><span class="plate p3 sm">People</span></a><p class="fabout">A free resource centre for marketing, HR, finance, events and operations people. Built on mutual aid.</p><span class="sticker orange" style="margin-top:16px">Free, always</span></div>
+      <div><a class="plates brand foot" href="index.html" aria-label="The Com'mon People, home"><img src="img/cp-logo-reversed.svg" alt="The Com'mon People" width="453" height="170"></a><p class="fabout">A free resource centre for marketing, HR, finance, events and operations people. Built on mutual aid.</p><span class="sticker orange" style="margin-top:16px">Free, always</span></div>
       <div><h6>Guides</h6><a href="guide-cv.html">The CV that gets read</a><a href="guide-video-intro.html">The intro video</a><a href="guide-interview-prep.html">Interview prep</a><a href="guide-linkedin.html">LinkedIn, properly</a><a href="guide-05-evp.html">The EVP field guide</a></div>
       <div><h6>Dispatches</h6><a href="dispatch-investigate-the-stereotype.html">Investigate the stereotype</a><a href="dispatch-first-year-wage.html">Pay the first year</a><a href="dispatch-training-shortage.html">The training shortage</a><a href="dispatch-embed-apprenticeships.html">Embed apprenticeships in HR</a><a href="dispatch-apprenticeship-paradox.html">The Apprenticeship Paradox</a><a href="dispatch-recruitment-rethink.html">The recruitment rethink</a><a href="dispatch-eu-ai-act.html">The EU AI Act</a><a href="dispatch-report-hertfordshire.html">The Commons Report</a></div>
       <div><h6>Loudspeaker</h6><a href="loudspeaker.html">The archive</a><a href="loudspeaker-edition-01.html">Edition 01 · May 2026</a><a href="loudspeaker-edition-02.html">Edition 02 · July 2026</a><a href="loudspeaker-edition-03.html">Edition 03 · August 2026</a><a href="loudspeaker-edition-04.html">Edition 04 · September 2026</a></div>
