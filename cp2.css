@@ -335,3 +335,12 @@ div.art-hero{padding-left:clamp(22px,5vw,46px);padding-right:clamp(22px,5vw,46px
 .art.lockup{background-color:transparent}
 
 .feature .art.lockup{aspect-ratio:16/9;min-height:0;background-size:cover;background-position:center}
+
+/* Hot off the press (Nov 2026): faster scroll, and tiles styled to match each content type's lead image */
+.scroller .strip{animation-duration:36s}
+.cover.hot::before{background:linear-gradient(180deg,rgba(18,24,32,.05) 30%,rgba(18,24,32,.72))!important;opacity:1!important;mix-blend-mode:normal!important}
+.cover.hot .cover-tag{top:12px;left:12px;padding:5px 10px 4px;border-radius:999px;font-size:10.5px;letter-spacing:.09em;line-height:1.2}
+.cover.hot.t-ls .cover-tag{background:#D2691E;color:#FBF7EC}
+.cover.hot.t-dp .cover-tag{background:#E0B03C;color:#14110E}
+.cover.hot.t-cp .cover-tag{background:#ECE6D8;color:#14110E;border:2px solid #14110E;border-radius:8px;transform:rotate(-2deg)}
+.cover.hot.t-ls{border-bottom:6px solid #D2691E}.cover.hot.t-dp{border-bottom:6px solid #E0B03C}.cover.hot.t-cp{border-bottom:6px solid #D2691E}
