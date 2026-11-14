@@ -307,40 +307,9 @@
   </div>
 </footer>
 
+<script src="commons-episodes.js"></script>
 <script>
-/* =====================================================================
-   EPISODES: the only bit you edit each week.
-   - date: the Friday it goes live (YYYY-MM-DD). It appears on that day.
-   - Add ONE of: youtube: "VIDEO_ID"  (the bit after v= in the YouTube link)
-                 or video: "videos/episode-01.mp4" (a file in the repo)
-   - Until an episode has a video, it shows as "coming soon".
-   ===================================================================== */
-var EPISODES = [
-  { num:1, date:"2026-10-02", title:"Thirty-One Years and a Floppy Disk", stars:["dee","zara"], img:"dee",
-    blurb:"Nan Dee is made redundant after 31 years on the night shift and digs out her last CV. It is on a floppy disk. Zara tries to help. Nobody survives the font choice.",
-    res:[["The CV that gets read","guide-cv.html"],["CV Rewrite app (free)","https://cv.the-common-people.com"]] },
-  { num:2, date:"2026-10-09", title:"Read Receipts", stars:["zara","bowie"], img:"zara",
-    blurb:"Zara smashes a final interview. Then nothing. Days of nothing. Bowie and Ozzy stage a sit-in by her phone while the family debate whether no news is good news.",
-    res:[["#StopGhostingJobSeekers","dispatch-stop-ghosting.html"],["Interview Prep app (free)","prep-report.html"]] },
-  { num:3, date:"2026-10-16", title:"Sunday Roast, Monday Interview", stars:["kai","priya"], img:"kai", video:"videos/episode-03.mp4", poster:"videos/episode-03-poster.jpg",
-    blurb:"Kai can cook for twelve without breaking a sweat. Talking about himself for ten minutes is another story. Priya runs a very strict mock interview across the gravy.",
-    res:[["Interview prep guide","guide-interview-prep.html"],["Apprenticeships, explained","apprenticeships.html"]] },
-  { num:4, date:"2026-10-23", title:"The Paperwork Staircase", stars:["marcus","kai"], img:"marcus",
-    blurb:"Marcus decides to take on his first apprentice and meets his greatest enemy yet: the funding rules. He builds a staircase to escape. It does not help.",
-    res:[["Apprenticeship guidance","apprenticeships.html"],["The Apprenticeship Paradox","dispatch-apprenticeship-paradox.html"]] },
-  { num:5, date:"2026-10-30", title:"Two Hundred and Eighty", stars:["priya","marcus"], img:"priya",
-    blurb:"Priya opens her inbox to around 280 applications for one role (the Home Counties average, according to The Commons Report). Not one mentions the job. She needs a better plan and a board that will listen.",
-    res:[["The Commons Report","dispatch-report-hertfordshire.html"],["Embed apprenticeships in HR","dispatch-embed-apprenticeships.html"]] },
-  { num:6, date:"2026-11-06", title:"Stand By", stars:["lou","zara"], img:"lou",
-    blurb:"Auntie Lou has run festivals for thousands, but one LinkedIn headline brings her to her knees. Zara offers help. Lou offers a clipboard. Chaos, with a running order.",
-    res:[["LinkedIn, properly","guide-linkedin.html"],["The intro video guide","guide-video-intro.html"]] },
-  { num:7, date:"2026-11-13", title:"The Robots Are Reading", stars:["dee","kai"], img:"dee",
-    blurb:"Dee is convinced a computer binned her application before a human saw it. Kai tries to explain AI. Dee writes a strongly worded letter to the algorithm.",
-    res:[["The EU AI Act, explained","dispatch-eu-ai-act.html"],["CV Rewrite app (free)","https://cv.the-common-people.com"]] },
-  { num:8, date:"2026-11-20", title:"Woof. Woof.", stars:["bowie","dee","marcus","priya","zara","kai","lou"], img:"bowie-ozzy",
-    blurb:"Series finale. The whole family gathers for a celebration and Bowie and Ozzy steal the show. Someone gets a job. Someone gets an apprentice. Ozzy gets the sausage rolls.",
-    res:[["Subscribe to The Loudspeaker","loudspeaker.html"],["Browse the field guides","guides.html"]] }
-];
+/* Episode list and release dates live in commons-episodes.js */
 
 var FAMILY = {
   dee:{name:"Nan Dee", role:"Redundant after 31 years", c:"#E0B03C", img:"dee",
@@ -378,11 +347,20 @@ function card(ep){ return "img/commons-episodes/episode-" + String(ep.num).padSt
 function esc(s){ return String(s).replace(/[&<>"]/g,function(ch){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch];}); }
 function parseDay(d){ var p=d.split("-"); return new Date(+p[0], +p[1]-1, +p[2], 0, 0, 0); }
 function niceDate(d){ return parseDay(d).toLocaleDateString("en-GB",{weekday:"short", day:"numeric", month:"short"}); }
-function isOut(ep){ return parseDay(ep.date) <= new Date() && (ep.youtube || ep.video); }
-
-var released = EPISODES.filter(isOut);
-var current = released.length ? released[released.length-1] : null;
-var nextUp = EPISODES.filter(function(e){ return !isOut(e); })[0] || null;
+function isDue(ep){ return parseDay(ep.date) <= new Date() && !!(ep.youtube || ep.video); }
+function isOut(ep){ return !!ep.ready; }
+function byDate(a,b){ return parseDay(a.date) - parseDay(b.date); }
+/* An episode is out once its date has passed AND its video is really on the site. */
+function checkReleases(){
+  return Promise.all(EPISODES.map(function(ep){
+    if (!isDue(ep)) return null;
+    if (ep.youtube){ ep.ready = true; return null; }
+    return fetch(ep.video, {method:"HEAD", cache:"no-store"}).then(function(r){
+      var t = r.headers.get("content-type") || "";
+      ep.ready = r.ok && t.indexOf("video") > -1;
+    }).catch(function(){ ep.ready = false; });
+  }));
+}
 
 /* ---------- player ---------- */
 function starsHTML(list){
@@ -423,7 +401,6 @@ function tick(ep){
   el.innerHTML = '<div><b>'+d+'</b><span>Days</span></div><div><b>'+h+'</b><span>Hours</span></div><div><b>'+m+'</b><span>Mins</span></div>';
   setTimeout(function(){ tick(ep); }, 30000);
 }
-if (current) playEpisode(current); else if (nextUp) teaser(nextUp);
 
 /* ---------- family flip cards ---------- */
 document.getElementById("cf-family").innerHTML = Object.keys(FAMILY).map(function(k){
@@ -441,18 +418,24 @@ Array.prototype.forEach.call(document.querySelectorAll(".cf-flip"), function(b){
 /* ---------- episode guide ---------- */
 function renderGuide(){
   document.getElementById("cf-guide").innerHTML = EPISODES.map(function(ep, i){
-    var out = isOut(ep), lead = FAMILY[ep.stars[0]];
+    var out = isOut(ep), late = !out && parseDay(ep.date) <= new Date(), lead = FAMILY[ep.stars[0]];
     return '<article class="cf-epcard'+(out?'':' locked')+'"><div class="top tcard" style="--c:'+lead.c+'"><img src="'+card(ep)+'" alt="" loading="lazy">' +
-      '<span class="when sticker '+(out?'orange':'navy')+'">'+(out?'Out now':esc(niceDate(ep.date)))+'</span></div>' +
+      '<span class="when sticker '+(out?'orange':'navy')+'">'+(out?'Out now':esc(late?'Coming soon':niceDate(ep.date)))+'</span></div>' +
       '<div class="in"><h3>'+esc(ep.title)+'</h3><p>'+esc(ep.blurb)+'</p><div class="act">' +
-      (out ? '<button class="cf-watch" type="button" data-i="'+i+'">Watch episode &rarr;</button>' : '<span class="cf-soon">Coming '+esc(niceDate(ep.date))+'</span>') +
+      (out ? '<button class="cf-watch" type="button" data-i="'+i+'">Watch episode &rarr;</button>' : '<span class="cf-soon">'+(late?'Coming soon':'Coming '+esc(niceDate(ep.date)))+'</span>') +
       '</div></div></article>';
   }).join("");
   Array.prototype.forEach.call(document.querySelectorAll(".cf-watch"), function(b){
     b.addEventListener("click", function(){ playEpisode(EPISODES[+b.getAttribute("data-i")]); document.getElementById("episode").scrollIntoView({behavior:"smooth"}); });
   });
 }
-renderGuide();
+checkReleases().then(function(){
+  var released = EPISODES.filter(isOut).sort(byDate);
+  var current = released.length ? released[released.length-1] : null;
+  var nextUp = EPISODES.filter(function(e){ return !isOut(e); }).sort(byDate)[0] || null;
+  if (current) playEpisode(current); else if (nextUp) teaser(nextUp);
+  renderGuide();
+});
 
 /* ---------- quiz ---------- */
 var QUIZ = [

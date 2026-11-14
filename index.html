@@ -93,10 +93,10 @@
 </style>
 <section class="band-navy">
   <div class="wrap feature">
-    <div class="art navy cf-home-art cf-home-video">
+    <div class="art navy cf-home-art cf-home-video" id="cf-home-video">
       <video controls playsinline preload="metadata" poster="videos/episode-03-poster.jpg" aria-label="The Commons, episode 3: Sunday Roast, Monday Interview"><source src="videos/episode-03.mp4" type="video/mp4">Your browser can't play this video. <a href="commons-family.html">Watch it on The Commons page.</a></video>
     </div>
-    <div class="txt"><span class="eyebrow">Out now · The Commons · Episode 03</span><h2>Sunday Roast, Monday Interview.</h2><p>Kai can cook for twelve without breaking a sweat. Talking about himself for ten minutes is another story. Priya runs a very strict mock interview across the gravy. Every episode of our new cartoon ends with the free guide that would have saved them a lot of bother.</p><div class="cta"><a class="btn lg orange" href="commons-family.html#episode">Watch on The Commons page →</a><a class="btn lg on-color" href="commons-family.html#quiz">Which Common are you?</a></div></div>
+    <div class="txt" id="cf-home-txt"><span class="eyebrow">Out now · The Commons · Episode 03</span><h2>Sunday Roast, Monday Interview.</h2><p>Kai can cook for twelve without breaking a sweat. Talking about himself for ten minutes is another story. Priya runs a very strict mock interview across the gravy. Every episode of our new cartoon ends with the free guide that would have saved them a lot of bother.</p><div class="cta"><a class="btn lg orange" href="commons-family.html#episode">Watch on The Commons page →</a><a class="btn lg on-color" href="commons-family.html#quiz">Which Common are you?</a></div></div>
   </div>
 </section>
 
@@ -253,6 +253,36 @@
       else{m.style.color="#F0B27A";m.textContent=d.error||"Something went wrong. Please try again.";}
     }catch(err){m.style.color="#F0B27A";m.textContent="Something went wrong. Please try again.";}
   });}
+})();
+</script>
+<script src="commons-episodes.js"></script>
+<script>
+/* Homepage: always show the latest Commons episode that is out (dates and videos live in commons-episodes.js) */
+(function(){
+  if (typeof EPISODES === "undefined") return;
+  function day(d){ var p=d.split("-"); return new Date(+p[0], +p[1]-1, +p[2]); }
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+  var due = EPISODES.filter(function(e){ return e.video && day(e.date) <= new Date(); })
+                    .sort(function(a,b){ return day(b.date) - day(a.date); });
+  (function next(i){
+    if (i >= due.length) return;
+    var ep = due[i];
+    fetch(ep.video, {method:"HEAD", cache:"no-store"}).then(function(r){
+      var t = r.headers.get("content-type") || "";
+      if (!(r.ok && t.indexOf("video") > -1)) return next(i+1);
+      var nn = String(ep.num).padStart(2,"0");
+      var poster = ep.poster || ("img/commons-episodes/episode-" + nn + "-title-card.jpg");
+      var box = document.getElementById("cf-home-video"), txt = document.getElementById("cf-home-txt");
+      if (box && box.querySelector("source").getAttribute("src") !== ep.video){
+        box.innerHTML = '<video controls playsinline preload="metadata" poster="'+esc(poster)+'" aria-label="The Commons, episode '+ep.num+': '+esc(ep.title)+'"><source src="'+esc(ep.video)+'" type="video/mp4">Your browser can\'t play this video. <a href="commons-family.html">Watch it on The Commons page.</a></video>';
+      }
+      if (txt){
+        txt.querySelector(".eyebrow").textContent = "Out now · The Commons · Episode " + nn;
+        txt.querySelector("h2").textContent = ep.title.replace(/[.!?]$/,"") + ".";
+        txt.querySelector("p").textContent = ep.blurb + " Every episode of our new cartoon ends with the free guide that would have saved them a lot of bother.";
+      }
+    }).catch(function(){ next(i+1); });
+  })(0);
 })();
 </script>
 <script defer src="cp-free-popup.js"></script>
