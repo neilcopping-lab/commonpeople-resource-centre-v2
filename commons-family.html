@@ -192,6 +192,12 @@
 .cf-front::after{content:"";position:absolute;top:12px;left:12px;z-index:2;width:36px;height:36px;background:url(img/cp-icon.svg) center/contain no-repeat;border-radius:9px;box-shadow:0 2px 0 rgba(20,17,14,.45)}
 .cf-screen:has(.cf-teaser)::after{content:"";position:absolute;bottom:18px;left:20px;z-index:3;width:120px;height:45px;background:url(img/cp-logo-reversed.svg) left center/contain no-repeat;pointer-events:none}
 @media (max-width:600px){.cf-screen:has(.cf-teaser)::after{width:84px;height:32px;bottom:12px;left:12px}}
+.cf-tcard{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cf-count-over{position:absolute;right:16px;top:16px;z-index:2}
+@media (max-width:600px){.cf-count-over{transform:scale(.7);transform-origin:top right;right:8px;top:8px}}
+.cf-count-over div{background:var(--navy)!important;border-color:var(--navy)!important}
+.cf-epcard .top.tcard{aspect-ratio:16/9}
+.cf-epcard .top.tcard img{object-position:50% 50%}
 </style>
 </head>
 <body>
@@ -368,6 +374,7 @@ var FAMILY = {
 };
 
 function img(k){ return "img/commons-family/" + k + ".jpg"; }
+function card(ep){ return "img/commons-episodes/episode-" + String(ep.num).padStart(2,"0") + "-title-card.jpg"; }
 function esc(s){ return String(s).replace(/[&<>"]/g,function(ch){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch];}); }
 function parseDay(d){ var p=d.split("-"); return new Date(+p[0], +p[1]-1, +p[2], 0, 0, 0); }
 function niceDate(d){ return parseDay(d).toLocaleDateString("en-GB",{weekday:"short", day:"numeric", month:"short"}); }
@@ -395,17 +402,15 @@ function playEpisode(ep){
   if (ep.youtube){
     s.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/'+encodeURIComponent(ep.youtube)+'?rel=0" title="The Commons, episode '+ep.num+': '+esc(ep.title)+'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>';
   } else {
-    s.innerHTML = '<video controls preload="metadata" poster="'+img(ep.img)+'"><source src="'+esc(ep.video)+'" type="video/mp4">Your browser can\'t play this video.</video>';
+    s.innerHTML = '<video controls preload="metadata" poster="'+card(ep)+'"><source src="'+esc(ep.video)+'" type="video/mp4">Your browser can\'t play this video.</video>';
   }
   document.getElementById("cf-epinfo").innerHTML = infoHTML(ep, true);
 }
 function teaser(ep){
   var s = document.getElementById("cf-screen");
   s.classList.add("is-teaser");
-  var faces = ["dee","marcus","priya","zara","kai","lou","bowie-ozzy"].map(function(k){ return '<img src="'+img(k)+'" alt="">'; }).join("");
-  s.innerHTML = '<div class="cf-teaser cf-dots"><div class="faces">'+faces+'</div>' +
-    '<div class="big">Episode '+String(ep.num).padStart(2,"0")+'<br><em>'+esc(ep.title)+'</em></div>' +
-    '<div class="cf-count" id="cf-count"></div></div>' +
+  s.innerHTML = '<img class="cf-tcard" src="'+card(ep)+'" alt="The Commons, episode '+ep.num+': '+esc(ep.title)+'">' +
+    '<div class="cf-count cf-count-over" id="cf-count"></div>' +
     '<div class="cf-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 4v16l13-8L7 4Z"/></svg></div>';
   document.getElementById("cf-epinfo").innerHTML = infoHTML(ep, false);
   tick(ep);
@@ -437,8 +442,7 @@ Array.prototype.forEach.call(document.querySelectorAll(".cf-flip"), function(b){
 function renderGuide(){
   document.getElementById("cf-guide").innerHTML = EPISODES.map(function(ep, i){
     var out = isOut(ep), lead = FAMILY[ep.stars[0]];
-    return '<article class="cf-epcard'+(out?'':' locked')+'"><div class="top" style="--c:'+lead.c+'"><img src="'+img(ep.img)+'" alt="" loading="lazy">' +
-      '<span class="epn">'+String(ep.num).padStart(2,"0")+'</span>' +
+    return '<article class="cf-epcard'+(out?'':' locked')+'"><div class="top tcard" style="--c:'+lead.c+'"><img src="'+card(ep)+'" alt="" loading="lazy">' +
       '<span class="when sticker '+(out?'orange':'navy')+'">'+(out?'Out now':esc(niceDate(ep.date)))+'</span></div>' +
       '<div class="in"><h3>'+esc(ep.title)+'</h3><p>'+esc(ep.blurb)+'</p><div class="act">' +
       (out ? '<button class="cf-watch" type="button" data-i="'+i+'">Watch episode &rarr;</button>' : '<span class="cf-soon">Coming '+esc(niceDate(ep.date))+'</span>') +
