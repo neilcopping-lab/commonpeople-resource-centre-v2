@@ -1,0 +1,18 @@
+THE LOUDSPEAKER: NEW LEAD IMAGES ACROSS THE SITE
+================================================
+
+What changes
+- Edition pages 01 to 05 lead with their new image, and share it on LinkedIn.
+- Loudspeaker archive: all five cards plus the top banner.
+- Homepage: the Edition 03 and 04 tiles in the "Hot off the press" strip,
+  and the Loudspeaker card.
+- About and Resources: the Loudspeaker card.
+
+To upload (about 2 minutes)
+1. Unzip this folder.
+2. Go to github.com/neilcopping-lab/commonpeople-resource-centre-v2 and sign in.
+3. Click "Add file", then "Upload files".
+4. Drag in the 9 .html files AND the img folder (drag the folder itself,
+   so the pictures land in img/). Leave this HOW-TO file out.
+5. Commit directly to main.
+Cloudflare Pages updates the live site within a few minutes.
