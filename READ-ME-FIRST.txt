@@ -1,0 +1,21 @@
+COMQUAT ROLL-OUT: THREE UPLOADS
+
+Do them in this order. Each one is the same drag-and-drop as before.
+
+1. THE WEBSITE
+   Open: github.com/neilcopping-lab/commonpeople-resource-centre-v2/upload/main
+   Drag EVERYTHING inside the "1-SITE-upload" folder (the four files and the img folder) onto the page.
+   Click "Commit changes". The site updates in a minute or two.
+
+2. THE CV REWRITE APP (cv.the-common-people.com)
+   Open: github.com/neilcopping-lab/cv-rewrite-app/upload/main
+   Drag the "public" folder from inside "2-CV-APP-upload" onto the page.
+   Click "Commit changes". Render rebuilds the app in a few minutes.
+
+3. THE INTERVIEW PREP APP
+   Open: github.com/neilcopping-lab/interview-prep-app-v2/upload/main
+   Drag the "public" folder from inside "3-PREP-APP-upload" onto the page.
+   Click "Commit changes". Render rebuilds the app in a few minutes.
+
+The "campaign-images-for-later" folder holds the Pay the First Year campaign image.
+It isn't on the site yet because there's no campaign spot for it. Keep it for when there is.
