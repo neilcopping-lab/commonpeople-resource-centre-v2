@@ -344,3 +344,18 @@ div.art-hero{padding-left:clamp(22px,5vw,46px);padding-right:clamp(22px,5vw,46px
 .cover.hot.t-dp .cover-tag{background:#E0B03C;color:#14110E}
 .cover.hot.t-cp .cover-tag{background:#ECE6D8;color:#14110E;border:2px solid #14110E;border-radius:8px;transform:rotate(-2deg)}
 .cover.hot.t-ls{border-bottom:6px solid #D2691E}.cover.hot.t-dp{border-bottom:6px solid #E0B03C}.cover.hot.t-cp{border-bottom:6px solid #D2691E}
+
+/* Apprenticeships page (Nov 2026): every apprenticeship story in the sidebar, with its lead image */
+.side-card.stories{padding:20px}
+.story-list{list-style:none;margin:6px 0 0;padding:0}
+.story-list li{margin:0 0 18px;padding:0 0 18px;border-bottom:1px solid var(--line)}
+.story-list li:last-child{margin-bottom:0;padding-bottom:0;border-bottom:0}
+.story{display:block;text-decoration:none;color:inherit}
+.story img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid var(--line);transition:transform .15s ease}
+.story:hover img{transform:translateY(-2px)}
+.story .st-type{display:inline-block;margin:10px 0 6px;padding:3px 9px 2px;border-radius:999px;font-family:var(--label);font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase}
+.story .st-type.dp{background:#E0B03C;color:#14110E}
+.story .st-type.ls{background:#D2691E;color:#FBF7EC}
+.story .st-title{display:block;font-weight:700;font-size:15px;line-height:1.35;color:var(--ink)}
+.story .st-go{display:block;margin-top:6px;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:12px;color:#2f7f97}
+.story:hover .st-title{text-decoration:underline}
