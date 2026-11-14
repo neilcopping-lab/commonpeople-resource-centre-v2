@@ -359,3 +359,45 @@ div.art-hero{padding-left:clamp(22px,5vw,46px);padding-right:clamp(22px,5vw,46px
 .story .st-title{display:block;font-weight:700;font-size:15px;line-height:1.35;color:var(--ink)}
 .story .st-go{display:block;margin-top:6px;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:12px;color:#2f7f97}
 .story:hover .st-title{text-decoration:underline}
+
+/* Landing page banners (Nov 2026): one lead image under the dark hero on every menu landing page (not the homepage) */
+.landing-banner{padding:44px 0 0;background:transparent}
+.landing-banner img{display:block;width:100%;max-width:880px;height:auto;border-radius:var(--radius-lg);box-shadow:var(--shadow)}
+@media (max-width:640px){.landing-banner{padding-top:26px}}
+
+/* ===== Comquat landing pages (Nov 2026). Same template as cv.the-common-people.com.
+   Interview Prep = leaf green #1F6B45, CV Rewrite = kumquat #FF8A1F. Ink #17191C, peel #FFF3E2, pith #E9DCC8, muted #5B5F66.
+   Type: Bricolage Grotesque (headlines, sentence case), DM Sans (everything else). ===== */
+body.cq-landing{--navy:#17191C;--cream:#FFF3E2;--gold:#FF8A1F;--teal:#3E9A5F;--orange:#1F6B45;--ink:#17191C;--muted:#5B5F66;--tint:#FFF3E2;--line:#E9DCC8;
+  --display:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;--label:"DM Sans",system-ui,sans-serif;--body:"DM Sans",system-ui,sans-serif;font-family:var(--body);color:#17191C}
+body.cq-landing h1,body.cq-landing h2,body.cq-landing h3,body.cq-landing h4{font-weight:800;text-transform:none;letter-spacing:-.015em;line-height:1.05}
+body.cq-landing .btn{text-transform:none;letter-spacing:0;font-weight:700}
+body.cq-landing .btn.orange{background:#1F6B45;color:#FFF3E2}
+body.cq-landing .btn.orange:hover{background:#17573a}
+body.cq-landing .btn.ghost{border-color:#E9DCC8;color:#17191C}
+body.cq-landing .eyebrow{color:#1F6B45;font-weight:700}
+body.cq-landing .band-navy{background:#17191C}
+body.cq-landing .band-navy .eyebrow{color:#FF8A1F!important}
+body.cq-landing .band-tint{background:#FFF3E2}
+body.cq-landing .price .v{color:#1F6B45;font-family:var(--display);font-weight:800}
+body.cq-landing .stepcard .n{border-color:#1F6B45!important;color:#1F6B45!important}
+body.cq-landing .faq a{color:#1F6B45}
+body.cq-landing .focus{border-left-color:#3E9A5F}
+body.cq-landing .slot{background:#FF8A1F;color:#17191C}
+body.cq-landing footer{background:#17191C}
+body.cq-landing .nav-book{background:#FF8A1F!important;color:#17191C!important}
+.cq-brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none;line-height:1}
+.cq-brand img{height:32px;width:auto;display:block}
+.cq-brand .cq-feat{font-family:"DM Sans",system-ui,sans-serif;font-weight:700;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;padding:6px 11px;border-radius:999px;white-space:nowrap;background:#1F6B45;color:#FFF3E2}
+.cq-foot{display:inline-block;background:#FFF3E2;border-radius:999px;padding:9px 18px 7px}.cq-foot img{display:block;height:26px;width:auto}
+.cq-hero{padding:56px 0 60px;background:#fff;border-bottom:1px solid #E9DCC8}
+.cq-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.cq-hero h1{font-size:clamp(36px,5vw,58px);margin:12px 0 18px;color:#17191C}
+.cq-hero .lead{font-size:17.5px;line-height:1.7;color:#17191C;margin:0 0 18px;max-width:none}
+.cq-hero-img{display:block;width:100%;height:auto;border-radius:20px;box-shadow:0 22px 50px -26px rgba(23,25,28,.45)}
+.cq-free{margin:0 0 22px}
+.cq-flag{display:inline-block;background:#1F6B45;color:#FFF3E2;font-family:"DM Sans",system-ui,sans-serif;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:999px}
+.cq-fine{font-family:"DM Sans",system-ui,sans-serif;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#5B5F66}
+@media (max-width:900px){.cq-hero-grid{grid-template-columns:1fr;gap:28px}.cq-hero{padding:36px 0 40px}}
+.nav .cq-brand{flex:none;margin-right:20px}
+@media (min-width:921px) and (max-width:1180px){.nav .cq-brand .cq-feat{display:none}}
