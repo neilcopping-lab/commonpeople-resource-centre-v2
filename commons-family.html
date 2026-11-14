@@ -322,7 +322,7 @@ var EPISODES = [
   { num:2, date:"2026-10-09", title:"Read Receipts", stars:["zara","bowie"], img:"zara",
     blurb:"Zara smashes a final interview. Then nothing. Days of nothing. Bowie and Ozzy stage a sit-in by her phone while the family debate whether no news is good news.",
     res:[["#StopGhostingJobSeekers","dispatch-stop-ghosting.html"],["Interview Prep app (free)","prep-report.html"]] },
-  { num:3, date:"2026-10-16", title:"Sunday Roast, Monday Interview", stars:["kai","priya"], img:"kai",
+  { num:3, date:"2026-10-16", title:"Sunday Roast, Monday Interview", stars:["kai","priya"], img:"kai", video:"videos/episode-03.mp4", poster:"videos/episode-03-poster.jpg",
     blurb:"Kai can cook for twelve without breaking a sweat. Talking about himself for ten minutes is another story. Priya runs a very strict mock interview across the gravy.",
     res:[["Interview prep guide","guide-interview-prep.html"],["Apprenticeships, explained","apprenticeships.html"]] },
   { num:4, date:"2026-10-23", title:"The Paperwork Staircase", stars:["marcus","kai"], img:"marcus",
@@ -402,7 +402,11 @@ function playEpisode(ep){
   if (ep.youtube){
     s.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/'+encodeURIComponent(ep.youtube)+'?rel=0" title="The Commons, episode '+ep.num+': '+esc(ep.title)+'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>';
   } else {
+<<<<<<< Updated upstream
     s.innerHTML = '<video controls preload="metadata" poster="'+card(ep)+'"><source src="'+esc(ep.video)+'" type="video/mp4">Your browser can\'t play this video.</video>';
+=======
+    s.innerHTML = '<video controls playsinline preload="metadata" poster="'+esc(ep.poster||img(ep.img))+'"><source src="'+esc(ep.video)+'" type="video/mp4">Your browser can\'t play this video.</video>';
+>>>>>>> Stashed changes
   }
   document.getElementById("cf-epinfo").innerHTML = infoHTML(ep, true);
 }
