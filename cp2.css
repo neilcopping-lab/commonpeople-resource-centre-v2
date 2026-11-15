@@ -473,3 +473,24 @@ body.cq-landing .nav-book{background:#FF8A1F!important;color:#17191C!important}
 }
 .consent span{min-width:0;flex:1}
 html,body{overflow-x:clip}
+/* Buttons, Nov 2026: same type as the menu, brand teal, slimmer tactile buttons.
+   Comquat landing pages keep their own button style. */
+body:not(.cq-landing) .btn{font-family:var(--label);font-weight:600;font-size:14px;letter-spacing:.05em;line-height:1.2;text-transform:uppercase;padding:10px 18px;border:2px solid transparent;border-radius:6px;background:var(--teal);color:var(--navy);box-shadow:0 3px 0 #2F7F97;transition:transform .1s ease,box-shadow .1s ease,background .1s ease}
+body:not(.cq-landing) .btn.lg{font-size:15px;padding:12px 22px}
+body:not(.cq-landing) .btn:hover{background:#6BB6CD;transform:translateY(1px);box-shadow:0 2px 0 #2F7F97}
+body:not(.cq-landing) .btn:active{transform:translateY(3px);box-shadow:0 0 0 #2F7F97}
+body:not(.cq-landing) .btn:focus-visible{outline:2px solid var(--navy);outline-offset:3px}
+/* outline buttons keep their outline, same shape */
+body:not(.cq-landing) .btn.ghost{background:transparent;color:var(--navy);border-color:var(--navy);box-shadow:0 3px 0 rgba(22,31,41,.25)}
+body:not(.cq-landing) .btn.ghost:hover{background:rgba(90,169,194,.14);box-shadow:0 2px 0 rgba(22,31,41,.25)}
+body:not(.cq-landing) .band-navy .btn.ghost,body:not(.cq-landing) .art .btn.ghost{color:var(--cream);border-color:rgba(236,230,216,.6);box-shadow:0 3px 0 rgba(0,0,0,.35)}
+/* cream buttons sitting on coloured panels */
+body:not(.cq-landing) .btn.on-color{background:var(--cream);color:var(--navy);box-shadow:0 3px 0 rgba(0,0,0,.28)}
+body:not(.cq-landing) .btn.on-color:hover{background:#F6F2E9;box-shadow:0 2px 0 rgba(0,0,0,.28)}
+/* on a teal panel a teal button would vanish, so go navy */
+body:not(.cq-landing) .band-teal .btn:not(.ghost):not(.on-color){background:var(--navy);color:var(--cream);box-shadow:0 3px 0 #0B1118}
+/* header button */
+.nav-actions .nav-book{padding:8px 16px;white-space:nowrap}
+@media (min-width:921px) and (max-width:1260px){.nav-actions .nav-book{font-size:13.5px;letter-spacing:.04em}}
+@media (min-width:921px) and (max-width:1120px){.nav-actions .nav-book{font-size:13px;letter-spacing:.03em}}
+@media (max-width:600px){body:not(.cq-landing) .nav-actions .nav-book{font-size:13px;padding:7px 12px}}
