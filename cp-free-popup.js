@@ -25,7 +25,7 @@
     "#cpfree .cf-bulb.lit{background:#FFC27A;box-shadow:0 0 10px 3px rgba(255,138,31,.8)}",
     "#cpfree .cf-x{position:absolute;top:12px;right:16px;z-index:3;background:none;border:0;color:#AEBAC6;font-size:32px;line-height:1;cursor:pointer;padding:4px 8px}",
     "#cpfree .cf-x:hover{color:#fff}",
-    "#cpfree .cf-logo{display:inline-block;background:#FFF3E2;border-radius:999px;padding:11px 22px 9px;margin-bottom:18px}",
+    "#cpfree .cf-logo{display:inline-block;margin-bottom:18px}",
     "#cpfree .cf-logo img{display:block;height:34px;width:auto}",
     "#cpfree .cf-eyebrow{font-family:'DM Sans',Arial,sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#FF8A1F;margin:0 0 6px}",
     "#cpfree h2{font-family:'Bricolage Grotesque','DM Sans',Arial,sans-serif;font-weight:800;text-transform:none;font-size:clamp(46px,11vw,78px);line-height:.95;letter-spacing:-1.5px;margin:6px 0 4px;color:#FFF3E2}",
@@ -45,7 +45,7 @@
     "@keyframes cfwiggle{0%,100%{transform:rotate(-2deg) scale(1)}50%{transform:rotate(2deg) scale(1.06)}}",
     "@keyframes cfstamp{0%,100%{transform:rotate(-14deg) scale(1)}50%{transform:rotate(-8deg) scale(1.1)}}",
     "@keyframes cfpulse{0%,100%{box-shadow:0 0 0 0 rgba(62,154,95,.7)}50%{box-shadow:0 0 0 12px rgba(62,154,95,0)}}",
-    "@media (max-width:480px){#cpfree .cf-card{padding:34px 20px 24px}#cpfree .cf-logo{padding:9px 16px 7px}#cpfree .cf-logo img{height:26px}#cpfree .cf-stamp{width:64px;height:64px;top:16px;left:14px}#cpfree .cf-stamp s{font-size:14px}#cpfree .cf-stamp b{font-size:24px}#cpfree .cf-eyebrow{margin-top:56px}}",
+    "@media (max-width:480px){#cpfree .cf-card{padding:34px 20px 24px}#cpfree .cf-logo{padding:0}#cpfree .cf-logo img{height:30px}#cpfree .cf-stamp{width:64px;height:64px;top:16px;left:14px}#cpfree .cf-stamp s{font-size:14px}#cpfree .cf-stamp b{font-size:24px}#cpfree .cf-eyebrow{margin-top:56px}}",
     "@media (prefers-reduced-motion:reduce){#cpfree .cf-card{transition:none;transform:none}#cpfree h2 em,#cpfree .cf-stamp,#cpfree .cf-a{animation:none}}"
   ].join("\n");
 
@@ -65,7 +65,7 @@
         '<div class="cf-bulbs" aria-hidden="true"></div>' +
         '<button class="cf-x" type="button" aria-label="Close">&times;</button>' +
         '<div class="cf-stamp" aria-hidden="true"><s>&pound;15</s><b>&pound;0</b></div>' +
-        '<div class="cf-logo"><img src="/img/comquat-logo.svg" alt="Comquat" width="150" height="34"></div>' +
+        '<div class="cf-logo"><img src="/img/comquat-logo-reversed.svg" alt="Comquat" width="150" height="34"></div>' +
         '<p class="cf-eyebrow">Big news, everyone</p>' +
         '<h2 id="cpfree-title">Free.<br><em>Forever.</em></h2>' +
         '<p class="cf-sub">Comquat, our CV Rewrite and Interview Prep app, now costs nothing. Every time, for everyone. No card, no credits, no catch.</p>' +

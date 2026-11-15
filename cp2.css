@@ -389,7 +389,7 @@ body.cq-landing .nav-book{background:#FF8A1F!important;color:#17191C!important}
 .cq-brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none;line-height:1}
 .cq-brand img{height:32px;width:auto;display:block}
 .cq-brand .cq-feat{font-family:"DM Sans",system-ui,sans-serif;font-weight:700;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;padding:6px 11px;border-radius:999px;white-space:nowrap;background:#1F6B45;color:#FFF3E2}
-.cq-foot{display:inline-block;background:#FFF3E2;border-radius:999px;padding:9px 18px 7px}.cq-foot img{display:block;height:26px;width:auto}
+.cq-foot{display:inline-block}.cq-foot img{display:block;height:30px;width:auto}
 .cq-hero{padding:56px 0 60px;background:#fff;border-bottom:1px solid #E9DCC8}
 .cq-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
 .cq-hero h1{font-size:clamp(36px,5vw,58px);margin:12px 0 18px;color:#17191C}
@@ -494,3 +494,21 @@ body:not(.cq-landing) .band-teal .btn:not(.ghost):not(.on-color){background:var(
 @media (min-width:921px) and (max-width:1260px){.nav-actions .nav-book{font-size:13.5px;letter-spacing:.04em}}
 @media (min-width:921px) and (max-width:1120px){.nav-actions .nav-book{font-size:13px;letter-spacing:.03em}}
 @media (max-width:600px){body:not(.cq-landing) .nav-actions .nav-book{font-size:13px;padding:7px 12px}}
+
+/* Comquat-branded app promos (Dispatches) */
+.cp-cta.cq-cta{background:#17191C;color:#D9D4CB}
+.cq-cta .cq-cta-brand{display:inline-block;margin-bottom:16px}
+.cq-cta .cq-cta-brand img{display:block;height:32px;width:auto}
+.cq-cta .eyebrow{display:block;color:#FF8A1F}
+.cq-cta h3{color:#FFF3E2}
+body:not(.cq-landing) .btn.cq-btn{background:#1F6B45;color:#FFF3E2;box-shadow:0 3px 0 #123F28}
+body:not(.cq-landing) .btn.cq-btn:hover{background:#26804F;box-shadow:0 2px 0 #123F28}
+body:not(.cq-landing) .btn.cq-btn:active{box-shadow:0 0 0 #123F28}
+body:not(.cq-landing) .btn.cq-btn-alt{background:#FF8A1F;color:#17191C;box-shadow:0 3px 0 #B85A08}
+body:not(.cq-landing) .btn.cq-btn-alt:hover{background:#FFA54A;box-shadow:0 2px 0 #B85A08}
+body:not(.cq-landing) .btn.cq-btn-alt:active{box-shadow:0 0 0 #B85A08}
+.cq-nav{white-space:nowrap}
+@media (max-width:600px){.cq-ad-wrap{padding:28px 14px!important}.cq-ad-wrap>div{padding:30px 20px!important}.cq-ad-wrap h2{font-size:26px!important}}
+/* Nav spacing: room for the Comquat icons beside Interview Prep and CV Rewrite */
+@media (min-width:921px) and (max-width:1400px){.nav .row>.links{gap:8px 16px}}
+@media (min-width:921px) and (max-width:1120px){.nav .row>.links{gap:8px 11px}}

@@ -14,10 +14,10 @@
 var EPISODES = [
   { num:1, date:"2026-11-20", title:"Thirty-One Years and a Floppy Disk", stars:["dee","zara"], img:"dee", video:"videos/episode-01.mp4",
     blurb:"Nan Dee is made redundant after 31 years on the night shift and digs out her last CV. It is on a floppy disk. Zara tries to help. Nobody survives the font choice.",
-    res:[["The CV that gets read","guide-cv.html"],["CV Rewrite app (free)","https://cv.the-common-people.com"]] },
+    res:[["The CV that gets read","guide-cv.html"],["Comquat CV Rewrite (free)","https://cv.the-common-people.com"]] },
   { num:2, date:"2026-11-27", title:"Read Receipts", stars:["zara","bowie"], img:"zara", video:"videos/episode-02.mp4",
     blurb:"Zara smashes a final interview. Then nothing. Days of nothing. Bowie and Ozzy stage a sit-in by her phone while the family debate whether no news is good news.",
-    res:[["#StopGhostingJobSeekers","dispatch-stop-ghosting.html"],["Interview Prep app (free)","prep-report.html"]] },
+    res:[["#StopGhostingJobSeekers","dispatch-stop-ghosting.html"],["Comquat Interview Prep (free)","prep-report.html"]] },
   { num:3, date:"2026-11-13", title:"Sunday Roast, Monday Interview", stars:["kai","priya"], img:"kai", video:"videos/episode-03.mp4", poster:"videos/episode-03-poster.jpg",
     blurb:"Kai can cook for twelve without breaking a sweat. Talking about himself for ten minutes is another story. Priya runs a very strict mock interview across the gravy.",
     res:[["Interview prep guide","guide-interview-prep.html"],["Apprenticeships, explained","apprenticeships.html"]] },
@@ -32,7 +32,7 @@ var EPISODES = [
     res:[["LinkedIn, properly","guide-linkedin.html"],["The intro video guide","guide-video-intro.html"]] },
   { num:7, date:"2027-01-08", title:"The Robots Are Reading", stars:["dee","kai"], img:"dee", video:"videos/episode-07.mp4",
     blurb:"Dee is convinced a computer binned her application before a human saw it. Kai tries to explain AI. Dee writes a strongly worded letter to the algorithm.",
-    res:[["The EU AI Act, explained","dispatch-eu-ai-act.html"],["CV Rewrite app (free)","https://cv.the-common-people.com"]] },
+    res:[["The EU AI Act, explained","dispatch-eu-ai-act.html"],["Comquat CV Rewrite (free)","https://cv.the-common-people.com"]] },
   { num:8, date:"2027-01-15", title:"Woof. Woof.", stars:["bowie","dee","marcus","priya","zara","kai","lou"], img:"bowie-ozzy", video:"videos/episode-08.mp4",
     blurb:"Series finale. The whole family gathers for a celebration and Bowie and Ozzy steal the show. Someone gets a job. Someone gets an apprentice. Ozzy gets the sausage rolls.",
     res:[["Subscribe to The Loudspeaker","loudspeaker.html"],["Browse the field guides","guides.html"]] }
