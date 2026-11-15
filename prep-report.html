@@ -43,7 +43,7 @@
       <h1>Walk in ready. We'll build the prep for you.</h1>
       <p class="lead">Paste your CV and the job description. Answer a handful of questions, by voice or text. Get back a proper, personalised prep report: real research on the company, a tailored pitch, sharp questions, the works. Not a template with your name swapped in.</p>
       <p class="cq-free"><span class="cq-flag">Free, always</span> <span class="cq-fine">No card. No subscription. No catch.</span></p>
-      <div class="cta"><a class="btn orange lg" href="https://the-common-people-interview-prep-app.onrender.com">Get my free prep report</a><a class="btn ghost lg" href="sample-report.html">See a sample report →</a></div>
+      <div class="cta"><a class="btn orange lg" href="https://prep.the-common-people.com">Get my free prep report</a><a class="btn ghost lg" href="sample-report.html">See a sample report →</a></div>
       <p class="cq-fine" style="margin-top:18px">Takes about 10 minutes to fill in. Your report is usually ready in under 2 minutes.</p>
     </div>
     <img class="cq-hero-img" src="img/comquat-interview-prep-hero.jpg" alt="Comquat Interview Prep: a notebook checklist, a watch and two kumquats on green. Walk in ready." width="1600" height="900">
@@ -134,7 +134,7 @@
 <section class="band-navy" style="text-align:center">
   <div class="wrap">
     <h2 style="color:var(--cream);font-size:clamp(30px,4.6vw,48px);margin:0 0 26px">Ready when you are.</h2>
-    <a class="btn orange lg" href="https://the-common-people-interview-prep-app.onrender.com">Get your free interview prep report</a>
+    <a class="btn orange lg" href="https://prep.the-common-people.com">Get your free interview prep report</a>
   </div>
 </section>
 
@@ -154,7 +154,7 @@
 (function(){var b=document.getElementById("cpburger"),n=document.getElementById("cpnav");if(b&&n)b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");});})();
 /* Pre-warm the interview prep report app so users never hit Render's cold-start page. */
 (function(){
-  var APP='https://the-common-people-interview-prep-app.onrender.com';
+  var APP='https://prep.the-common-people.com';
   var warmed=false, warming=null;
   function warm(){warming=fetch(APP,{mode:'no-cors',cache:'no-store'}).then(function(){warmed=true;},function(){warmed=true;});return warming;}
   warm(); setInterval(warm,120000);
