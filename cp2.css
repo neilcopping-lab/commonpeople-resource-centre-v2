@@ -512,3 +512,23 @@ body:not(.cq-landing) .btn.cq-btn-alt:active{box-shadow:0 0 0 #B85A08}
 /* Nav spacing: room for the Comquat icons beside Interview Prep and CV Rewrite */
 @media (min-width:921px) and (max-width:1400px){.nav .row>.links{gap:8px 16px}}
 @media (min-width:921px) and (max-width:1120px){.nav .row>.links{gap:8px 11px}}
+
+/* ===== Header fit (17 Nov 2026): coaching button sits beside the logo, the menu gets the whole row
+   beneath it and wraps if it must, so nothing overlaps at laptop widths ===== */
+@media (min-width:921px){
+  .nav .row{grid-template-columns:minmax(0,1fr) auto!important;grid-template-areas:"brand actions" "links links"!important}
+  .nav .row>.links{flex-wrap:wrap!important;white-space:normal!important;justify-self:start;row-gap:10px}
+  .nav .row>.links a{white-space:nowrap}
+}
+/* Comquat landing pages on phones: logo and coaching button fit the screen */
+@media (max-width:600px){
+  body.cq-landing .nav .cq-brand .cq-feat{display:none!important}
+  body.cq-landing .nav .cq-brand{margin-right:8px}
+  body.cq-landing .nav .cq-brand img{height:28px;width:auto}
+  body.cq-landing .nav-actions{gap:8px}
+  body.cq-landing .nav-actions .nav-book{font-size:12px!important;padding:7px 11px!important;letter-spacing:.02em}
+}
+/* Long buttons (like an email address) wrap on phones instead of running off the screen */
+@media (max-width:600px){.btn{white-space:normal;overflow-wrap:anywhere;max-width:100%;text-align:center}}
+/* Two-column blocks with a fixed photo column stack on phones */
+@media (max-width:700px){[style*="grid-template-columns:300px 1fr"]{grid-template-columns:1fr!important;gap:22px!important}}
