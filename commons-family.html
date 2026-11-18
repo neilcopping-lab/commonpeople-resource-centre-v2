@@ -218,16 +218,17 @@
     <div>
       <div class="cf-kicker"><span class="sticker orange">New cartoon series</span><span class="sticker navy" style="transform:rotate(2deg);border:1.5px solid rgba(236,230,216,.3)">Every Friday</span></div>
       <h1 id="cf-title">Meet the <span class="mark-underline">Commons.</span></h1>
-      <p class="lead">One Hertfordshire family. Both sides of the recruitment desk. A redundant night-shift legend, a small employer, an HR lead, a ghosted graduate, a future chef, a returner and two very loud schnauzers. <b>Every one of them is who The Com'mon People is for.</b></p>
+      <p class="lead">One Hertfordshire family. Both sides of the recruitment desk. A redundant night-shift legend, a small employer, an HR lead, a ghosted graduate, a future chef, a returner, a young woman who hasn't been past the front gate since March, and two very loud schnauzers. <b>Every one of them is who The Com'mon People is for.</b></p>
       <div class="cta">
         <a class="btn orange lg" href="#episode">Watch this week's episode</a>
         <a class="btn ghost lg" href="#family">Meet the family</a>
       </div>
     </div>
     <div class="cf-collage" aria-label="The Commons family">
-      <figure class="cf-pol cf-float" style="left:2%;top:2%;--r:-6deg;margin:0"><img src="img/commons-family/dee.jpg" alt="Nan Dee"><span>Nan Dee</span></figure>
-      <figure class="cf-pol cf-float" style="left:35%;top:0;--r:3deg;margin:0"><img src="img/commons-family/marcus.jpg" alt="Marcus"><span>Marcus</span></figure>
-      <figure class="cf-pol cf-float" style="left:68%;top:4%;--r:-3deg;margin:0"><img src="img/commons-family/priya.jpg" alt="Priya"><span>Priya</span></figure>
+      <figure class="cf-pol cf-float" style="left:0;top:2%;--r:-6deg;margin:0"><img src="img/commons-family/dee.jpg" alt="Nan Dee"><span>Nan Dee</span></figure>
+      <figure class="cf-pol cf-float" style="left:24%;top:0;--r:3deg;margin:0"><img src="img/commons-family/marcus.jpg" alt="Marcus"><span>Marcus</span></figure>
+      <figure class="cf-pol cf-float" style="left:47%;top:4%;--r:-3deg;margin:0"><img src="img/commons-family/priya.jpg" alt="Priya"><span>Priya</span></figure>
+      <figure class="cf-pol cf-float" style="left:70%;top:0;--r:4deg;margin:0"><img src="img/commons-family/jamie.jpg" alt="Jamie"><span>Jamie</span></figure>
       <figure class="cf-pol cf-float" style="left:0;top:48%;--r:4deg;margin:0"><img src="img/commons-family/zara.jpg" alt="Zara"><span>Zara</span></figure>
       <figure class="cf-pol cf-float" style="left:24%;top:40%;--r:-2deg;margin:0"><img src="img/commons-family/kai.jpg" alt="Kai"><span>Kai</span></figure>
       <figure class="cf-pol cf-float" style="left:47%;top:46%;--r:5deg;margin:0"><img src="img/commons-family/lou.jpg" alt="Auntie Lou"><span>Auntie Lou</span></figure>
@@ -336,6 +337,10 @@ var FAMILY = {
        q:"I've run festivals for thousands. It's the LinkedIn headline that scares me.",
        p:"Priya's best mate and family in every way that counts. Back after seven years raising twins with her wife, Jo.",
        go:["LinkedIn, properly","guide-linkedin.html"]},
+  jamie:{name:"Jamie", role:"Behind the door", c:"#5AA9C2", img:"jamie",
+       q:"I'm not lazy. I just can't get past the front gate yet.",
+       p:"Marcus's niece. Nineteen, bright, and hasn't been past the front gate since March. She wants a start. Someone has to knock first.",
+       go:["#PayTheFirstYear","dispatch-first-year-wage.html"]},
   bowie:{name:"Bowie & Ozzy", role:"The Loudspeakers", c:"#5AA9C2", img:"bowie-ozzy",
        q:"Woof. Woof.",
        p:"Bowie is silver, cool and reads your CV over your shoulder. Ozzy is black and has never owned an indoor voice. When Ozzy howls, there's news.",
@@ -445,15 +450,18 @@ var QUIZ = [
     ["Wondering when CVs started needing a personal brand","dee"],
     ["Wondering if you even need a CV","kai"],
     ["Trying to explain a career break in one line","lou"],
-    ["Trying to hire someone and drowning in forms","marcus"] ]},
+    ["Trying to hire someone and drowning in forms","marcus"],
+    ["Under the duvet, phone in hand, door firmly shut","jamie"] ]},
   { q:"Your secret superpower?", a:[
     ["Deadpan comebacks","zara"],["A colour-coded spreadsheet for everything","priya"],
     ["Thirty years of knowing how things actually work","dee"],["A roast dinner for twelve","kai"],
-    ["Running a room of thousands with a clipboard","lou"],["Building anything from scratch","marcus"] ]},
+    ["Running a room of thousands with a clipboard","lou"],["Building anything from scratch","marcus"],
+    ["Noticing everything and saying very little","jamie"] ]},
   { q:"What would help most right now?", a:[
     ["Employers who actually reply","zara"],["The business case to win over my board","priya"],
     ["A CV that fits the job","dee"],["Some interview practice","kai"],
-    ["A LinkedIn glow-up","lou"],["Someone to explain apprenticeships in plain English","marcus"] ]}
+    ["A LinkedIn glow-up","lou"],["Someone to explain apprenticeships in plain English","marcus"],
+    ["Someone to knock first, and a first step that fits","jamie"] ]}
 ];
 var RESULTS = {
   zara:{line:"Talented, funny and done with being left on read. You deserve an answer, and a CV that sounds like you.", links:[["#StopGhostingJobSeekers","dispatch-stop-ghosting.html"],["Comquat Interview Prep (free)","prep-report.html"]]},
@@ -461,6 +469,7 @@ var RESULTS = {
   dee:{line:"Decades of experience, zero patience for jargon. Let's get all that know-how onto one page.", links:[["The CV that gets read","guide-cv.html"],["Comquat CV Rewrite (free)","https://cv.the-common-people.com"]]},
   kai:{line:"Big heart, bigger ambitions and a route that doesn't have to be uni. Earn while you learn.", links:[["Apprenticeships, explained","apprenticeships.html"],["Interview prep guide","guide-interview-prep.html"]]},
   lou:{line:"You've run bigger things than this. The gap on your CV is a story, so let's tell it well.", links:[["LinkedIn, properly","guide-linkedin.html"],["1:1 coaching with Neil","https://cal.com/the-common-people.com/interviewcoaching"]]},
+  jamie:{line:"Bright, capable and stuck behind a door that's harder to open than it looks. Small steps count, and the help should come to you.", links:[["#PayTheFirstYear","dispatch-first-year-wage.html"],["Apprenticeships, explained","apprenticeships.html"]]},
   marcus:{line:"You want to give someone a start and do it properly. The paperwork is less scary than it looks.", links:[["Apprenticeship guidance","apprenticeships.html"],["The Apprenticeship Paradox","dispatch-apprenticeship-paradox.html"]]}
 };
 var qStep = 0, qScore = {};
