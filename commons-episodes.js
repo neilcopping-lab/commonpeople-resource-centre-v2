@@ -12,9 +12,6 @@
    - To move a release, change its date (YYYY-MM-DD).
    ===================================================================== */
 var EPISODES = [
-  { num:"SP", label:"Special edition", date:"2026-11-18", title:"Who Knocks on Jamie's Door?", stars:["marcus","jamie"], img:"marcus", video:"videos/episode-special-milburn.mp4", poster:"videos/episode-special-milburn-poster.jpg",
-    blurb:"Our response to the Milburn Review. Marcus's niece Jamie hasn't been past the front gate since March. The plan gives her an adviser in 14 days and somewhere to go. So who knocks on her door first, and why wait until 2027 to pay for it?",
-    res:[["Sign the petition","dispatch-milburn-falls-short.html#petition"],["#PayTheFirstYear","dispatch-first-year-wage.html"],["Where Milburn falls short","dispatch-milburn-falls-short.html"]] },
   { num:1, date:"2026-11-20", title:"Thirty-One Years and a Floppy Disk", stars:["dee","zara"], img:"dee", video:"videos/episode-01.mp4",
     blurb:"Nan Dee is made redundant after 31 years on the night shift and digs out her last CV. It is on a floppy disk. Zara tries to help. Nobody survives the font choice.",
     res:[["The CV that gets read","guide-cv.html"],["Comquat CV Rewrite (free)","https://cv.the-common-people.com"]] },
