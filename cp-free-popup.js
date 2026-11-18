@@ -2,8 +2,8 @@
    Colours and type follow the Comquat Brand design system: kumquat #FF8A1F, leaf #1F6B45,
    ink #17191C, peel #FFF3E2, Bricolage Grotesque headlines, DM Sans everything else.
    Appears 5 seconds after someone lands, once per visit (per browser tab session).
-   Chasing theatre lights, confetti, a bouncing stamp and an original fanfare.
-   Lights chase at 2 steps a second, well under the 3-flashes-a-second safety limit.
+   Bright Comquat look (Nov 2026): orange to pink header, white card, app-coloured buttons,
+   confetti, a bouncing stamp and an original fanfare.
    Browsers block sound until a visitor taps, so the fanfare starts from a button.
    To switch the pop-up off everywhere: set CPFREE_ON to false below. */
 (function () {
@@ -15,37 +15,41 @@
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   var css = [
-    "#cpfree{position:fixed;inset:0;z-index:100000;display:flex;align-items:center;justify-content:center;padding:18px;background:rgba(10,14,20,.78);opacity:0;transition:opacity .35s ease}",
+    "#cpfree{position:fixed;inset:0;z-index:100000;display:flex;align-items:center;justify-content:center;padding:18px;background:rgba(23,25,28,.55);opacity:0;transition:opacity .35s ease}",
     "#cpfree.on{opacity:1}",
     "#cpfree canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}",
-    "#cpfree .cf-card{position:relative;width:min(560px,100%);max-height:calc(100vh - 36px);overflow:auto;background:#17191C;color:#FFF3E2;border-radius:26px;padding:44px 34px 30px;text-align:center;box-shadow:0 30px 80px -20px rgba(0,0,0,.8),0 0 0 4px #FF8A1F;transform:scale(.4) rotate(-6deg);transition:transform .6s cubic-bezier(.2,1.6,.4,1);font-family:'DM Sans','Hanken Grotesk','Helvetica Neue',Arial,sans-serif}",
+    "#cpfree .cf-card{position:relative;width:min(540px,100%);max-height:calc(100vh - 36px);overflow:auto;background:#fff;color:#17191C;border-radius:28px;text-align:center;box-shadow:0 30px 80px -24px rgba(23,25,28,.55);transform:scale(.5) rotate(-4deg);transition:transform .6s cubic-bezier(.2,1.6,.4,1);font-family:'DM Sans','Helvetica Neue',Arial,sans-serif}",
     "#cpfree.on .cf-card{transform:scale(1) rotate(0)}",
-    "#cpfree .cf-bulbs{position:absolute;inset:10px;border-radius:18px;pointer-events:none}",
-    "#cpfree .cf-bulb{position:absolute;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:#5a3a1a;box-shadow:none}",
-    "#cpfree .cf-bulb.lit{background:#FFC27A;box-shadow:0 0 10px 3px rgba(255,138,31,.8)}",
-    "#cpfree .cf-x{position:absolute;top:12px;right:16px;z-index:3;background:none;border:0;color:#AEBAC6;font-size:32px;line-height:1;cursor:pointer;padding:4px 8px}",
-    "#cpfree .cf-x:hover{color:#fff}",
-    "#cpfree .cf-logo{display:inline-block;margin-bottom:18px}",
-    "#cpfree .cf-logo img{display:block;height:34px;width:auto}",
-    "#cpfree .cf-eyebrow{font-family:'DM Sans',Arial,sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#FF8A1F;margin:0 0 6px}",
-    "#cpfree h2{font-family:'Bricolage Grotesque','DM Sans',Arial,sans-serif;font-weight:800;text-transform:none;font-size:clamp(46px,11vw,78px);line-height:.95;letter-spacing:-1.5px;margin:6px 0 4px;color:#FFF3E2}",
-    "#cpfree h2 em{font-style:normal;color:#FF8A1F;display:inline-block;animation:cfwiggle 1.6s ease-in-out infinite}",
-    "#cpfree .cf-sub{font-size:17px;line-height:1.55;color:#E9DCC8;margin:14px auto 22px;max-width:40ch}",
-    "#cpfree .cf-stamp{position:absolute;top:26px;left:18px;z-index:2;width:92px;height:92px;border-radius:50%;background:#FF8A1F;color:#17191C;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Bricolage Grotesque','DM Sans',Arial,sans-serif;font-weight:800;line-height:1;transform:rotate(-14deg);box-shadow:0 8px 20px -6px rgba(0,0,0,.6);animation:cfstamp 2.4s ease-in-out infinite}",
-    "#cpfree .cf-stamp s{font-size:18px;opacity:.8}#cpfree .cf-stamp b{font-weight:800;font-size:34px}",
+    "#cpfree .cf-top{position:relative;overflow:hidden;background:linear-gradient(120deg,#FF8A1F 0%,#F25C54 55%,#E8467C 100%);color:#fff;padding:34px 30px 40px}",
+    "#cpfree .cf-top:before,#cpfree .cf-top:after{content:'';position:absolute;border-radius:50%;pointer-events:none}",
+    "#cpfree .cf-top:before{width:260px;height:260px;right:-90px;top:-120px;background:#fff;opacity:.16}",
+    "#cpfree .cf-top:after{width:170px;height:170px;left:-60px;bottom:-110px;background:#FFB547;opacity:.4}",
+    "#cpfree .cf-top>*{position:relative;z-index:1}",
+    "#cpfree .cf-x{position:absolute;top:12px;right:14px;z-index:3;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.2);border:0;color:#fff;font-size:28px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0 0 3px}",
+    "#cpfree .cf-x:hover{background:rgba(255,255,255,.34)}",
+    "#cpfree .cf-logo{display:inline-block;margin-bottom:14px}",
+    "#cpfree .cf-logo img{display:block;height:32px;width:auto}",
+    "#cpfree .cf-eyebrow{display:inline-block;font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:6px 14px;margin:0 0 10px}",
+    "#cpfree h2{font-family:'Bricolage Grotesque','DM Sans',Arial,sans-serif;font-weight:800;text-transform:none;font-size:clamp(46px,11vw,76px);line-height:.95;letter-spacing:-1.5px;margin:4px 0 0;color:#fff}",
+    "#cpfree h2 em{font-style:normal;color:#FFE3B3;display:inline-block;animation:cfwiggle 1.6s ease-in-out infinite}",
+    "#cpfree .cf-stamp{position:absolute;top:16px;left:16px;z-index:2;width:84px;height:84px;border-radius:50%;background:#fff;color:#17191C;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'Bricolage Grotesque','DM Sans',Arial,sans-serif;font-weight:800;line-height:1;transform:rotate(-14deg);box-shadow:0 10px 22px -8px rgba(23,25,28,.45);animation:cfstamp 2.4s ease-in-out infinite}",
+    "#cpfree .cf-stamp s{font-size:16px;color:#5B5F66}#cpfree .cf-stamp b{font-weight:800;font-size:31px;color:#E2650B}",
+    "#cpfree .cf-body{padding:24px 30px 26px;background:#fff}",
+    "#cpfree .cf-sub{font-size:17px;line-height:1.55;color:#3F444B;margin:0 auto 20px;max-width:40ch}",
     "#cpfree .cf-btns{display:flex;flex-direction:column;gap:12px}",
-    "#cpfree .cf-btn{display:block;font-family:'DM Sans',Arial,sans-serif;font-weight:700;font-size:18px;letter-spacing:0;text-decoration:none;padding:16px 20px;border-radius:999px;transition:transform .12s ease}",
-    "#cpfree .cf-btn:hover{transform:translateY(-2px) scale(1.02)}",
-    "#cpfree .cf-a{background:#1F6B45;color:#FFF3E2;animation:cfpulse 1.8s ease-in-out infinite}",
-    "#cpfree .cf-b{background:#FF8A1F;color:#17191C}",
-    "#cpfree .cf-sound{margin-top:16px;background:none;border:2px solid #FF8A1F;color:#FF8A1F;border-radius:999px;padding:9px 18px;font-family:'DM Sans',Arial,sans-serif;font-weight:700;font-size:14px;letter-spacing:.02em;cursor:pointer}",
-    "#cpfree .cf-sound:hover{background:#FF8A1F;color:#17191C}",
-    "#cpfree .cf-fine{margin:14px 0 0;font-size:12.5px;color:#A9A398}",
-    "#cpfree a:focus-visible,#cpfree button:focus-visible{outline:3px solid #FF8A1F;outline-offset:3px}",
+    "#cpfree .cf-btn{display:flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:18px;letter-spacing:0;text-decoration:none;padding:15px 20px;border-radius:999px;transition:transform .12s ease,box-shadow .12s ease}",
+    "#cpfree .cf-btn:hover{transform:translateY(-2px)}",
+    "#cpfree .cf-btn i{width:10px;height:10px;border-radius:50%;background:currentColor;opacity:.75}",
+    "#cpfree .cf-a{background:linear-gradient(120deg,#3E9A5F,#1F6B45);color:#fff;box-shadow:0 8px 18px -8px rgba(31,107,69,.7);animation:cfpulse 1.8s ease-in-out infinite}",
+    "#cpfree .cf-b{background:linear-gradient(120deg,#FFA53D,#FF8A1F);color:#17191C;box-shadow:0 8px 18px -8px rgba(226,101,11,.7)}",
+    "#cpfree .cf-sound{margin-top:16px;background:#FFF3E2;border:2px solid #F25C54;color:#C2362E;border-radius:999px;padding:8px 18px;font-family:inherit;font-weight:700;font-size:14px;cursor:pointer}",
+    "#cpfree .cf-sound:hover{background:#F25C54;color:#fff}",
+    "#cpfree .cf-fine{margin:14px 0 0;font-size:12.5px;line-height:1.5;color:#5B5F66}",
+    "#cpfree a:focus-visible,#cpfree button:focus-visible{outline:3px solid #17191C;outline-offset:3px}",
     "@keyframes cfwiggle{0%,100%{transform:rotate(-2deg) scale(1)}50%{transform:rotate(2deg) scale(1.06)}}",
     "@keyframes cfstamp{0%,100%{transform:rotate(-14deg) scale(1)}50%{transform:rotate(-8deg) scale(1.1)}}",
-    "@keyframes cfpulse{0%,100%{box-shadow:0 0 0 0 rgba(62,154,95,.7)}50%{box-shadow:0 0 0 12px rgba(62,154,95,0)}}",
-    "@media (max-width:480px){#cpfree .cf-card{padding:34px 20px 24px}#cpfree .cf-logo{padding:0}#cpfree .cf-logo img{height:30px}#cpfree .cf-stamp{width:64px;height:64px;top:16px;left:14px}#cpfree .cf-stamp s{font-size:14px}#cpfree .cf-stamp b{font-size:24px}#cpfree .cf-eyebrow{margin-top:56px}}",
+    "@keyframes cfpulse{0%,100%{box-shadow:0 0 0 0 rgba(62,154,95,.55)}50%{box-shadow:0 0 0 12px rgba(62,154,95,0)}}",
+    "@media (max-width:480px){#cpfree .cf-top{padding:30px 18px 32px}#cpfree .cf-body{padding:20px 18px 22px}#cpfree .cf-logo img{height:28px}#cpfree .cf-stamp{width:60px;height:60px;top:12px;left:12px}#cpfree .cf-stamp s{font-size:12px}#cpfree .cf-stamp b{font-size:22px}#cpfree .cf-logo{margin-top:44px}#cpfree .cf-btn{font-size:17px}}",
     "@media (prefers-reduced-motion:reduce){#cpfree .cf-card{transition:none;transform:none}#cpfree h2 em,#cpfree .cf-stamp,#cpfree .cf-a{animation:none}}"
   ].join("\n");
 
@@ -62,19 +66,22 @@
     wrap.innerHTML =
       '<canvas aria-hidden="true"></canvas>' +
       '<div class="cf-card">' +
-        '<div class="cf-bulbs" aria-hidden="true"></div>' +
         '<button class="cf-x" type="button" aria-label="Close">&times;</button>' +
-        '<div class="cf-stamp" aria-hidden="true"><s>&pound;15</s><b>&pound;0</b></div>' +
-        '<div class="cf-logo"><img src="/img/comquat-logo-reversed.svg" alt="Comquat" width="150" height="34"></div>' +
-        '<p class="cf-eyebrow">Big news, everyone</p>' +
-        '<h2 id="cpfree-title">Free.<br><em>Forever.</em></h2>' +
-        '<p class="cf-sub">Comquat, our CV Rewrite and Interview Prep app, now costs nothing. Every time, for everyone. No card, no credits, no catch.</p>' +
-        '<div class="cf-btns">' +
-          '<a class="cf-btn cf-a" href="https://the-common-people.com/prep-report.html">Get my free Interview Prep &rarr;</a>' +
-          '<a class="cf-btn cf-b" href="https://cv.the-common-people.com">Rewrite my CV for free &rarr;</a>' +
+        '<div class="cf-top">' +
+          '<div class="cf-stamp" aria-hidden="true"><s>&pound;15</s><b>&pound;0</b></div>' +
+          '<div class="cf-logo"><img src="/img/comquat-logo-reversed.svg" alt="Comquat" width="150" height="34"></div><br>' +
+          '<p class="cf-eyebrow">Big news, everyone</p>' +
+          '<h2 id="cpfree-title">Free.<br><em>Forever.</em></h2>' +
         '</div>' +
-        '<button class="cf-sound" type="button">&#9835; Play the fanfare</button>' +
-        '<p class="cf-fine">Comquat is from The Com\'mon People. Built on mutual aid, same as every guide, dispatch and Loudspeaker.</p>' +
+        '<div class="cf-body">' +
+          '<p class="cf-sub">Comquat, our CV Rewrite and Interview Prep app, now costs nothing. Every time, for everyone. No card, no credits, no catch.</p>' +
+          '<div class="cf-btns">' +
+            '<a class="cf-btn cf-a" href="https://the-common-people.com/prep-report.html"><i aria-hidden="true"></i>Get my free Interview Prep &rarr;</a>' +
+            '<a class="cf-btn cf-b" href="https://cv.the-common-people.com"><i aria-hidden="true"></i>Rewrite my CV for free &rarr;</a>' +
+          '</div>' +
+          '<button class="cf-sound" type="button">&#9835; Play the fanfare</button>' +
+          '<p class="cf-fine">Comquat is from The Com\'mon People. Built on mutual aid, same as every guide, dispatch and Loudspeaker.</p>' +
+        '</div>' +
       '</div>';
     document.body.appendChild(wrap);
     return wrap;
@@ -102,7 +109,7 @@
   // Confetti burst in brand colours.
   function confetti(canvas) {
     if (reduce) return;
-    var ctx = canvas.getContext("2d"), W, H, parts = [], colours = ["#FF8A1F", "#E2650B", "#1F6B45", "#3E9A5F", "#FFF3E2"];
+    var ctx = canvas.getContext("2d"), W, H, parts = [], colours = ["#FF8A1F", "#F25C54", "#E8467C", "#3E9A5F", "#FFB547", "#7C3AED"];
     function size() { W = canvas.width = innerWidth; H = canvas.height = innerHeight; }
     size();
     for (var i = 0; i < 220; i++) {
@@ -161,7 +168,6 @@
     var wrap = build(), lastFocus = document.activeElement;
     requestAnimationFrame(function () { wrap.classList.add("on"); });
     var timer = null;
-    setTimeout(function () { timer = bulbs(wrap); }, 350);
     confetti(wrap.querySelector("canvas"));
     var closeBtn = wrap.querySelector(".cf-x"), soundBtn = wrap.querySelector(".cf-sound");
     closeBtn.focus();
