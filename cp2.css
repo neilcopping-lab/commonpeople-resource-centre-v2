@@ -532,3 +532,10 @@ body:not(.cq-landing) .btn.cq-btn-alt:active{box-shadow:0 0 0 #B85A08}
 @media (max-width:600px){.btn{white-space:normal;overflow-wrap:anywhere;max-width:100%;text-align:center}}
 /* Two-column blocks with a fixed photo column stack on phones */
 @media (max-width:700px){[style*="grid-template-columns:300px 1fr"]{grid-template-columns:1fr!important;gap:22px!important}}
+
+/* ===== Legal links in every footer (18 Nov 2026) ===== */
+.fbottom{align-items:baseline}
+.flegal{display:flex;flex-wrap:wrap;gap:6px 18px}
+.flegal a{color:#AEB8C2!important;text-decoration:none}
+.flegal a:hover,.flegal a:focus-visible{color:var(--cream)!important;text-decoration:underline}
+.fco{flex-basis:100%;margin:4px 0 0;font-size:12.5px;letter-spacing:0;text-transform:none;line-height:1.55;color:#7C8791}
