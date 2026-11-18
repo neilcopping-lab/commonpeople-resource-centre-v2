@@ -308,7 +308,7 @@
   </div>
 </footer>
 
-<script src="commons-episodes.js"></script>
+<script src="commons-episodes.js?v=20261118sp"></script>
 <script>
 /* Episode list and release dates live in commons-episodes.js */
 
@@ -372,7 +372,7 @@ function starsHTML(list){
   return '<div class="cf-stars" aria-label="Starring">' + list.slice(0,7).map(function(k){ return '<img src="'+img(FAMILY[k].img)+'" alt="'+esc(FAMILY[k].name)+'">'; }).join("") + '</div>';
 }
 function infoHTML(ep, live){
-  return '<div class="num"><span class="pill solid" style="color:#fff">Episode ' + String(ep.num).padStart(2,"0") + '</span>' +
+  return '<div class="num"><span class="pill solid" style="color:#fff">' + (ep.label ? esc(ep.label) : 'Episode ' + String(ep.num).padStart(2,"0")) + '</span>' +
          '<span class="sticker '+(live?'orange':'navy')+'" style="transform:rotate(-2deg)">'+(live?'Out now':'Premieres '+esc(niceDate(ep.date)))+'</span></div>' +
          '<h2 id="cf-ep-title">' + esc(ep.title) + '</h2><p>' + esc(ep.blurb) + '</p>' + starsHTML(ep.stars) +
          '<div class="cf-res"><h3>Free help from this episode</h3><div class="cf-chips">' +

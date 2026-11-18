@@ -309,7 +309,7 @@
   });}
 })();
 </script>
-<script src="commons-episodes.js"></script>
+<script src="commons-episodes.js?v=20261118sp"></script>
 <script>
 /* Homepage: always show the latest Commons episode that is out (dates and videos live in commons-episodes.js) */
 (function(){
@@ -331,8 +331,8 @@
         box.innerHTML = '<video controls playsinline preload="metadata" poster="'+esc(poster)+'" aria-label="The Commons, episode '+ep.num+': '+esc(ep.title)+'"><source src="'+esc(ep.video)+'" type="video/mp4">Your browser can\'t play this video. <a href="commons-family.html">Watch it on The Commons page.</a></video>';
       }
       if (txt){
-        txt.querySelector(".eyebrow").textContent = "Out now · The Commons · Episode " + nn;
-        txt.querySelector("h2").textContent = ep.title.replace(/[.!?]$/,"") + ".";
+        txt.querySelector(".eyebrow").textContent = "Out now · The Commons · " + (ep.label || ("Episode " + nn));
+        txt.querySelector("h2").textContent = /[.!?]$/.test(ep.title) ? ep.title : ep.title + ".";
         txt.querySelector("p").textContent = ep.blurb + " Every episode of our new cartoon ends with the free guide that would have saved them a lot of bother.";
       }
     }).catch(function(){ next(i+1); });
