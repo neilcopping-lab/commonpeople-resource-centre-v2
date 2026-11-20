@@ -559,3 +559,5 @@ body:not(.cq-landing) .btn.cq-btn-alt:active{box-shadow:0 0 0 #B85A08}
 .cp-toc a{text-decoration:none}
 .cp-toc a:hover{text-decoration:underline}
 @media (prefers-reduced-motion:reduce){.cp-progress{display:none}}
+/* Header never touches the screen edge on mid-size screens (UX review, Nov 2026) */
+@media (min-width:921px) and (max-width:1260px){.nav .row{padding-left:30px!important;padding-right:30px!important}}
