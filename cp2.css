@@ -551,3 +551,11 @@ body:not(.cq-landing) .btn.cq-btn-alt:active{box-shadow:0 0 0 #B85A08}
 /* Slogan ticker now stands still (moving text with no pause fails WCAG 2.2.2) */
 .ticker .track,.scroller .strip{animation:none}
 .scroller{overflow-x:auto}
+/* Long-read helpers (cp-article.js) */
+.cp-progress{position:fixed;top:0;left:0;right:0;height:4px;background:var(--orange,#D2691E);transform:scaleX(0);transform-origin:0 50%;z-index:9999;pointer-events:none}
+.cp-toc{margin:8px 0 36px;padding:16px 20px;border:1px solid rgba(20,17,14,.12);border-left:4px solid var(--orange,#D2691E);border-radius:10px;background:rgba(255,255,255,.55);font-size:17px}
+.cp-toc summary{cursor:pointer;font-weight:700;font-family:var(--label);letter-spacing:.06em;text-transform:uppercase;font-size:14px}
+.cp-toc ol{margin:12px 0 0;padding-left:22px;line-height:1.7}
+.cp-toc a{text-decoration:none}
+.cp-toc a:hover{text-decoration:underline}
+@media (prefers-reduced-motion:reduce){.cp-progress{display:none}}
