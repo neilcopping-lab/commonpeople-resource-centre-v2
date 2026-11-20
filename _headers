@@ -1,2 +1,12 @@
+# Security headers for every page. Cloudflare Pages reads this file automatically.
+# These tell browsers (and the security scanners that firewalls use) that the site
+# is locked down: secure connections only, no sneaky file types, no framing by other sites.
+/*
+  Strict-Transport-Security: max-age=31536000
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), usb=()
+
 /videos/*
   Access-Control-Allow-Origin: *

@@ -1,0 +1,6 @@
+# The Com'mon People: free to read, free to share.
+# Search engines and AI assistants are welcome to read and cite everything here.
+User-agent: *
+Allow: /
+
+Sitemap: https://the-common-people.com/sitemap.xml

@@ -1,0 +1,48 @@
+# The Com'mon People
+
+> A free resource centre for people on both sides of recruitment: candidates, and the HR, marketing, finance, events and operations people who hire them. Founded and edited by Neil Copping, run by Comquat Ventures UK Ltd. Every guide is free to read and share, and every figure is sourced.
+
+We believe two good applications beat fifty, job adverts should describe the actual work, and apprenticeships and young people are a big part of the answer to the UK skills gap.
+
+## The Dispatches (opinion and research)
+
+- [AI CVs: The Honest, Brutal, Slightly Awkward Truth](https://the-common-people.com/dispatch-ai-cvs): 81% of people use AI in their job search. 62% of employers reject AI CVs. The EU AI Act enforcement deadline is now. Here is what you actually need to know.
+- [The Apprenticeship Paradox](https://the-common-people.com/dispatch-apprenticeship-paradox): Britain has the best answer to its skills crisis on the table, so why won't business pick it up? A fully sourced look at apprenticeships in 2026.
+- [How to Embed Apprenticeships Into Your HR Strategy](https://the-common-people.com/dispatch-embed-apprenticeships): A practical guide for HR leaders on making apprenticeships core to your workforce: the four barriers, how to beat each one, and the business case.
+- [The EU AI Act: What UK Businesses and Recruiters Need to Know](https://the-common-people.com/dispatch-eu-ai-act): The EU AI Act is live. UK firms are in scope. Most modern hiring tech is classified as high-risk. Here is what it means, who it catches and what to do now.
+- [Pay the First Year: Why Unspent Levy Should Fund a Young Apprentice's Wage](https://the-common-people.com/dispatch-first-year-wage): An estimated £700 million of levy money will not reach apprenticeships in 2026-27. The case for using it to pay a young apprentice's first-year wage.
+- [Don't Argue With the Stereotype. Investigate It.](https://the-common-people.com/dispatch-investigate-the-stereotype): A bank manager told me Gen Z don't want to work. I asked where that comes from. What the evidence says about young people and apprenticeships.
+- [Your Levy Is Your Money. In 2026 You Get Less Time to Spend It.](https://the-common-people.com/dispatch-levy-2026): From 2026/27 levy funds expire after 12 months instead of 24. What is changing, why employers miss out, and what smaller firms can get for free.
+- [Where Milburn Falls Short: The Small-Firm Fix the Report Missed](https://the-common-people.com/dispatch-milburn-falls-short): Milburn's final report offers small firms a £3,000 grant against a £15,600 first-year apprentice wage. The fix it missed, and a petition to sign.
+- [The Recruitment Model Is Overdue A Rethink](https://the-common-people.com/dispatch-recruitment-rethink): An honest take on exclusivity and why the recruitment model needs to change. Sourced and sense-checked. A Com’mon People Dispatch opinion piece.
+- [The View From Outside The Glass](https://the-common-people.com/dispatch-report-hertfordshire): Why Hertfordshire and Home Counties businesses are struggling to recruit in 2026. 14 pages, 28 sources, every claim referenced.
+- [The Silence That Does The Damage](https://the-common-people.com/dispatch-stop-ghosting): 65% of UK job seekers have been ghosted by a recruiter. 86% say it left them depressed. One recruiter with nine years in the industry is putting their hands up.
+- [You Don't Have a Skills Shortage. You Have a Training Shortage.](https://the-common-people.com/dispatch-training-shortage): Why employ an apprentice when experience costs £3 to £4 an hour more? Our answer, with every figure sourced: who trained that experienced hire?
+- [Keep Your Levy or Apprenticeship Funding in Your Town #KeepItLocal](https://the-common-people.com/dispatch-your-levy-their-town): Levy payer or not, you choose where your apprenticeship funding goes. What keeping it local means, why it works harder, and what your business gets back.
+
+## The Field Guides (practical guides for candidates and employers)
+
+- [The CV That Gets Read - Field Guide №01 · The Com'mon People](https://the-common-people.com/guide-cv): Seven stops, two universal don'ts and a personal statement that doesn't read like a press release. A practical guide to a CV that gets read.
+- [The 90 Seconds That Get You In The Room - Field Guide №02](https://the-common-people.com/guide-video-intro): Six red flags to avoid and seven stops for the video introduction that gets you in the room. A free field guide from The Com’mon People.
+- [LinkedIn, Properly - Field Guide №03](https://the-common-people.com/guide-linkedin): How to write a LinkedIn profile that matches the CV: the headline that does the work, the summary that sounds like you, and the bits most people get wrong.
+- [Interview Prep Pack - Field Guide №04](https://the-common-people.com/guide-interview-prep): Frameworks, scripts and checklists to help you stay on message and score points in any interview. Free, always.
+- [The EVP Field Guide - Field Guide №05](https://the-common-people.com/guide-05-evp): Most businesses have an employee value proposition. Few know what it is. A practical, fully-referenced guide to discovering, building and measuring your EVP.
+
+## The Loudspeaker (monthly HR and recruitment roundup)
+
+- [The Loudspeaker](https://the-common-people.com/loudspeaker): Neil Copping's monthly roundup of the UK HR and recruitment stories worth reading, with an editor's view. On LinkedIn the last Friday of each month.
+- [The Loudspeaker - Edition 01, May 2026](https://the-common-people.com/loudspeaker-edition-01): Six UK HR and recruitment stories with an editor's view from Neil Copping: World Cup absence, 8 million sick days, flexible working refusals up 109%.
+- [The Loudspeaker - Edition 02, July 2026](https://the-common-people.com/loudspeaker-edition-02): Six UK HR and recruitment stories with an editor's view from Neil Copping: ghosting, the levy squeeze, the Employment Rights Act and the World Cup verdict.
+- [The Loudspeaker, Edition 03](https://the-common-people.com/loudspeaker-edition-03): Edition 03, August 2026. Eight quirky UK HR and recruitment stories worth reading this month, with an editor's view from Neil Copping.
+- [The Loudspeaker, Edition 04, September 2026](https://the-common-people.com/loudspeaker-edition-04): The Loudspeaker, Edition 04, September 2026. Eight fresh UK stories on who gets heard at work, from The Com'mon People, written by Neil Copping.
+- [The Loudspeaker, Edition 05 · October 2026](https://the-common-people.com/loudspeaker-edition-05): Edition 05, October 2026. Eight fresh UK stories on the gap between what we assume at work and what is actually there, written by Neil Copping.
+
+## Free tools and more
+
+- [Comquat Interview Prep](https://the-common-people.com/prep-report): Paste your CV and the job description. Get back a personalised interview prep report: real company research, a tailored pitch, sharp questions. Free.
+- [Sample Comquat Interview Prep Report](https://the-common-people.com/sample-report): See exactly what you get, free: a real Comquat Interview Prep report, built for a real interview, section by section.
+- [Apprenticeships: Worth Fighting For](https://the-common-people.com/apprenticeships): Why apprenticeships matter for young people leaving school and college, what holds them back, and the case for businesses doing right by them. Figures cited.
+- [The Commons | A cartoon family from The Com'mon People](https://the-common-people.com/commons-family): Meet the Commons, a Hertfordshire family on both sides of the recruitment desk. A new animated episode every Friday, plus free guides for each adventure.
+- [About](https://the-common-people.com/about): Who we are, why we started The Com'mon People and what we believe about recruitment.
+- [Sponsor The Loudspeaker](https://the-common-people.com/sponsor): Reach 1,100 subscribers on both sides of hiring. One clearly labelled sponsor per edition of the Loudspeaker, plus an evergreen credit on the web archive.
+- [Company information](https://the-common-people.com/legal): Who runs The Com'mon People and Comquat: Comquat Ventures UK Ltd, company number 17581616, registered in England and Wales.
