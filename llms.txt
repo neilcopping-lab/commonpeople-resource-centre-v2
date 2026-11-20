@@ -39,6 +39,7 @@ We believe two good applications beat fifty, job adverts should describe the act
 
 ## Free tools and more
 
+- [Comquat: free CV and interview tools](https://the-common-people.com/comquat): Interview Prep, CV Rewrite and the CV Builder, all free with one account.
 - [Comquat Interview Prep](https://the-common-people.com/prep-report): Paste your CV and the job description. Get back a personalised interview prep report: real company research, a tailored pitch, sharp questions. Free.
 - [Sample Comquat Interview Prep Report](https://the-common-people.com/sample-report): See exactly what you get, free: a real Comquat Interview Prep report, built for a real interview, section by section.
 - [Apprenticeships: Worth Fighting For](https://the-common-people.com/apprenticeships): Why apprenticeships matter for young people leaving school and college, what holds them back, and the case for businesses doing right by them. Figures cited.
@@ -46,3 +47,4 @@ We believe two good applications beat fifty, job adverts should describe the act
 - [About](https://the-common-people.com/about): Who we are, why we started The Com'mon People and what we believe about recruitment.
 - [Sponsor The Loudspeaker](https://the-common-people.com/sponsor): Reach 1,100 subscribers on both sides of hiring. One clearly labelled sponsor per edition of the Loudspeaker, plus an evergreen credit on the web archive.
 - [Company information](https://the-common-people.com/legal): Who runs The Com'mon People and Comquat: Comquat Ventures UK Ltd, company number 17581616, registered in England and Wales.
+- [Contact us](https://the-common-people.com/contact): how to reach us.

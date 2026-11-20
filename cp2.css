@@ -539,3 +539,15 @@ body:not(.cq-landing) .btn.cq-btn-alt:active{box-shadow:0 0 0 #B85A08}
 .flegal a{color:#AEB8C2!important;text-decoration:none}
 .flegal a:hover,.flegal a:focus-visible{color:var(--cream)!important;text-decoration:underline}
 .fco{flex-basis:100%;margin:4px 0 0;font-size:12.5px;letter-spacing:0;text-transform:none;line-height:1.55;color:#7C8791}
+
+/* UX review fixes, 21 Nov 2026: bigger small print, six-column footer, phone logo padding */
+.fgrid{grid-template-columns:1.4fr repeat(4,1fr)}
+.fgrid h6{font-size:13px}
+.fbottom{font-size:13px}
+.byline{font-size:14px}
+@media (min-width:921px) and (max-width:1180px){.fgrid{grid-template-columns:1fr 1fr 1fr}}
+@media (max-width:920px){.fgrid{grid-template-columns:1fr 1fr}.nav .row{padding-left:16px!important;padding-right:12px!important}}
+@media (max-width:520px){.fgrid{grid-template-columns:1fr}}
+/* Slogan ticker now stands still (moving text with no pause fails WCAG 2.2.2) */
+.ticker .track,.scroller .strip{animation:none}
+.scroller{overflow-x:auto}
