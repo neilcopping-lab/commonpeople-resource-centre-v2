@@ -138,6 +138,14 @@
 .cf-stars img{width:46px;height:46px;border-radius:50%;object-fit:cover;object-position:50% 18%;border:2.5px solid #fff;margin-left:-10px;box-shadow:0 4px 10px -4px rgba(0,0,0,.4)}
 .cf-stars img:first-child{margin-left:0}
 .cf-res{margin-top:22px;border-top:1px solid var(--line);padding-top:18px}
+.cf-read{scroll-margin-top:120px;margin-top:22px;border-top:1px solid var(--line);padding-top:16px}
+.cf-read summary{cursor:pointer;font-weight:700;font-size:17px;color:var(--ink,#161F29);padding:6px 0}
+.cf-read summary:focus-visible{outline:3px solid var(--teal-ink,#2A7385);outline-offset:3px;border-radius:4px}
+.cf-read-note{font-size:15px}
+.cf-read-body{margin-top:10px;max-height:28em;overflow:auto;padding-right:6px}
+.cf-read-body:focus-visible{outline:3px solid var(--teal-ink,#2A7385)}
+.cf-epinfo .cf-read-body p{margin:0 0 10px;color:var(--ink,#161F29);font-size:16px;line-height:1.55}
+.cf-epinfo .cf-read-body .cf-read-scene{color:var(--muted);font-style:italic}
 .cf-res h3{font-family:var(--label);font-weight:700;font-size:13px;letter-spacing:.12em;color:var(--teal-ink,#2A7385)}
 .cf-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 .cf-chip{font-family:var(--label);font-weight:600;font-size:14px;border:1.5px solid var(--orange);color:var(--ink);border-radius:999px;padding:8px 14px;background:#fff;transition:background .15s,color .15s}
@@ -451,8 +459,23 @@ function infoHTML(ep, live){
          '<h2 id="cf-ep-title">' + esc(ep.title) + '</h2><p>' + esc(ep.blurb) + '</p>' + starsHTML(ep.stars) +
          '<div class="cf-res"><h3>Free help from this episode</h3><div class="cf-chips">' +
          ep.res.map(function(r){ return '<a class="cf-chip" href="'+r[1]+'">'+esc(r[0])+'</a>'; }).join("") + '</div></div>' +
+         (live && ep.read ? readHTML(ep) : '') +
          '<div class="cf-howl"><img src="'+img("bowie-ozzy")+'" alt="" loading="lazy" decoding="async"><p><b>New episodes every Friday.</b> Ozzy will howl. You will know.</p></div>';
 }
+function readHTML(ep){
+  return '<details class="cf-read" id="cf-read"><summary>Read this episode</summary>' +
+    '<p class="cf-read-note">Every word, plus what\'s happening on screen.</p><div class="cf-read-body" tabindex="0" role="region" aria-label="Episode ' + ep.num + ' written version">' +
+    ep.read.map(function(r){
+      return r[0] === "s" ? '<p class="cf-read-scene">' + esc(r[1]) + '</p>'
+                          : '<p class="cf-read-line"><b>' + esc(r[0]) + ':</b> ' + esc(r[1]) + '</p>';
+    }).join("") + '</div></details>';
+}
+function openRead(){
+  if (location.hash !== "#cf-read") return;
+  var d = document.getElementById("cf-read"); if (!d) return;
+  d.open = true; d.scrollIntoView(); d.querySelector("summary").focus();
+}
+window.addEventListener("hashchange", openRead);
 function playEpisode(ep){
   var s = document.getElementById("cf-screen");
   s.classList.remove("is-teaser");
@@ -462,6 +485,7 @@ function playEpisode(ep){
     s.innerHTML = '<video controls playsinline preload="metadata" poster="'+esc(ep.poster||card(ep))+'"><source src="'+esc(ep.video)+'" type="video/mp4">Your browser can\'t play this video.</video>';
   }
   document.getElementById("cf-epinfo").innerHTML = infoHTML(ep, true);
+  openRead();
 }
 function teaser(ep){
   var s = document.getElementById("cf-screen");
