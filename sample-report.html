@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -90,7 +90,7 @@
   .pr-btn{background:#5AA9C2; color:#161f29; font-family:'Oswald',sans-serif; font-weight:600; font-size:15px; text-transform:uppercase; letter-spacing:.05em; line-height:1.2; padding:12px 22px; border-radius:6px; box-shadow:0 3px 0 #2F7F97; display:inline-block; transition:transform .1s ease,box-shadow .1s ease;}.pr-btn:hover{background:#6BB6CD; transform:translateY(1px); box-shadow:0 2px 0 #2F7F97;}
   .sr-section{border-top:1px solid #2a333d; padding:44px 0;}
   .sr-section:first-child{border-top:none;}
-  .sr-tag{font-family:'Oswald',sans-serif; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#5aa9c2; margin-bottom:10px;}
+  .sr-tag{font-family:'Oswald',sans-serif; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--teal-ink,#2A7385); margin-bottom:10px;}
   .sr-section h3{font-family:'Anton',sans-serif; font-size:24px; text-transform:uppercase; margin:0 0 6px; color:#ece6d8;}
   .sr-sub{font-family:'Oswald',sans-serif; font-size:13px; color:#a9a293; margin:0 0 20px; font-style:italic;}
   .sr-section p{font-size:15px; line-height:1.75; color:#a9a293; margin:0 0 12px;}
@@ -106,21 +106,21 @@
   .sr-bar-track{background:#0f151c; height:10px; margin-top:10px; overflow:hidden;}
   .sr-bar-fill{background:linear-gradient(90deg,#5aa9c2,#e0b03c); height:100%;}
   .sr-cherry{border:1px solid #2a333d; padding:20px 22px; margin-bottom:14px;}
-  .sr-cherry .area{font-family:'Oswald',sans-serif; font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:#d2691e; margin-bottom:8px; font-weight:600;}
+  .sr-cherry .area{font-family:'Oswald',sans-serif; font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--orange-ink,#A64B12); margin-bottom:8px; font-weight:600;}
   .sr-pitch{border:1px solid #2a333d; padding:26px 28px; margin-bottom:16px;}
-  .sr-pitch .lbl{font-family:'Oswald',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:#5aa9c2; margin-bottom:10px;}
+  .sr-pitch .lbl{font-family:'Oswald',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--teal-ink,#2A7385); margin-bottom:10px;}
   .sr-star-card{border:1px solid #2a333d; padding:26px 28px; margin-bottom:18px;}
   .sr-star-card .q{font-family:'Arvo',serif; font-style:italic; font-size:16px; color:#ece6d8; line-height:1.55; margin:0 0 8px;}
-  .sr-star-card .based{font-family:'Oswald',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:#7a7466; margin-bottom:18px;}
+  .sr-star-card .based{font-family:'Oswald',sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:#9A9282; margin-bottom:18px;}
   .sr-star-row{display:grid; grid-template-columns:70px 1fr; gap:14px; margin-bottom:10px;}
   .sr-star-row .k{font-family:'Anton',sans-serif; font-size:13px; color:#e0b03c;}
   .sr-star-row .v{font-size:14px; color:#c9c2b3; line-height:1.6;}
   .sr-q{border-left:3px solid #e0b03c; padding:10px 0 10px 18px; margin-bottom:14px;}
   .sr-q p{margin:0; font-size:15px; color:#c9c2b3;}
-  .sr-qtype-lbl{font-family:'Oswald',sans-serif; font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:#5aa9c2; margin:26px 0 12px;}
+  .sr-qtype-lbl{font-family:'Oswald',sans-serif; font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--teal-ink,#2A7385); margin:26px 0 12px;}
   .sr-qtype-lbl:first-child{margin-top:0;}
   .sr-note{border:1px solid #5aa9c2; background:rgba(90,169,194,0.08); padding:18px 22px; font-size:13px; color:#c9c2b3; line-height:1.65; margin-bottom:24px;}
-  .sr-src-list{font-size:12px; color:#7a7466; line-height:2;}
+  .sr-src-list{font-size:12px; color:#9A9282; line-height:2;}
   .sr-src-list a{color:#6b8fa3;}
 </style>
 <style id="cp-tablet">
@@ -153,8 +153,10 @@
 }
 </style>
   <script defer data-site-id="88bb72ef-58ce-4e73-a307-471e35e35b1b" data-api="https://savri.io" src="https://savri.io/script.js"></script>
+<style id="a11y-base">.sr-bar-wrap p,.based,.sr-src-list,.sr-section span,.sr-section a{color:#9A9282!important}.side-card.dark,.note-box,.spotlight,.dont-card,.band-dark,.cf-face.cf-back,footer{--orange-ink:#E07A2E;--teal-ink:#5AA9C2}body{--orange-ink:#E07A2E;--teal-ink:#5AA9C2}.skip{position:absolute;left:-9999px;top:8px;z-index:10000;background:#161F29;color:#fff;padding:12px 16px;border-radius:8px;font-weight:700;text-decoration:none}.skip:focus{left:8px}.fh{font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 14px;color:var(--gold,#E0B03C)}@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}</style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to main content</a>
 <div style="font-family:'Arvo',serif; color:#ece6d8; min-width:1280px;">
 
   <!-- NAV: logo on top, menu beneath (matches the main site) -->
@@ -175,6 +177,7 @@
     </div>
   </div>
 
+  <main id="main">
   <!-- HERO -->
   <div style="padding:56px 64px 40px; max-width:860px;">
     <div class="sr-tag">A Real Sample Report</div>
@@ -290,7 +293,7 @@
       <div class="sr-bar-wrap">
         <div style="display:flex; justify-content:space-between; align-items:baseline;"><span style="font-family:'Oswald',sans-serif; font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:#a9a293;">Skills Match</span><span style="font-family:'Anton',sans-serif; font-size:26px; color:#e0b03c;">62%</span></div>
         <div class="sr-bar-track"><div class="sr-bar-fill" style="width:62%;"></div></div>
-        <p style="margin:10px 0 0; font-size:13px; color:#7a7466;">8 of 13 job requirements matched directly to Neil's CV.</p>
+        <p style="margin:10px 0 0; font-size:13px; color:#9A9282;">8 of 13 job requirements matched directly to Neil's CV.</p>
       </div>
       <h4 style="font-family:'Anton',sans-serif; font-size:15px; text-transform:uppercase; color:#ece6d8; margin:0 0 14px;">Matched strengths</h4>
       <div class="sr-item"><p>Nearly nine years of full-cycle, end-to-end recruitment across HR, Marketing, Finance, Tech, Creative and Operations briefs.</p></div>
@@ -419,7 +422,7 @@
   <div style="background:#0f151c; padding:56px 64px 32px; display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr 1fr; gap:32px; font-family:'Oswald',sans-serif;">
     <div>
       <a href="./index.html" aria-label="The Com'mon People, home" style="display:inline-flex;"><img src="img/cp-logo-reversed.svg" alt="The Com'mon People" width="453" height="170" style="display:block; height:56px; width:auto;" loading="lazy" decoding="async"></a>
-      <p style="font-size:12px; color:#7a7466; margin-top:16px; max-width:220px; line-height:1.6;">A free resource centre for marketing, HR, finance, events and operations people. Built on mutual aid.</p>
+      <p style="font-size:12px; color:#9A9282; margin-top:16px; max-width:220px; line-height:1.6;">A free resource centre for marketing, HR, finance, events and operations people. Built on mutual aid.</p>
     </div>
     <div>
       <h6 style="font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#e0b03c; margin:0 0 14px;">Guides</h6>
@@ -450,11 +453,12 @@
       <a href="mailto:neil.copping@thecommonpeople.co.uk" style="display:block; font-size:13px; color:#a9a293;">Get in touch</a>
     </div>
   </div>
-  <div style="padding:20px 64px; border-top:1px solid #2a333d; display:flex; justify-content:space-between; font-size:12px; color:#7a7466; font-family:'Oswald',sans-serif;">
+  <div style="padding:20px 64px; border-top:1px solid #2a333d; display:flex; justify-content:space-between; font-size:12px; color:#9A9282; font-family:'Oswald',sans-serif;">
     <span>© 2026 The Com'mon People. Built on mutual aid.</span>
-    <span><a href="./privacy.html" style="color:#7a7466;">Privacy notice</a> &middot; <a href="./privacy.html#cookies" style="color:#7a7466;">Cookies</a> &middot; <a href="./legal.html" style="color:#7a7466;">Company information</a> &middot; Free, always.</span>
+    <span><a href="./privacy.html" style="color:#9A9282;">Privacy notice</a> &middot; <a href="./privacy.html#cookies" style="color:#9A9282;">Cookies</a> &middot; <a href="./legal.html" style="color:#9A9282;">Company information</a> &middot; Free, always.</span>
   </div>
 
+</main>
 </div>
 <script src="/cp-mobile-nav.js" defer></script><script defer src="cp-free-popup.js?v=20261121"></script>
 <script defer src="cp-track.js?v=20261121"></script>

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html><html lang="en-GB"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light only">
 <meta name="supported-color-schemes" content="light">
@@ -155,7 +155,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 .nav{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--page) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav .row{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
 .links{display:flex;gap:22px;font-family:var(--label);font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.03em}
-.links a{color:var(--muted)} .links a:hover,.links a[aria-current]{color:var(--orange)}
+.links a{color:var(--muted)} .links a:hover,.links a[aria-current]{color:var(--orange-ink,#A64B12)}
 .nav-actions{display:flex;align-items:center;gap:10px}
 .burger{display:none;background:transparent;border:2px solid var(--line);border-radius:10px;padding:8px 10px;cursor:pointer;color:var(--ink)}
 .burger svg{width:20px;height:20px}
@@ -212,9 +212,9 @@ section.tight{padding:60px 0}
 .card .in{padding:24px 24px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
 .card h3{font-size:23px} .card p{color:var(--muted);font-size:15px;margin:0}
 .card .foot{margin-top:auto;padding-top:14px;display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--line)}
-.card .go{font-family:var(--label);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--orange);display:inline-flex;gap:7px;align-items:center}
+.card .go{font-family:var(--label);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--orange-ink,#A64B12);display:inline-flex;gap:7px;align-items:center}
 .card .tag{font-family:var(--label);font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-.card .tag.free{color:var(--teal)} .card .tag.paid{color:var(--orange)}
+.card .tag.free{color:var(--teal-ink,#2A7385)} .card .tag.paid{color:var(--orange-ink,#A64B12)}
 
 
 .feature{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
@@ -232,7 +232,7 @@ section.tight{padding:60px 0}
 .band-navy .price{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.22)}
 .price .l{font-family:var(--label);font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .band-navy .price .l{color:#AEBAC6}
-.price .v{font-family:var(--display);font-size:33px;color:var(--orange);margin-top:4px}
+.price .v{font-family:var(--display);font-size:33px;color:var(--orange-ink,#A64B12);margin-top:4px}
 .band-navy .price .v{color:var(--gold)}
 .price .s{font-size:11px;color:var(--muted);margin-top:2px}.band-navy .price .s{color:#AEBAC6}
 
@@ -242,7 +242,7 @@ section.tight{padding:60px 0}
 .prose h2{font-size:clamp(26px,3.4vw,38px);margin:38px 0 14px}
 .prose h3{font-size:22px;margin:28px 0 10px}
 .prose ul,.prose ol{padding-left:22px;margin:0 0 20px} .prose li{margin-bottom:8px}
-.prose a{color:var(--orange);text-decoration:underline;text-underline-offset:2px}
+.prose a{color:var(--orange-ink,#A64B12);text-decoration:underline;text-underline-offset:2px}
 .prose blockquote,.callout{border-left:4px solid var(--orange);background:var(--tint);padding:18px 22px;margin:24px 0;border-radius:0 var(--radius) var(--radius) 0}
 .small-cap{font-family:var(--label);font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 
@@ -289,7 +289,7 @@ footer{background:var(--navy);color:#CBD3DB;padding:64px 0 40px}
 .byline{font-family:var(--label);font-weight:500;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#8E99A4;margin-top:20px;line-height:1.6}
 .art-grid{max-width:1180px;margin:0 auto;padding:60px 30px;display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:48px;align-items:start}
 .art-grid .prose{max-width:none;margin:0}
-.small-cap{font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--orange)}
+.small-cap{font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:12px;color:var(--orange-ink,#A64B12)}
 .callout{border-left:4px solid var(--orange);background:var(--tint);padding:20px 24px;margin:26px 0;font-size:18px;line-height:1.55;color:var(--ink);border-radius:0 var(--radius) var(--radius) 0}
 .callout cite{display:block;font-style:normal;font-family:var(--label);text-transform:uppercase;letter-spacing:.05em;font-size:11px;color:var(--muted);margin-top:12px}
 .note-box{background:var(--navy);color:#C6CFD8;border-radius:var(--radius);padding:22px 24px;margin:24px 0;border-left:4px solid var(--gold)}
@@ -297,13 +297,13 @@ footer{background:var(--navy);color:#CBD3DB;padding:64px 0 40px}
 .note-box p{margin:0;font-size:15.5px;line-height:1.65}
 .note-box strong{color:var(--cream)}
 .note-box a{color:var(--gold);text-decoration:underline}
-.note-box.teal{border-left-color:var(--teal)}.note-box.teal .bl{color:var(--teal)}
+.note-box.teal{border-left-color:var(--teal)}.note-box.teal .bl{color:var(--teal-ink,#2A7385)}
 .note-box.purple{border-left-color:#c3b7e6}.note-box.purple .bl{color:#c3b7e6}
-.note-box.coral{border-left-color:var(--orange)}.note-box.coral .bl{color:var(--orange)}
+.note-box.coral{border-left-color:var(--orange)}.note-box.coral .bl{color:var(--orange-ink,#A64B12)}
 .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}
 .stat-row.two{grid-template-columns:repeat(2,1fr)}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
-.stat b{display:block;font-family:var(--display);font-size:30px;color:var(--orange);line-height:1.05}
+.stat b{display:block;font-family:var(--display);font-size:30px;color:var(--orange-ink,#A64B12);line-height:1.05}
 .stat span{display:block;font-size:13.5px;color:var(--muted);margin-top:8px;line-height:1.5}
 .stat .stat-s{font-family:var(--label);text-transform:uppercase;letter-spacing:.03em;font-size:10.5px;color:var(--muted);margin-top:8px}
 .dont-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0}
@@ -322,20 +322,20 @@ footer{background:var(--navy);color:#CBD3DB;padding:64px 0 40px}
 .checklist .item strong{color:var(--ink)}
 .steps{display:grid;gap:12px;margin:18px 0}
 .step{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
-.step-n{font-family:var(--display);font-size:26px;color:var(--orange);line-height:1}
+.step-n{font-family:var(--display);font-size:26px;color:var(--orange-ink,#A64B12);line-height:1}
 .step-t{font-weight:700;font-size:16px;color:var(--ink);margin-bottom:4px}
 .step-d{font-size:14.5px;color:var(--muted);line-height:1.55}
 .full-src{background:var(--tint);border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;margin:30px 0}
-.full-src h4{font-family:var(--label);text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:var(--orange);margin:0 0 12px}
+.full-src h4{font-family:var(--label);text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:var(--orange-ink,#A64B12);margin:0 0 12px}
 .full-src ol{margin:0;padding-left:18px}.full-src li{font-size:12.5px;color:var(--muted);line-height:1.5;margin-bottom:8px}
 aside .side-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-bottom:16px}
-.side-card h5{font-family:var(--label);text-transform:uppercase;letter-spacing:.05em;font-size:12px;color:var(--orange);margin:0 0 8px}
+.side-card h5{font-family:var(--label);text-transform:uppercase;letter-spacing:.05em;font-size:12px;color:var(--orange-ink,#A64B12);margin:0 0 8px}
 .side-card p{font-size:14px;color:var(--muted);line-height:1.6;margin:0 0 10px}
-.side-card .link{font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:12.5px;color:var(--teal)}
+.side-card .link{font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:12.5px;color:var(--teal-ink,#2A7385)}
 .side-card.accent{background:var(--gold);border-color:var(--gold)}
 .side-card.accent h5{color:#2A1E06}.side-card.accent p{color:#4a3712}.side-card.accent .link{color:#161f29}
 .side-card.dark{background:var(--navy);border-color:var(--navy)}
-.side-card.dark h5{color:var(--gold)}.side-card.dark p{color:#C6CFD8}.side-card.dark strong{color:var(--cream)}.side-card.dark .link{color:var(--teal)}
+.side-card.dark h5{color:var(--gold)}.side-card.dark p{color:#C6CFD8}.side-card.dark strong{color:var(--cream)}.side-card.dark .link{color:var(--teal-ink,#2A7385)}
 .share-bar{display:flex;align-items:center;gap:10px;margin:22px 0 0;flex-wrap:wrap}
 .share-label{font-family:var(--label);text-transform:uppercase;letter-spacing:.1em;font-size:11px;color:#8E99A4}
 .share-ico{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:1.5px solid rgba(236,230,216,.3);color:var(--cream);border-radius:10px}
@@ -352,14 +352,14 @@ aside .side-card{background:var(--card);border:1px solid var(--line);border-radi
 
 .stop-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0}
 .stop-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px}
-.stop-card .n{font-family:var(--display);font-size:20px;color:var(--orange);display:block;margin-bottom:6px}
+.stop-card .n{font-family:var(--display);font-size:20px;color:var(--orange-ink,#A64B12);display:block;margin-bottom:6px}
 .stop-card h4{font-size:18px;margin:0 0 6px}
 .stop-card p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.6}
 .risk-band{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;padding:14px 18px;margin:10px 0}
 .risk-band b{display:block;font-family:var(--label);text-transform:uppercase;letter-spacing:.03em;font-size:12.5px;color:var(--ink);margin-bottom:4px}
 .risk-band p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.55}
 .risk-band.r1{border-left-color:var(--orange)}.risk-band.r2{border-left-color:var(--teal)}.risk-band.r3{border-left-color:var(--gold)}.risk-band.r4{border-left-color:var(--red)}
-.num{display:inline-block;font-family:var(--display);color:var(--orange);margin-right:12px}
+.num{display:inline-block;font-family:var(--display);color:var(--orange-ink,#A64B12);margin-right:12px}
 .jump-row{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}
 .jump-row a{font-family:var(--label);font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:12.5px;border:1.5px solid rgba(236,230,216,.3);border-radius:999px;padding:9px 16px;color:var(--cream)}
 .art-hero .jump-row a:hover{border-color:var(--gold);color:var(--gold)}
@@ -409,9 +409,9 @@ aside .side-card{background:var(--card);border:1px solid var(--line);border-radi
 .case{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--orange);border-radius:var(--radius);padding:22px 24px;margin:24px 0;box-shadow:0 14px 34px -22px rgba(22,31,41,.4)}
 .case .cl{display:block;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:11.5px;color:var(--muted);margin-bottom:10px}
 .case h4{font-size:22px;line-height:1.1;margin:0 0 12px;color:var(--ink);font-family:var(--display);text-transform:uppercase;letter-spacing:.3px}
-.case h4 span{color:var(--orange)!important}
+.case h4 span{color:var(--orange-ink,#A64B12)!important}
 .case p{color:var(--ink);font-size:16px;line-height:1.66;margin:0 0 12px}
-.case a{color:var(--orange)!important}
+.case a{color:var(--orange-ink,#A64B12)!important}
 .note-box.amber{border-left-color:var(--gold)}.note-box.amber .bl{color:var(--gold)}
 .art-hero .art-lede a,.case .cl{color:inherit}
 
@@ -419,14 +419,14 @@ aside .side-card{background:var(--card);border:1px solid var(--line);border-radi
 .case .note-box p,.note-box p,.note-box li{color:#C6CFD8}
 .case .note-box strong,.note-box strong{color:var(--cream)}
 .case .note-box .bl{color:var(--gold)}
-.case .note-box.teal .bl{color:var(--teal)}.case .note-box.coral .bl{color:var(--orange)}.case .note-box.purple .bl{color:#c3b7e6}
+.case .note-box.teal .bl{color:var(--teal-ink,#2A7385)}.case .note-box.coral .bl{color:var(--orange-ink,#A64B12)}.case .note-box.purple .bl{color:#c3b7e6}
 
 
 div.art-hero{padding-left:clamp(22px,5vw,46px);padding-right:clamp(22px,5vw,46px)}
 </style>
 <link rel="stylesheet" href="cp2.css">
 <style>
-.prose sup.ref,.dont-card sup.ref,.note-box sup.ref,.callout sup.ref,.side-card sup.ref{font-family:var(--label);font-size:11px;color:var(--orange);margin-left:1px;line-height:0}
+.prose sup.ref,.dont-card sup.ref,.note-box sup.ref,.callout sup.ref,.side-card sup.ref{font-family:var(--label);font-size:11px;color:var(--orange-ink,#A64B12);margin-left:1px;line-height:0}
 .prose .fig{margin:26px 0 30px}
 .prose .fig figcaption,.chart figcaption{font-family:var(--label);font-size:11px;text-transform:uppercase;letter-spacing:.05em;margin-top:12px;color:var(--muted)}
 .prose .video{position:relative;padding-top:56.25%;border-radius:var(--radius);overflow:hidden;background:var(--navy)}
@@ -465,7 +465,7 @@ div.art-hero{padding-left:clamp(22px,5vw,46px);padding-right:clamp(22px,5vw,46px
 .hbar>div{background:rgba(22,31,41,.07);border-radius:8px}
 .hbar span{display:flex;align-items:center;height:48px;padding:0 16px;border-radius:8px;font-family:var(--display);font-size:24px;color:var(--navy);white-space:nowrap;min-width:max-content}
 .answer{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;border-top:2px solid var(--ink);margin-top:26px;padding-top:20px}
-.answer b{font-family:var(--display);font-weight:400;font-size:clamp(56px,10vw,84px);line-height:1;color:var(--orange)}
+.answer b{font-family:var(--display);font-weight:400;font-size:clamp(56px,10vw,84px);line-height:1;color:var(--orange-ink,#A64B12)}
 .prose .answer p{margin:0;font-size:17px;line-height:1.5;flex:1;min-width:220px}
 @media (max-width:600px){.chart{padding:22px 18px 16px}.twin{grid-template-columns:1fr;gap:30px}.legend div{grid-template-columns:14px 78px 1fr}.tline::before{left:70px}.prose .tline li{grid-template-columns:58px 1fr;gap:26px}.tline .yr{font-size:26px}}
 
@@ -487,12 +487,14 @@ html,body{background:#FFFFFF!important;color:var(--ink)}
 <style>.cp-nutshell{margin:0 0 30px;padding:18px 22px;border-radius:12px;background:#FFF8EA;border:1px solid rgba(20,17,14,.12);border-left:5px solid var(--gold,#E0B03C)}.cp-nutshell .cp-nut-h{margin:0 0 8px;font-family:var(--label);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:14px}.cp-nutshell ul{margin:0;padding-left:20px}.cp-nutshell li{margin:6px 0;line-height:1.55}</style>
 <style>picture{display:contents}</style>
 </head><body>
+<a class="skip" href="#main">Skip to main content</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="burger" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2.2H3V6Zm0 5h18v2.2H3V11Zm0 5h18v2.2H3V16Z"/></symbol></svg>
 <header class="nav"><div class="wrap row">
  <a class="plates brand" href="index.html" aria-label="The Com'mon People, home"><img src="img/cp-logo.svg" alt="The Com'mon People" width="453" height="170"></a>
- <nav class="links" id="cpnav" aria-label="Primary"><a href="guides.html">Guides</a><a href="dispatches.html" aria-current="page">Dispatches</a><a href="loudspeaker.html">Loudspeaker</a><a href="apprenticeships.html">Apprenticeships</a><a href="commons-family.html">The Commons</a><a href="about.html">About</a><a class="cq-nav" href="prep-report.html" aria-label="Comquat Interview Prep"><img src="img/comquat-mark.svg" alt="" width="15" height="18" style="display:inline-block;height:1.15em;width:auto;vertical-align:-.2em;margin-right:5px">Interview Prep</a><a class="cq-nav" href="https://cv.the-common-people.com" aria-label="Comquat CV Rewrite"><img src="img/comquat-mark.svg" alt="" width="15" height="18" style="display:inline-block;height:1.15em;width:auto;vertical-align:-.2em;margin-right:5px">CV Rewrite</a><a href="https://cv.the-common-people.com/account/" aria-label="Your Comquat account: sign in or sign up">My account</a></nav>
+ <nav class="links" id="cpnav" aria-label="Primary"><a href="guides.html">Guides</a><a href="dispatches.html" aria-current="page">Dispatches</a><a href="loudspeaker.html">Loudspeaker</a><a href="apprenticeships.html">Apprenticeships</a><a href="commons-family.html">The Commons</a><a href="about.html">About</a><a class="cq-nav" href="prep-report.html" aria-label="Comquat Interview Prep"><img src="img/comquat-mark.svg" alt="" width="15" height="18" style="display:inline-block;height:1.15em;width:auto;vertical-align:-.2em;margin-right:5px">Interview Prep</a><a class="cq-nav" href="https://cv.the-common-people.com" aria-label="Comquat CV Rewrite"><img src="img/comquat-mark.svg" alt="" width="15" height="18" style="display:inline-block;height:1.15em;width:auto;vertical-align:-.2em;margin-right:5px">CV Rewrite</a><a href="https://cv.the-common-people.com/account/" aria-label="My account: sign in or sign up to Comquat">My account</a></nav>
  <div class="nav-actions"><a class="btn orange nav-book" href="comquat.html">Try Comquat free</a><button class="burger" id="cpburger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24"><use href="#burger"/></svg></button></div>
 </div></header>
+<main id="main">
 <section class="hero-c"><div class="wrap hc-grid"><div class="hc-copy">
  <div class="crumb"><a href="./dispatches.html">&larr; the dispatches</a></div>
  <div class="meta-row"><span class="pill solid">The Dispatch &middot; The Wage Issue</span><span class="pill">September 2026</span></div>
@@ -748,14 +750,15 @@ html,body{background:#FFFFFF!important;color:var(--ink)}
 
 <div class="cp-cta cq-cta"><a class="cq-cta-brand" href="prep-report.html" aria-label="Comquat, the free app from The Com'mon People"><img src="img/comquat-logo-reversed.svg" alt="Comquat" width="150" height="34" loading="lazy" decoding="async"></a><span class="eyebrow">Everything here is free, always. Including the app that does it for you.</span><h3>Want us to just do it for you? Comquat does it free.</h3><p>Comquat is our free CV Rewrite and Interview Prep app, built by the same people who write these dispatches. Company research, a tailored pitch, sharp questions, or a CV rewritten to the exact role. Most of the way there in minutes. Free every time, for everyone.</p><div class="row"><a class="btn cq-btn" href="prep-report.html">Comquat Interview Prep, free &rarr;</a><a class="btn cq-btn-alt" href="https://cv.the-common-people.com">Comquat CV Rewrite, free &rarr;</a></div></div>
 
+</main>
 <footer>
  <div class="wrap">
  <div class="fgrid">
       <div><a class="plates brand foot" href="index.html" aria-label="The Com'mon People, home"><img src="img/cp-logo-reversed.svg" alt="The Com'mon People" width="453" height="170" loading="lazy" decoding="async"></a><p class="fabout">A free resource centre for the people on both sides of recruitment. Built on mutual aid.</p><span class="sticker orange" style="margin-top:16px">Free, always</span></div>
-      <div><h6>Guides</h6><a href="guides.html">All Field Guides</a><a href="guide-cv.html">The CV that gets read</a><a href="guide-video-intro.html">The intro video</a><a href="guide-interview-prep.html">Interview prep</a><a href="guide-05-evp.html">The EVP field guide</a></div>
-      <div><h6>Read</h6><a href="dispatches.html">All Dispatches</a><a href="index.html#campaigns">Our campaigns</a><a href="apprenticeships.html">Apprenticeships</a><a href="loudspeaker.html">The Loudspeaker</a></div>
-      <div><h6>Comquat</h6><a href="comquat.html">All Comquat tools</a><a href="https://prep.the-common-people.com">Interview Prep</a><a href="https://cv.the-common-people.com">CV Rewrite</a><a href="https://cv.the-common-people.com/account/">My account</a><a href="https://recruiters.the-common-people.com">For recruiters</a></div>
-      <div><h6>About</h6><a href="about.html">About us</a><a href="commons-family.html">The Commons</a><a href="sponsor.html">Sponsor the Loudspeaker</a><a href="contact.html">Contact</a></div>
+      <div><h2 class="fh">Guides</h2><a href="guides.html">All Field Guides</a><a href="guide-cv.html">The CV that gets read</a><a href="guide-video-intro.html">The intro video</a><a href="guide-interview-prep.html">Interview prep</a><a href="guide-05-evp.html">The EVP field guide</a></div>
+      <div><h2 class="fh">Read</h2><a href="dispatches.html">All Dispatches</a><a href="index.html#campaigns">Our campaigns</a><a href="apprenticeships.html">Apprenticeships</a><a href="loudspeaker.html">The Loudspeaker</a></div>
+      <div><h2 class="fh">Comquat</h2><a href="comquat.html">All Comquat tools</a><a href="https://prep.the-common-people.com">Interview Prep</a><a href="https://cv.the-common-people.com">CV Rewrite</a><a href="https://cv.the-common-people.com/account/">My account</a><a href="https://recruiters.the-common-people.com">For recruiters</a></div>
+      <div><h2 class="fh">About</h2><a href="about.html">About us</a><a href="commons-family.html">The Commons</a><a href="sponsor.html">Sponsor the Loudspeaker</a><a href="contact.html">Contact</a></div>
     </div>
     <div class="fbottom"><span>© 2026 The Com'mon People. Built on mutual aid. Free, always.</span><nav class="flegal" aria-label="Legal"><a href="privacy.html">Privacy notice</a><a href="privacy.html#cookies">Cookies</a><a href="legal.html">Company information</a><a href="accessibility.html">Accessibility</a></nav><p class="fco">The Com'mon People and Comquat are run by Comquat Ventures UK Ltd, a company registered in England and Wales, company number 17581616. Registered office: 102 Stevenage Road, Hitchin, SG4 9DQ.</p></div>
  </div>

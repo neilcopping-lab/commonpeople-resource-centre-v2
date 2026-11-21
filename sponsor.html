@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -90,7 +90,7 @@
 .rate{background:var(--card);border:1.5px solid var(--line);border-radius:var(--radius);padding:26px 22px}
 .rate.feature{border-color:var(--gold);border-width:2px}
 .rate .l{font-family:var(--label);font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
-.rate .n{font-family:var(--display);font-size:36px;color:var(--orange);line-height:1}
+.rate .n{font-family:var(--display);font-size:36px;color:var(--orange-ink,#A64B12);line-height:1}
 .rate .s{font-size:13px;color:var(--muted);margin-top:8px}
 @media (max-width:760px){.rates{grid-template-columns:1fr}}
 </style>
@@ -98,6 +98,7 @@
 <style>picture{display:contents}</style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to main content</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="mega" viewBox="0 0 24 24"><path fill="currentColor" d="M3 10v4a1 1 0 0 0 1 1h2l3.2 3.6a1 1 0 0 0 1.8-.66V6.06a1 1 0 0 0-1.8-.66L6 9H4a1 1 0 0 0-1 1Z"/><path fill="currentColor" d="M15.5 8.5c1 1 1 4 0 5l1.3 1.3c1.7-1.7 1.7-5.9 0-7.6L15.5 8.5Zm2.4-2.4c2.3 2.3 2.3 8 0 10.3l1.3 1.3c3-3 3-9.9 0-12.9l-1.3 1.3Z"/></symbol>
   <symbol id="burger" viewBox="0 0 24 24"><path fill="currentColor" d="M3 6h18v2.2H3V6Zm0 5h18v2.2H3V11Zm0 5h18v2.2H3V16Z"/></symbol>
@@ -105,13 +106,14 @@
 <header class="nav">
   <div class="wrap row">
     <a class="plates brand" href="index.html" aria-label="The Com'mon People, home"><img src="img/cp-logo.svg" alt="The Com'mon People" width="453" height="170"></a>
-    <nav class="links" id="cpnav" aria-label="Primary"><a href="guides.html">Guides</a><a href="dispatches.html">Dispatches</a><a href="loudspeaker.html">Loudspeaker</a><a href="apprenticeships.html">Apprenticeships</a><a href="commons-family.html">The Commons</a><a href="about.html">About</a><a class="cq-nav" href="prep-report.html" aria-label="Comquat Interview Prep"><img src="img/comquat-mark.svg" alt="" width="15" height="18" style="display:inline-block;height:1.15em;width:auto;vertical-align:-.2em;margin-right:5px">Interview Prep</a><a class="cq-nav" href="https://cv.the-common-people.com" aria-label="Comquat CV Rewrite"><img src="img/comquat-mark.svg" alt="" width="15" height="18" style="display:inline-block;height:1.15em;width:auto;vertical-align:-.2em;margin-right:5px">CV Rewrite</a><a href="https://cv.the-common-people.com/account/" aria-label="Your Comquat account: sign in or sign up">My account</a></nav>
+    <nav class="links" id="cpnav" aria-label="Primary"><a href="guides.html">Guides</a><a href="dispatches.html">Dispatches</a><a href="loudspeaker.html">Loudspeaker</a><a href="apprenticeships.html">Apprenticeships</a><a href="commons-family.html">The Commons</a><a href="about.html">About</a><a class="cq-nav" href="prep-report.html" aria-label="Comquat Interview Prep"><img src="img/comquat-mark.svg" alt="" width="15" height="18" style="display:inline-block;height:1.15em;width:auto;vertical-align:-.2em;margin-right:5px">Interview Prep</a><a class="cq-nav" href="https://cv.the-common-people.com" aria-label="Comquat CV Rewrite"><img src="img/comquat-mark.svg" alt="" width="15" height="18" style="display:inline-block;height:1.15em;width:auto;vertical-align:-.2em;margin-right:5px">CV Rewrite</a><a href="https://cv.the-common-people.com/account/" aria-label="My account: sign in or sign up to Comquat">My account</a></nav>
     <div class="nav-actions"><a class="btn orange nav-book" href="comquat.html">Try Comquat free</a><button class="burger" id="cpburger" type="button" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24"><use href="#burger"/></svg></button></div>
   </div>
 </header>
+<main id="main">
 
 <section class="hero-c"><div class="wrap hc-grid"><div class="hc-copy">
-    <span class="eyebrow" style="color:var(--teal)">Sponsorship</span>
+    <span class="eyebrow" style="color:var(--teal-ink,#2A7385)">Sponsorship</span>
     <h1 style="font-size:clamp(38px,5.6vw,68px);color:var(--cream);margin:12px 0 16px">Sponsor The Loudspeaker.</h1>
     <p style="color:#C6CFD8;font-size:19px;max-width:720px;border-left:3px solid var(--orange);padding-left:20px;line-height:1.65;margin:0">One clearly-labelled sponsor per edition. No ad clutter, no pop-ups, no selling anyone's data. A single, honest introduction to people on both sides of hiring, and it is what keeps the whole resource free.</p>
   </div><figure class="hc-frame"><picture><source type="image/webp" srcset="img/home-who-we-are-800.webp 800w, img/home-who-we-are.webp 1600w" sizes="(max-width: 920px) 100vw, 900px"><img src="img/home-who-we-are.jpg" alt="An open shop door on a high street with a chalkboard outside" width="1600" height="900" fetchpriority="high"></picture><figcaption>Sponsorship</figcaption></figure></div></section>
@@ -151,14 +153,15 @@
   </div>
 </section>
 
+</main>
 <footer>
   <div class="wrap">
     <div class="fgrid">
       <div><a class="plates brand foot" href="index.html" aria-label="The Com'mon People, home"><img src="img/cp-logo-reversed.svg" alt="The Com'mon People" width="453" height="170" loading="lazy" decoding="async"></a><p class="fabout">A free resource centre for the people on both sides of recruitment. Built on mutual aid.</p><span class="sticker orange" style="margin-top:16px">Free, always</span></div>
-      <div><h6>Guides</h6><a href="guides.html">All Field Guides</a><a href="guide-cv.html">The CV that gets read</a><a href="guide-video-intro.html">The intro video</a><a href="guide-interview-prep.html">Interview prep</a><a href="guide-05-evp.html">The EVP field guide</a></div>
-      <div><h6>Read</h6><a href="dispatches.html">All Dispatches</a><a href="index.html#campaigns">Our campaigns</a><a href="apprenticeships.html">Apprenticeships</a><a href="loudspeaker.html">The Loudspeaker</a></div>
-      <div><h6>Comquat</h6><a href="comquat.html">All Comquat tools</a><a href="https://prep.the-common-people.com">Interview Prep</a><a href="https://cv.the-common-people.com">CV Rewrite</a><a href="https://cv.the-common-people.com/account/">My account</a><a href="https://recruiters.the-common-people.com">For recruiters</a></div>
-      <div><h6>About</h6><a href="about.html">About us</a><a href="commons-family.html">The Commons</a><a href="sponsor.html">Sponsor the Loudspeaker</a><a href="contact.html">Contact</a></div>
+      <div><h2 class="fh">Guides</h2><a href="guides.html">All Field Guides</a><a href="guide-cv.html">The CV that gets read</a><a href="guide-video-intro.html">The intro video</a><a href="guide-interview-prep.html">Interview prep</a><a href="guide-05-evp.html">The EVP field guide</a></div>
+      <div><h2 class="fh">Read</h2><a href="dispatches.html">All Dispatches</a><a href="index.html#campaigns">Our campaigns</a><a href="apprenticeships.html">Apprenticeships</a><a href="loudspeaker.html">The Loudspeaker</a></div>
+      <div><h2 class="fh">Comquat</h2><a href="comquat.html">All Comquat tools</a><a href="https://prep.the-common-people.com">Interview Prep</a><a href="https://cv.the-common-people.com">CV Rewrite</a><a href="https://cv.the-common-people.com/account/">My account</a><a href="https://recruiters.the-common-people.com">For recruiters</a></div>
+      <div><h2 class="fh">About</h2><a href="about.html">About us</a><a href="commons-family.html">The Commons</a><a href="sponsor.html">Sponsor the Loudspeaker</a><a href="contact.html">Contact</a></div>
     </div>
     <div class="fbottom"><span>© 2026 The Com'mon People. Built on mutual aid. Free, always.</span><nav class="flegal" aria-label="Legal"><a href="privacy.html">Privacy notice</a><a href="privacy.html#cookies">Cookies</a><a href="legal.html">Company information</a><a href="accessibility.html">Accessibility</a></nav><p class="fco">The Com'mon People and Comquat are run by Comquat Ventures UK Ltd, a company registered in England and Wales, company number 17581616. Registered office: 102 Stevenage Road, Hitchin, SG4 9DQ.</p></div>
   </div>
