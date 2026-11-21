@@ -29,7 +29,7 @@
     "#cpfree .cfb-cv{background:#FF8A1F;color:#17191C}",
     "#cpfree .cfb-x{position:absolute;top:6px;right:6px;width:40px;height:40px;border:0;border-radius:50%;background:rgba(255,255,255,.45);color:#17191C;font-size:24px;line-height:1;cursor:pointer}",
     "#cpfree .cfb-x:focus-visible,#cpfree a:focus-visible{outline:3px solid #17191C;outline-offset:2px}",
-    "@media (max-width:600px){#cpfree{left:10px;right:10px;bottom:10px;width:auto;border-radius:14px}#cpfree .cfb-body p{display:none}#cpfree .cfb-body{padding:10px 12px 12px}}",
+    "@media (max-width:600px){#cpfree{left:10px;right:10px;bottom:10px;width:auto;border-radius:14px}#cpfree .cfb-body p:not(.cfb-acc){display:none}#cpfree .cfb-acc{margin:10px 0 0}#cpfree .cfb-body{padding:10px 12px 12px}}",
     "@media (prefers-reduced-motion:reduce){#cpfree{transition:none}}"
   ].join("");
 
