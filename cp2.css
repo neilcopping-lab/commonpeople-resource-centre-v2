@@ -607,3 +607,8 @@ video:focus-visible,iframe:focus-visible,[tabindex]:focus-visible{outline:3px so
 /* Sign-up consent tick: the .news input rule (for the email box) was making the tick box a big white square. */
 .news .consent input[type=checkbox]{min-width:0;width:18px;height:18px;padding:0;margin:1px 0 0;flex:0 0 18px;border-radius:4px;accent-color:var(--gold)}
 .news .consent{align-items:flex-start;font-size:13.5px}
+/* Campaigns are always orange: heading label, tags and a top edge on each card. */
+.camp .head .eyebrow,.camp .card .tag:not(.free){color:var(--orange-ink)}
+.camp article.card{border-top:4px solid var(--orange)}
+/* Footer: one link per line (pairs were running together on one line). */
+.fgrid > div > a{display:block}
