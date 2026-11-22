@@ -396,7 +396,7 @@
   </div>
 </footer>
 
-<script src="commons-episodes.js?v=20261121special"></script>
+<script src="commons-episodes.js?v=20261122bob"></script>
 <script>
 /* Episode list and release dates live in commons-episodes.js */
 
@@ -440,7 +440,7 @@ var FAMILY = {
 };
 
 function img(k){ return "img/commons-family/" + k + ".jpg"; }
-function card(ep){ return "img/commons-episodes/episode-" + String(ep.num).padStart(2,"0") + "-title-card.jpg"; }
+function card(ep){ return "img/commons-episodes/episode-" + String(ep.num).padStart(2,"0") + "-title-card.jpg?v=20261122"; }
 function esc(s){ return String(s).replace(/[&<>"]/g,function(ch){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch];}); }
 function parseDay(d){ var p=d.split("-"); return new Date(+p[0], +p[1]-1, +p[2], 0, 0, 0); }
 function niceDate(d){ return parseDay(d).toLocaleDateString("en-GB",{weekday:"short", day:"numeric", month:"short"}); }
