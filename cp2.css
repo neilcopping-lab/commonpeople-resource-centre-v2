@@ -592,3 +592,15 @@ video:focus-visible,iframe:focus-visible,[tabindex]:focus-visible{outline:3px so
 .card .go.soon-note{color:var(--muted)}
 /* Footer item for something not live yet: looks like the links but isn't one. */
 .fgrid .fsoon{display:block;color:#7F8A95;font-size:14px;margin-bottom:9px}.fgrid .fsoon em{font-style:normal;color:var(--gold);font-size:12px}
+/* Introducing Comquat (home page): the four Comquat apps, with the logo and Neil's why. */
+.cards.three{grid-template-columns:repeat(3,1fr)}
+.cq-intro{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:start;margin-bottom:42px}
+.cq-logo{display:block;height:52px;width:auto;margin:0 0 18px}
+.cq-intro h2{font-size:clamp(32px,4.8vw,52px);margin:0 0 14px}
+.cq-lead{color:var(--muted);font-size:18px;margin:0 0 12px}
+.cq-why{background:var(--cream);border-left:5px solid var(--gold);border-radius:var(--radius);padding:24px 26px}
+.cq-why .eyebrow{display:inline-block;margin-bottom:10px}
+.cq-why p{margin:0 0 12px;font-size:17px}
+.cq-why .cq-sign{font-weight:700;margin:0}
+@media (max-width:920px){.cq-intro{grid-template-columns:1fr;gap:26px}.cards.three{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.cards.three{grid-template-columns:1fr}}
