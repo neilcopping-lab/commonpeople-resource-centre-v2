@@ -585,3 +585,8 @@ body.cq-landing .sticker.orange{color:#fff}
 .prose ol li,.dont-card b,.compare-card b,.jump-row a,.fco{font-size:14px}
 .cf-face .nm span,.cf-face.cf-back p,.cf-face.cf-back q,.cf-face .go{font-size:13px}
 video:focus-visible,iframe:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--orange-ink);outline-offset:2px}
+
+/* "Coming soon" banner across the corner of a card that isn't live yet (Comquat for Recruiters, Nov 2026). Remove the class and banner to go live. */
+.card .top.soon{overflow:hidden}
+.card .soon-banner{position:absolute;z-index:4;top:22px;right:-52px;width:210px;transform:rotate(35deg);background:var(--gold);color:var(--navy);font-family:var(--label);font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;text-align:center;padding:7px 0;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.card .go.soon-note{color:var(--muted)}
