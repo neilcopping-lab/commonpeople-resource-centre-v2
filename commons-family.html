@@ -321,7 +321,6 @@
       <figure class="cf-pol cf-float" style="left:47%;top:46%;--r:5deg;margin:0"><picture><source type="image/webp" srcset="img/commons-family/lou.webp"><img src="img/commons-family/lou.jpg" alt="Auntie Lou" loading="lazy" decoding="async"></picture><span>Auntie Lou</span></figure>
       <figure class="cf-pol cf-float" style="left:70%;top:42%;--r:-4deg;margin:0"><picture><source type="image/webp" srcset="img/commons-family/bowie-ozzy.webp"><img src="img/commons-family/bowie-ozzy.jpg" alt="Bowie and Ozzy, the schnauzers" loading="lazy" decoding="async"></picture><span>Bowie &amp; Ozzy</span></figure>
       <figure class="cf-pol cf-float cf-pol-new" style="left:37%;top:37%;--r:3deg;margin:0;width:24%"><picture><source type="image/webp" srcset="img/commons-family/bob.webp"><img src="img/commons-family/bob.jpg" alt="Bob" loading="lazy" decoding="async"></picture><span>Bob</span></figure>
-      <div class="cf-bubble">When Ozzy howls, a new episode's out.</div>
     </div>
   </div>
 </section>
@@ -436,7 +435,7 @@ var FAMILY = {
        go:["Apprenticeship guidance","apprenticeships.html"]},
   bowie:{name:"Bowie & Ozzy", role:"The Loudspeakers", c:"#5AA9C2", img:"bowie-ozzy",
        q:"Woof. Woof.",
-       p:"Bowie is silver, cool and reads your CV over your shoulder. Ozzy is black and has never owned an indoor voice. When Ozzy howls, there's news.",
+       p:"Bowie is silver, cool and reads your CV over your shoulder. Ozzy is black and has never owned an indoor voice.",
        go:["Subscribe to The Loudspeaker","loudspeaker.html"]}
 };
 
@@ -471,7 +470,7 @@ function infoHTML(ep, live){
          '<div class="cf-res"><h3>Free help from this episode</h3><div class="cf-chips">' +
          ep.res.map(function(r){ return '<a class="cf-chip" href="'+r[1]+'">'+esc(r[0])+'</a>'; }).join("") + '</div></div>' +
          (live && ep.read ? readHTML(ep) : '') +
-         '<div class="cf-howl"><img src="'+img("bowie-ozzy")+'" alt="" loading="lazy" decoding="async"><p><b>New episodes every Friday.</b> Ozzy will howl. You will know.</p></div>';
+         '<div class="cf-howl"><img src="'+img("bowie-ozzy")+'" alt="" loading="lazy" decoding="async"><p><b>New episodes every Friday.</b></p></div>';
 }
 function readHTML(ep){
   return '<details class="cf-read" id="cf-read"><summary>Read this episode</summary>' +
