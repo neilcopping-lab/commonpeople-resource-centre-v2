@@ -613,3 +613,7 @@ video:focus-visible,iframe:focus-visible,[tabindex]:focus-visible{outline:3px so
 .camp article.card{border-top:4px solid var(--orange)}
 /* Footer: one link per line (pairs were running together on one line). */
 .fgrid > div > a{display:block}
+
+/* Nov 2026: the two Comquat menu items (Job Seekers, Recruiters) are longer than the three they replaced,
+   so the laptop menu is a touch tighter to keep it on one line. */
+@media (min-width:1121px){.nav .row>.links{gap:8px 12px;font-size:13px;letter-spacing:.015em}}
