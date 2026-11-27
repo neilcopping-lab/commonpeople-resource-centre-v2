@@ -44,10 +44,10 @@
     box.innerHTML =
       '<div class="cfb-top"><img src="/img/comquat-mark.svg" alt="">Comquat is free. For everyone, every time.</div>' +
       '<button class="cfb-x" type="button" aria-label="Close">&times;</button>' +
-      '<div class="cfb-body"><p>Our CV Rewrite and Interview Prep tools cost nothing, and a free account gets you Identify Your Options, the CV Builder and the pitch video too. No card, no credits, no catch.</p>' +
+      '<div class="cfb-body"><p>Our CV Rewrite and Interview Prep tools cost nothing, and a free account gets you Beyond the Obvious, the CV Builder and the pitch video too. No card, no credits, no catch.</p>' +
       '<div class="cfb-btns"><a class="cfb-prep" href="https://prep.the-common-people.com">Interview Prep</a>' +
       '<a class="cfb-cv" href="https://cv.the-common-people.com">Rewrite my CV</a></div>' +
-      '<p class="cfb-acc"><a href="https://cv.the-common-people.com/options.html">Not sure what&rsquo;s next? Identify Your Options &rarr;</a></p>' +
+      '<p class="cfb-acc"><a href="https://cv.the-common-people.com/options.html">Not sure what&rsquo;s next? Beyond the Obvious &rarr;</a></p>' +
       '<p class="cfb-acc cfb-acc2"><a href="https://cv.the-common-people.com/account/?mode=signup&amp;next=%2Faccount%2Fme.html">No CV yet? Get the CV Builder free &rarr;</a></p></div>';
     document.body.appendChild(box);
     box.querySelector(".cfb-x").addEventListener("click", function () {
