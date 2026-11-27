@@ -23,13 +23,13 @@
     "#cpfree .cfb-body{padding:12px 16px 16px;font-size:15px;line-height:1.45}",
     "#cpfree .cfb-body p{margin:0 0 12px}",
     "#cpfree .cfb-btns{display:flex;gap:8px;flex-wrap:wrap}",
-    "#cpfree .cfb-acc{margin:12px 0 0;font-size:14.5px}#cpfree .cfb-acc a{color:#5B21B6;font-weight:700;text-decoration:underline}",
+    "#cpfree .cfb-acc{margin:12px 0 0;font-size:14.5px}#cpfree .cfb-acc2{margin-top:6px}#cpfree .cfb-acc a{color:#5B21B6;font-weight:700;text-decoration:underline}",
     "#cpfree .cfb-btns a{flex:1 1 auto;text-align:center;text-decoration:none;font-weight:700;font-size:15px;padding:11px 14px;border-radius:999px;min-height:44px;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center}",
     "#cpfree .cfb-prep{background:#1F6B45;color:#fff}",
     "#cpfree .cfb-cv{background:#FF8A1F;color:#17191C}",
     "#cpfree .cfb-x{position:absolute;top:6px;right:6px;width:40px;height:40px;border:0;border-radius:50%;background:rgba(255,255,255,.45);color:#17191C;font-size:24px;line-height:1;cursor:pointer}",
     "#cpfree .cfb-x:focus-visible,#cpfree a:focus-visible{outline:3px solid #17191C;outline-offset:2px}",
-    "@media (max-width:600px){#cpfree{left:10px;right:10px;bottom:10px;width:auto;border-radius:14px}#cpfree .cfb-body p:not(.cfb-acc){display:none}#cpfree .cfb-acc{margin:10px 0 0}#cpfree .cfb-body{padding:10px 12px 12px}}",
+    "@media (max-width:600px){#cpfree{left:10px;right:10px;bottom:10px;width:auto;border-radius:14px}#cpfree .cfb-body p:not(.cfb-acc){display:none}#cpfree .cfb-acc{margin:10px 0 0}#cpfree .cfb-acc2{margin-top:4px}#cpfree .cfb-body{padding:10px 12px 12px}}",
     "@media (prefers-reduced-motion:reduce){#cpfree{transition:none}}"
   ].join("");
 
@@ -44,10 +44,11 @@
     box.innerHTML =
       '<div class="cfb-top"><img src="/img/comquat-mark.svg" alt="">Comquat is free. For everyone, every time.</div>' +
       '<button class="cfb-x" type="button" aria-label="Close">&times;</button>' +
-      '<div class="cfb-body"><p>Our CV Rewrite and Interview Prep tools cost nothing, and a free account gets you the CV Builder too. No card, no credits, no catch.</p>' +
+      '<div class="cfb-body"><p>Our CV Rewrite and Interview Prep tools cost nothing, and a free account gets you Identify Your Options, the CV Builder and the pitch video too. No card, no credits, no catch.</p>' +
       '<div class="cfb-btns"><a class="cfb-prep" href="https://prep.the-common-people.com">Interview Prep</a>' +
       '<a class="cfb-cv" href="https://cv.the-common-people.com">Rewrite my CV</a></div>' +
-      '<p class="cfb-acc"><a href="https://cv.the-common-people.com/account/?mode=signup&amp;next=%2Faccount%2Fme.html">No CV yet? Get the CV Builder free &rarr;</a></p></div>';
+      '<p class="cfb-acc"><a href="https://cv.the-common-people.com/options.html">Not sure what&rsquo;s next? Identify Your Options &rarr;</a></p>' +
+      '<p class="cfb-acc cfb-acc2"><a href="https://cv.the-common-people.com/account/?mode=signup&amp;next=%2Faccount%2Fme.html">No CV yet? Get the CV Builder free &rarr;</a></p></div>';
     document.body.appendChild(box);
     box.querySelector(".cfb-x").addEventListener("click", function () {
       try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {}

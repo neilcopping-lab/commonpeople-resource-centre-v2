@@ -592,6 +592,7 @@ video:focus-visible,iframe:focus-visible,[tabindex]:focus-visible{outline:3px so
 .card .go.soon-note{color:var(--muted)}
 /* Footer item for something not live yet: looks like the links but isn't one. */
 .fgrid .fsoon{display:block;color:#7F8A95;font-size:14px;margin-bottom:9px}.fgrid .fsoon em{font-style:normal;color:var(--gold);font-size:12px}
+.fsoon-tag{color:var(--gold);font-size:13px}
 /* Introducing Comquat (home page): the four Comquat apps, with the logo and Neil's why. */
 .cards.three{grid-template-columns:repeat(3,1fr)}
 .cq-intro{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:start;margin-bottom:42px}
