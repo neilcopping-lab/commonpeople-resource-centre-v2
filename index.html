@@ -285,7 +285,7 @@
     try{
       var r=await fetch("https://cv.the-common-people.com/api/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:f.email.value.trim(),company:f.company.value})});
       var d=await r.json().catch(function(){return {};});
-      if(r.ok){f.reset();m.style.color="#7bbf9e";m.textContent=d.message||"You're on the list.";try{if(window.va)window.va("event","Loudspeaker sign-up",{from:location.pathname});}catch(_){}}
+      if(r.ok){f.reset();m.style.color="#7bbf9e";m.textContent=d.message||"You're on the list.";try{if(window.va)window.va("event","Loudspeaker sign-up",{from:location.pathname});}catch(_){}try{if(d.message)sessionStorage.setItem("cpSubMsg",d.message);}catch(_){}setTimeout(function(){location.href="/loudspeaker-thanks";},600);}
       else{m.style.color="#F0B27A";m.textContent=d.error||"Something went wrong. Please try again.";}
     }catch(err){m.style.color="#F0B27A";m.textContent="Something went wrong. Please try again.";}
   });}
